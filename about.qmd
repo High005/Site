@@ -7,3 +7,11 @@ About this site
 ```{r}
 1 + 1
 ```
+
+```{r}
+png(file = "grafico.png")
+grafico <- curve(x^2+1, from = 0, to = 3)
+grafico
+dev.off()
+```
+
