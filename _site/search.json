@@ -7,11 +7,25 @@
     "text": "“Welcome to the page where you can find open healthcare news and challenges. As a data science fresh graduate i can’t wait to talk with you about public health, Medtech, Biotech and health analytics.\nLet’s keep in touch to improve healthcare by adopting new strategies to ease evidence based decisions.\n\n\n\nChannels of fresh adventures and news\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewcare\n\n\n\n\n\nThe news about revolution that are solving Medicine’s challenges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArtificial intelligence will improve your healthcare job routine\n\n\n\n\n\n\n\n\n\n\n\nJan 11, 2025\n\n\nFederico\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\nFederico\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "posts/datah/medical_datactor/aspirin/index.html",
+    "href": "posts/datah/medical_datactor/aspirin/index.html",
+    "title": "Aspirin Vs Cancer",
+    "section": "",
+    "text": "The article:\n“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the authors of the study. As Scarpa notes, this study suggests that aspirin may be playing a slightly different role by stimulating the immune system’s surveillance response, which can then prevent or delay the progression of colorectal cancer.\nfull article here: (https://www.nationalgeographic.com/premium/article/aspirin-immune-system-detect-target-cancer-cells)"
+  },
+  {
+    "objectID": "jobs.html",
+    "href": "jobs.html",
+    "title": "jobs",
+    "section": "",
+    "text": "Job opportunity\nData manager, Bergamo (Part time)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About High 0.05",
     "section": "",
-    "text": "It all started with debates with University Professors where bottles were uncorked when the P-value of the analysis in progress was less than 0.05. At that moment smiles blossomed and above all we began to share, as the English say, the “High five” with researchers of every background and specialty from biologists to Medical Doctors. To dedicate even an additional dose to that magical number, the whole company declared his love by adopting the name of so loved P = 0.05.\nTechnology is just a tool that can became useful if it brings large-scale changes to everyday life and can identify concrete and high-impact fields of application."
+    "text": "It all started with debates with University Professors where bottles were uncorked when the P-value of the analysis in progress was less than 0.05. At that moment smiles blossomed and above all we began to share, as the English say, the “High five” with researchers of every background and specialty from biologists to Medical Doctors. To dedicate even an additional dose to that magical number, the whole company declared his love by adopting the name of so loved P = 0.05. The need to further explore a multidisciplinary approach is since technology is just a tool that can became useful if it brings large-scale changes to everyday life and can identify concrete and high-impact fields of application."
   },
   {
     "objectID": "Chicche.html",
@@ -26,20 +40,6 @@
     "title": "Chicche",
     "section": "",
     "text": "Here, we will walk through an example of performing GSEA in R…\nlibrary(clusterProfiler) # Example code for GSEA"
-  },
-  {
-    "objectID": "jobs.html",
-    "href": "jobs.html",
-    "title": "jobs",
-    "section": "",
-    "text": "Job opportunity\nData manager, Bergamo (Part time)"
-  },
-  {
-    "objectID": "posts/datah/medical_datactor/aspirin/index.html",
-    "href": "posts/datah/medical_datactor/aspirin/index.html",
-    "title": "Aspirin Vs Cancer",
-    "section": "",
-    "text": "The article:\n“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the authors of the study. As Scarpa notes, this study suggests that aspirin may be playing a slightly different role by stimulating the immune system’s surveillance response, which can then prevent or delay the progression of colorectal cancer.\nfull article here: (https://www.nationalgeographic.com/premium/article/aspirin-immune-system-detect-target-cancer-cells)"
   },
   {
     "objectID": "posts/datah/index.html",
