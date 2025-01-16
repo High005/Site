@@ -4,13 +4,55 @@
     "href": "index.html",
     "title": "High 005",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "“Welcome to the page where you can find open healthcare news and challenges. As a data science fresh graduate i can’t wait to talk with you about public health, Medtech, Biotech and health analytics.\nLet’s keep in touch to improve healthcare by adopting new strategies to ease evidence based decisions.\n\n\n\nChannels of fresh adventures and news\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewcare\n\n\n\n\n\nThe news about revolution that are solving Medicine’s challenges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArtificial intelligence will improve your healthcare job routine\n\n\n\n\n\n\n\n\n\n\n\nJan 11, 2025\n\n\nFederico\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\nFederico\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About High 0.05",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "It all started with debates with University Professors where bottles were uncorked when the P-value of the analysis in progress was less than 0.05. At that moment smiles blossomed and above all we began to share, as the English say, the “High five” with researchers of every background and specialty from biologists to Medical Doctors. To dedicate even an additional dose to that magical number, the whole company declared his love by adopting the name of so loved P = 0.05.\nTechnology is just a tool that can became useful if it brings large-scale changes to everyday life and can identify concrete and high-impact fields of application."
+  },
+  {
+    "objectID": "Chicche.html",
+    "href": "Chicche.html",
+    "title": "Chicche",
+    "section": "",
+    "text": "Here, we will walk through an example of performing GSEA in R…\nlibrary(clusterProfiler) # Example code for GSEA"
+  },
+  {
+    "objectID": "Chicche.html#easy-gene-set-enrichment-analysis-in-r",
+    "href": "Chicche.html#easy-gene-set-enrichment-analysis-in-r",
+    "title": "Chicche",
+    "section": "",
+    "text": "Here, we will walk through an example of performing GSEA in R…\nlibrary(clusterProfiler) # Example code for GSEA"
+  },
+  {
+    "objectID": "jobs.html",
+    "href": "jobs.html",
+    "title": "jobs",
+    "section": "",
+    "text": "Job opportunity\nData manager, Bergamo (Part time)"
+  },
+  {
+    "objectID": "posts/datah/medical_datactor/aspirin/index.html",
+    "href": "posts/datah/medical_datactor/aspirin/index.html",
+    "title": "Aspirin Vs Cancer",
+    "section": "",
+    "text": "The article:\n“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the authors of the study. As Scarpa notes, this study suggests that aspirin may be playing a slightly different role by stimulating the immune system’s surveillance response, which can then prevent or delay the progression of colorectal cancer.\nfull article here: (https://www.nationalgeographic.com/premium/article/aspirin-immune-system-detect-target-cancer-cells)"
+  },
+  {
+    "objectID": "posts/datah/index.html",
+    "href": "posts/datah/index.html",
+    "title": "Newcare",
+    "section": "",
+    "text": "Artificial intelligence will improve your healthcare job routine\n\n\n\n\n\n\n\n\n\n\n\nJan 11, 2025\n\n\nFederico\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\nFederico\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/datah/medical_datactor/cardiology/index.html",
+    "href": "posts/datah/medical_datactor/cardiology/index.html",
+    "title": "Artificial intelligence will improve your healthcare job routine",
+    "section": "",
+    "text": "AI and Medical journey\nLLMs in medicine are nowadays super in hype. Or better, GenAI is super in hype. The last one is different from traditional AI in that it can generate content, such as summaries of text and answers to questions, rather than merely analyzing existing data. GenAI can definitively improve your work as healthcare professional since the goal is just to “removing the robot that is inside you to let you perform more human related task”. Hence the opportunity here of GenAI is just to manage exactly all the jobs that as healthcare professional you try to avoid every day to let you as much time as possible with patients. This since GenAI can empower your role, plus the patients to take a more active role in their healthcare. This since patients can use LLM-powered chatbots to interact with their EHR, prepare for appointments.\nWhile challenges exist, the benefits of GenAI are too significant to ignore, and it may revolutionize care delivery by automating tasks, improving patient self-management, and enhancing job satisfaction.\nBy actively engaging in the development and implementation of GenAI, and adopting a balanced approach that prioritizes safety and responsibility, we can explore its potential to transform the way we deliver cardiovascular care and ultimately improve patient outcomes."
   }
 ]

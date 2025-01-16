@@ -1,0 +1,12 @@
+---
+title: "Chicche"
+format: html
+---
+
+## Easy Gene Set Enrichment Analysis in R
+
+Here, we will walk through an example of performing GSEA in R...
+
+```{r}
+library(clusterProfiler)
+# Example code for GSEA
