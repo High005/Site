@@ -9,11 +9,9 @@ website:
         href: index.qmd
       - text: "Tutorials"
         href: tutorials.qmd
-      - text: "Chicche"
-        href: Chicche.qmd
+      - text: "Click to solve together"
+        href: jobs.qmd
       - text: "About"
         href: about.qmd
-      - text: "Jobs"
-        href: jobs.qmd
 
 

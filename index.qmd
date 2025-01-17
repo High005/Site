@@ -60,13 +60,19 @@ format:
           </style>
 ---
 
+<div id="animated-title" style="text-align: center; padding: 20px 0;"></div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new TypeIt("#animated-title", {
+      strings: ["The page of healthcare news and challenges for the next years. Curiosities and questions are the beginning of new journey, let's embrace together!", "Read. Enjoy. Share opinion with us"],
+      speed: 50,
+      breakLines: false,
+      loop: true,
+    }).go();
+  });
+</script>
 
-::: column-body-outset
-"Welcome to the page where you can find open healthcare news and challenges. As a data science fresh graduate i can't wait to talk with you about public health, Medtech, Biotech and health analytics.
-
-Let's keep in touch to improve healthcare by adopting new strategies to ease evidence based decisions.
-:::
 
 ::: column-page
 ::: {style="font-size: 2em; face: bold; color: #343a40;"}
