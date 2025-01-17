@@ -77,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -96,7 +96,42 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif; /* Modern, clean font */
+    background-color: #fff8e1; /* Soft yellow background */
+    color: #333; /* Dark gray text for readability */
+  }
+  .quarto-listing-item {
+    border: 2px solid #ffc1e3; /* Pink border for listing items */
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff; /* White background for contrast */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .quarto-listing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
+  }
+  .quarto-title-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  }
+  a {
+    color: #ff4081; /* Pink links */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -130,10 +165,10 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -175,24 +210,22 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">High 005</h1>
-                      </div>
-  </div>
-  <div class="quarto-title-meta column-body">
-    </div>
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles content page-columns page-full column-body">
+<div class="quarto-about-trestles content page-columns page-full">
   <div class="about-entity">
     <img src="images/logo.png" class="about-image
   round " style="height: 25em; width: 25em;">
-
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">High 005</h1>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header>
     <div class="about-links">
   <a href="https://orcid.org/0000-0002-4610-0950" class="about-link" rel="" target="">
      <span class="about-link-text">Founder published papers</span>
@@ -202,7 +235,7 @@ window.Quarto = {
   </a>
 </div>
   </div>
-  <div class="about-contents page-columns page-full"><main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
+  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
 <div class="column-body-outset">
 <p>“Welcome to the page where you can find open healthcare news and challenges. As a data science fresh graduate i can’t wait to talk with you about public health, Medtech, Biotech and health analytics.</p>
 <p>Let’s keep in touch to improve healthcare by adopting new strategies to ease evidence based decisions.</p>
@@ -214,85 +247,76 @@ window.Quarto = {
 </div>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1736416225141" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/datah/index.html" class="no-external"></a></p><a href="./posts/datah/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\datah\medical_datactor\cardiology\cuore.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/datah/index.html" class="no-external"></a></p>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1736416225141" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./posts/datah/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\datah\medical_datactor\cardiology\cuore.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Newcare
+</h5>
+<div class="card-text listing-description">
+The news about revolution that are solving Medicine’s challenges
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/index.html" class="no-external">Newcare</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/index.html" class="no-external">The news about revolution that are solving Medicine’s challenges</a>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 </div>
 </div>
-<div class="metadata">
-<p><a href="./posts/datah/index.html" class="no-external"></a></p><a href="./posts/datah/index.html" class="no-external">
+</div>
+</div>
 </a>
 </div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1736550000000" data-listing-file-modified-sort="1736753900719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
+<a href="./posts/datah/medical_datactor/cardiology/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/datah/medical_datactor/cardiology/cuore.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Artificial intelligence will improve your healthcare job routine
+</h5>
+<div class="card-text listing-description">
+LLMs in medicine are nowadays super in hype. Or better, GenAI is super in hype. The last one is different from traditional AI in that it can generate content, such as…
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1736550000000" data-listing-file-modified-sort="1736753900719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail">
-<p><a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external"></a></p><a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">
-<p><img src="./posts/datah/medical_datactor/cardiology/cuore.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external"></a></p>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Federico
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">Artificial intelligence will improve your healthcare job routine</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">LLMs in medicine are nowadays super in hype. Or better, GenAI is super in hype. The last one is different from traditional AI in that it can generate content, such as…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">
 <div class="listing-date">
 Jan 11, 2025
 </div>
-<div class="listing-author">
-Federico
+</div>
+</div>
 </div>
 </a>
 </div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1716415200000" data-listing-file-modified-sort="1736753926565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<a href="./posts/datah/medical_datactor/aspirin/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/datah/medical_datactor/aspirin/cells.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Aspirin Vs Cancer
+</h5>
+<div class="card-text listing-description">
+“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the…
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1716415200000" data-listing-file-modified-sort="1736753926565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
-<div class="thumbnail">
-<p><a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external"></a></p><a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external">
-<p><img src="./posts/datah/medical_datactor/aspirin/cells.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external"></a></p>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Federico
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external">Aspirin Vs Cancer</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external">“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/medical_datactor/aspirin/index.html" class="no-external">
 <div class="listing-date">
 May 23, 2024
 </div>
-<div class="listing-author">
-Federico
+</div>
+</div>
 </div>
 </a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
