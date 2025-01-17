@@ -6,16 +6,17 @@ about:
     image-width: 25em
     image-shape: round
     links:
-    - text: Founder published papers
+    - text: Scientific activity papers
       url: https://orcid.org/0000-0002-4610-0950
-    - text: Medtech Youtube news 
+    - icon: youtube
+      text: Medtech Youtube news 
       url: https://www.youtube.com/@High_005
 listing:
   contents: posts
   sort: "date desc"
   type: grid # Enhanced grid layout
   max-items: 6 # Display more items
-  categories: false # Show categories for better filtering
+  categories: false 
   feed: true
   image-height: 200px # Uniform thumbnail size      
 format:

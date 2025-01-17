@@ -1,6 +1,5 @@
 ---
 title: "Aspirin Vs Cancer"
-author: "Federico"
 date: "2024-05-23"
 categories:
 image: "cells.png"

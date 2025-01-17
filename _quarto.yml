@@ -7,7 +7,7 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Tutorials"
+      - text: "Discover"
         href: tutorials.qmd
       - text: "Click to solve together"
         href: jobs.qmd
