@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/datah/index.html",
+      "/posts/datah/medical_datactor/bitcoin/index.html",
       "/posts/datah/medical_datactor/cardiology/index.html",
       "/posts/datah/medical_datactor/aspirin/index.html"
     ]
@@ -10,6 +11,7 @@
   {
     "listing": "/posts/datah/index.html",
     "items": [
+      "/posts/datah/medical_datactor/bitcoin/index.html",
       "/posts/datah/medical_datactor/cardiology/index.html",
       "/posts/datah/medical_datactor/aspirin/index.html"
     ]
