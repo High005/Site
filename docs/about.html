@@ -67,6 +67,42 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif; /* Modern, clean font */
+    background-color: #fff8e1; /* Soft yellow background */
+    color: #333; /* Dark gray text for readability */
+  }
+  .quarto-listing-item {
+    border: 2px solid #ffc1e3; /* Pink border for listing items */
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff; /* White background for contrast */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .quarto-listing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
+  }
+  .quarto-title-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  }
+  a {
+    color: #ff4081; /* Pink links */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
 
 </head>
 
@@ -93,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./tutorials.qmd"> 
-<span class="menu-text">Tutorials</span></a>
+<span class="menu-text">Discover</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./jobs.html"> 
