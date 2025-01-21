@@ -1,5 +1,5 @@
 ---
-title: "Is tech really improving our healthcare journey?"
+title: "Is tech improving our healthcare journey?"
 date: "2025-01-21"
 categories:
 image: "robot.jpg"
@@ -9,7 +9,7 @@ execute:
   eval: false
 ---
 
-####  Is tech really improving our healthcare journey?
+####  Is tech improving our healthcare journey?
 
 The integration of digital technologies in healthcare is an evolutionary process, marked by both advancements and initial challenges. While the introduction of new technologies can lead to temporary setbacks and integration hurdles, the healthcare sector is currently experiencing a transformative period where data and technologies like artificial intelligence (AI) are converging to enhance processes, capabilities, and, most importantly, patient care. The following outlines some significant shifts occurring in healthcare delivery and medication management within complex supply chains and hospital systems.
 
