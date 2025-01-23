@@ -1,0 +1,48 @@
+---
+title: "Useful tutorial for your data journey"
+format:
+  html:
+    include-in-header: 
+      - text: |
+          <!-- Include TypeIt for text animations -->
+          <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+          <!-- Custom CSS for Yellow and Pink Theme -->
+          <style>
+            body {
+              font-family: 'Inter', sans-serif; /* Modern, clean font */
+              background-color: #fff8e1; /* Soft yellow background */
+              color: #333; /* Dark gray text for readability */
+            }
+            .quarto-listing-item {
+              border: 2px solid #ffc1e3; /* Pink border for listing items */
+              padding: 10px;
+              border-radius: 8px;
+              background: #fff; /* White background for contrast */
+              transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .quarto-listing-item:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
+            }
+            .quarto-title-banner {
+              text-align: center;
+              padding: 50px 20px;
+              background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
+              color: white;
+              font-size: 2.5em;
+              text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+            }
+            a {
+              color: #ff4081; /* Pink links */
+              text-decoration: none;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+          </style>
+---
+
+Make your first data collection [ITALIAN]
+url: "https://youtu.be/zWWHXvnTTBA"
+
+email : bisturiep005\@gmail.com
