@@ -9,7 +9,7 @@
       "/posts/datah/medical_datactor/tech_challenge/index.html",
       "/posts/datah/medical_datactor/bitcoin/index.html",
       "/posts/datah/medical_datactor/cardiology/index.html",
-      "/posts/datah/medical_datactor/aspirin/index.html"
+      "/posts/datah/papers/aspirin/index.html"
     ]
   },
   {
@@ -20,6 +20,31 @@
       "/posts/datah/medical_datactor/bitcoin/index.html",
       "/posts/datah/medical_datactor/cardiology/index.html",
       "/posts/datah/medical_datactor/aspirin/index.html"
+    ]
+  },
+  {
+    "listing": "/tutorials.html",
+    "items": [
+      "/posts/datah/papers/bias/index.html",
+      "/posts/datah/papers/survival/index.html",
+      "/posts/datah/papers/aspirin/index.html"
+    ]
+  },
+  {
+    "listing": "/tech.html",
+    "items": [
+      "/posts/datah/medical_datactor/longevity/index.html",
+      "/posts/datah/medical_datactor/tech_challenge/index.html",
+      "/posts/datah/medical_datactor/bitcoin/index.html",
+      "/posts/datah/medical_datactor/cardiology/index.html"
+    ]
+  },
+  {
+    "listing": "/science.html",
+    "items": [
+      "/posts/datah/papers/bias/index.html",
+      "/posts/datah/papers/survival/index.html",
+      "/posts/datah/papers/aspirin/index.html"
     ]
   }
 ]
