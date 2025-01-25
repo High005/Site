@@ -9,7 +9,7 @@ execute:
   eval: false
 ---
 
-#### The Bias in healtchare studies
+#### The Bias in healthcare studies
 
 When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges in research is bias—systematic errors that can distort findings and lead to incorrect conclusions. \
 Since then many choices in medical practice are made from fresh research papers it's better to be well trained on get the idea of bias. \
@@ -67,7 +67,7 @@ Reducing bias is critical to ensure the validity and reliability of research fin
 
 Randomization ensures that participants are assigned to groups purely by chance. This minimizes selection bias and balances known and unknown confounding factors between groups.
 
-*Example*: In a randomized controlled trial (RCT) for a new vaccine, participants are randomly assigned to receive either the vaccine or a placebo.
+*Example*: In a randomized controlled trial for a new vaccine, participants are randomly assigned to receive either the vaccine or a placebo.
 
 2.  **Blinding**
 
@@ -99,7 +99,7 @@ Systematic reviews and meta-analyses combine results from multiple studies, help
 
 6.  **Transparent Reporting**
 
-Adhering to reporting guidelines, such as CONSORT (for clinical trials) or PRISMA (for systematic reviews), ensures all relevant details are disclosed.
+Adhering to reporting guidelines, such as CONSORT for clinical trials or PRISMA for systematic reviews, ensures all relevant details are disclosed.
 
 *Example*: A clinical trial includes detailed information about randomization, blinding, and attrition rates in its published report.
 
@@ -111,9 +111,9 @@ Encouraging independent replication of studies helps verify findings and reduce 
 
 **What's to do now?**
 
-Bias is a common but manageable challenge in evidence-based medicine. By understanding the different types of bias—such as selection, observation, publication, confirmation, and attrition biases—and employing strategies like randomization, blinding, and transparent reporting, MDs can critically appraise research and make better clinical decisions. Reducing bias not only strengthens the validity of studies but also ensures that patients receive the best possible care based on reliable evidence.
+Bias is a common but manageable challenge in evidence-based medicine. By understanding the different types of bias such as: selection, observation, publication, confirmation, and attrition biases and employing strategies like: randomization, blinding, and transparent reporting. Healthcare researcher can now critically appraise research and make better clinical decisions. Reducing bias not only strengthens the validity of studies but also ensures that patients receive the best possible care based on reliable evidence.
 
-Material to go even deeper:
+Material to go even deeper on the topic:
 
 Higgins JPT, Green S. Cochrane Handbook for Systematic Reviews of Interventions. Version 5.1.0. The Cochrane Collaboration, 2011.
 
