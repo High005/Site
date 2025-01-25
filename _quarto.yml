@@ -15,5 +15,5 @@ website:
         href: about.qmd
       - text: "Fresh tech"
         href: tech.qmd
-      - text: "Analyitics tips"
+      - text: "Analytics tips"
         href: science.qmd

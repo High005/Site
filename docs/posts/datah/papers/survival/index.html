@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-01-25">
 
-<title>High005 - Survival analysis</title>
+<title>Survival analysis – High005</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -108,9 +108,13 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../../../tech.html"> 
 <span class="menu-text">Fresh tech</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../science.html"> 
+<span class="menu-text">Analytics tips</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -153,9 +157,11 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="survival-analysis">Survival analysis</h4>
 <p>If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t worry—it’s not (we hope!). Survival analysis is a statistical tool used to analyze time-to-event data, and it’s incredibly useful for understanding outcomes in medicine. Let’s break it down, step by step, with some examples.</p>
 <p>In a nutshell, survival analysis answers questions like:</p>
-<p>How long does it take for an event to occur?</p>
-<p>What factors influence the timing of that event?</p>
-<p>Here, the “event” could be a positive outcome (like recovery or a sneeze) or a less-than-ideal one (like disease progression or mortality). The key difference between survival analysis and other data analysis techniques is its ability to handle censored data. Censoring happens when you don’t observe the event during the study period—for example, a patient hasn’t died or relapsed by the time the study ends.</p>
+<ul>
+<li><p>How long does it take for an event to occur?</p></li>
+<li><p>What factors influence the timing of that event?</p></li>
+</ul>
+<p>Here, the ‘’event’’ could be a positive outcome (like recovery or a sneeze) or a less-than-ideal one (like disease progression or mortality). The key difference between survival analysis and other data analysis techniques is its ability to handle censored data. Censoring happens when you don’t observe the event during the study period—for example, a patient hasn’t died or relapsed by the time the study ends.</p>
 <p>Fun Fact: Survival analysis isn’t just for medicine! It’s also used in engineering (how long before a machine breaks) and business (how long a customer stays loyal to a subscription). But in medicine, it’s a literal life-saver.</p>
 <p>Common solution that Survival Analysis can gave us:</p>
 <ol type="1">
@@ -176,24 +182,30 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>The Kaplan-Meier method is like the “intro course” to survival analysis. It estimates survival probabilities over time and creates a curve showing the proportion of patients surviving at different time points.</p>
 <p>Why Use It?</p>
-<p>Simple and visual.</p>
-<p>Great for comparing survival between groups (e.g., drug vs.&nbsp;placebo).</p>
+<ul>
+<li><p>Simple and visual.</p></li>
+<li><p>Great for comparing survival between groups (e.g., drug vs.&nbsp;placebo).</p></li>
+</ul>
 <p>Example: You’re evaluating survival after heart surgery in two groups: those who received a new device vs.&nbsp;standard care. Kaplan-Meier gives you a clear picture of how survival curves differ.</p>
 <ol start="2" type="1">
 <li><strong>Cox Proportional Hazards Model</strong></li>
 </ol>
 <p>The Cox model takes survival analysis to the next level. It examines the relationship between survival time and multiple predictors (like age, smoking status, or treatment type). It’s called “proportional hazards” because it assumes the effect of predictors remains constant over time.</p>
 <p>Why Use It?</p>
-<p>Adjusts for confounding variables.</p>
-<p>Helps identify which factors significantly impact survival.</p>
+<ul>
+<li><p>Adjusts for confounding variables.</p></li>
+<li><p>Helps identify which factors significantly impact survival.</p></li>
+</ul>
 <p>Example: In a cancer trial, the Cox model might reveal that tumor size and age significantly influence survival, while gender does not.</p>
 <ol start="3" type="1">
 <li><strong>Parametric Models</strong></li>
 </ol>
 <p>Unlike the Cox model, parametric models assume a specific distribution (e.g., exponential, Weibull) for survival times. These are great when you’re interested in modeling the actual shape of the survival curve.</p>
 <p>Why Use It?</p>
-<p>More informative when you can justify the assumptions.</p>
-<p>Useful for making predictions.</p>
+<ul>
+<li><p>More informative when you can justify the assumptions.</p></li>
+<li><p>Useful for making predictions.</p></li>
+</ul>
 <p>Example: You’re studying time until remission in a chronic disease. A parametric model lets you estimate not just median survival but also probabilities at specific time points.</p>
 <ol start="4" type="1">
 <li><strong>Competing Risks Models</strong></li>
@@ -218,13 +230,13 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>The Cox model assumes that the hazard ratios are constant over time. If this assumption is violated, your results might be misleading.</p>
 <p>Pro Tip: Check proportionality with diagnostic plots or use time-varying covariates if needed.</p>
-<p>SO, let’s Wrap It Up (Like a Survival Blanket) why is Survival Analysis Useful?</p>
-<p><strong>Handles Censored Data</strong>: Not everyone experiences the event during the study period, but survival analysis doesn’t leave their data out of the equation. It’s like giving everyone a voice, even if they didn’t “finish the race.”</p>
+<p>So, let’s Wrap It Up (Like a Survival Blanket). Why is Survival Analysis Useful?</p>
+<p><strong>Handles Censored Data</strong>: Not everyone experiences the event during the study period, but survival analysis doesn’t leave their data out of the equation. It’s like giving everyone a voice, even if they didn’t “finish the race”.</p>
 <p><strong>Flexible Models</strong>: Survival analysis offers a variety of models to suit your needs (more on that in a moment).</p>
 <p><strong>Clinical Insights</strong>: It helps you understand which variables (age, treatment type, comorbidities) affect time to an event, aiding personalized medicine.</p>
 <p>Real-Life Applications: Whether you’re studying disease progression, treatment durability, or hospital outcomes, survival analysis has your back.</p>
 <p>Survival analysis isn’t as intimidating as it sounds. It’s an essential tool for MDs diving into clinical research, helping you understand and predict time-to-event outcomes. Whether you’re drawing Kaplan-Meier curves or diving into the depths of the Cox model, remember: survival analysis is all about making the most of your data, even when life (or research) gets complicated.</p>
-<p>So, the next time someone asks, “How long until the event occurs?” you can confidently say, “Let me run a survival analysis on that!” And if they ask what that means, feel free to share this article—or just tell them it’s not about your career. (We hope.)</p>
+<p>So, the next time someone asks, “How long until the event occurs?” you can confidently say, “Let me run a survival analysis on that!” If they ask what that means, feel free to share this article — or just tell them it’s not about your career. (We hope…)</p>
 <p>To go deeper on the topic:</p>
 <p>Kaplan EL, Meier P. “Nonparametric estimation from incomplete observations.” Journal of the American Statistical Association. 1958;53(282):457-481.</p>
 <p>Cox DR. “Regression models and life-tables.” Journal of the Royal Statistical Society: Series B (Methodological). 1972;34(2):187-220.</p>
@@ -271,18 +283,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -314,7 +315,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -322,7 +345,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

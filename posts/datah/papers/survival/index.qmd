@@ -11,15 +11,15 @@ execute:
 
 #### Survival analysis 
 
-If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t worry—it’s not (we hope!). Survival analysis is a statistical tool used to analyze time-to-event data, and it’s incredibly useful for understanding outcomes in medicine. Let’s break it down, step by step, with some examples.
+If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious... is this about my career?” Don’t worry—it’s not (we hope!). Survival analysis is a statistical tool used to analyze time-to-event data, and it’s incredibly useful for understanding outcomes in medicine. Let’s break it down, step by step, with some examples.
 
 In a nutshell, survival analysis answers questions like:
 
-How long does it take for an event to occur?
+* How long does it take for an event to occur?
 
-What factors influence the timing of that event?
+* What factors influence the timing of that event?
 
-Here, the “event” could be a positive outcome (like recovery or a sneeze) or a less-than-ideal one (like disease progression or mortality). The key difference between survival analysis and other data analysis techniques is its ability to handle censored data. Censoring happens when you don’t observe the event during the study period—for example, a patient hasn’t died or relapsed by the time the study ends.
+Here, the "event" could be a positive outcome (like recovery or a sneeze) or a less-than-ideal one (like disease progression or mortality). The key difference between survival analysis and other data analysis techniques is its ability to handle censored data. Censoring happens when you don’t observe the event during the study period—for example, a patient hasn’t died or relapsed by the time the study ends.
 
 Fun Fact: Survival analysis isn’t just for medicine! It’s also used in engineering (how long before a machine breaks) and business (how long a customer stays loyal to a subscription). But in medicine, it’s a literal life-saver.
 
@@ -46,9 +46,9 @@ The Kaplan-Meier method is like the "intro course" to survival analysis. It esti
 
 Why Use It?
 
-Simple and visual.
+* Simple and visual.
 
-Great for comparing survival between groups (e.g., drug vs. placebo).
+* Great for comparing survival between groups (e.g., drug vs. placebo).
 
 Example: You’re evaluating survival after heart surgery in two groups: those who received a new device vs. standard care. Kaplan-Meier gives you a clear picture of how survival curves differ.
 
@@ -58,9 +58,9 @@ The Cox model takes survival analysis to the next level. It examines the relatio
 
 Why Use It?
 
-Adjusts for confounding variables.
+* Adjusts for confounding variables.
 
-Helps identify which factors significantly impact survival.
+* Helps identify which factors significantly impact survival.
 
 Example: In a cancer trial, the Cox model might reveal that tumor size and age significantly influence survival, while gender does not.
 
@@ -70,9 +70,9 @@ Unlike the Cox model, parametric models assume a specific distribution (e.g., ex
 
 Why Use It?
 
-More informative when you can justify the assumptions.
+* More informative when you can justify the assumptions.
 
-Useful for making predictions.
+* Useful for making predictions.
 
 Example: You’re studying time until remission in a chronic disease. A parametric model lets you estimate not just median survival but also probabilities at specific time points.
 
@@ -107,9 +107,9 @@ The Cox model assumes that the hazard ratios are constant over time. If this ass
 Pro Tip: Check proportionality with diagnostic plots or use time-varying covariates if needed.
 
 
-SO, let’s Wrap It Up (Like a Survival Blanket) why is Survival Analysis Useful?
+So, let’s Wrap It Up (Like a Survival Blanket). Why is Survival Analysis Useful?
 
-**Handles Censored Data**: Not everyone experiences the event during the study period, but survival analysis doesn’t leave their data out of the equation. It’s like giving everyone a voice, even if they didn’t "finish the race."
+**Handles Censored Data**: Not everyone experiences the event during the study period, but survival analysis doesn’t leave their data out of the equation. It’s like giving everyone a voice, even if they didn’t "finish the race".
 
 **Flexible Models**: Survival analysis offers a variety of models to suit your needs (more on that in a moment).
 
@@ -119,7 +119,7 @@ Real-Life Applications: Whether you’re studying disease progression, treatment
 
 Survival analysis isn’t as intimidating as it sounds. It’s an essential tool for MDs diving into clinical research, helping you understand and predict time-to-event outcomes. Whether you’re drawing Kaplan-Meier curves or diving into the depths of the Cox model, remember: survival analysis is all about making the most of your data, even when life (or research) gets complicated.
 
-So, the next time someone asks, “How long until the event occurs?” you can confidently say, “Let me run a survival analysis on that!” And if they ask what that means, feel free to share this article—or just tell them it’s not about your career. (We hope.)
+So, the next time someone asks, “How long until the event occurs?” you can confidently say, “Let me run a survival analysis on that!” If they ask what that means, feel free to share this article — or just tell them it’s not about your career. (We hope...)
 
 
 

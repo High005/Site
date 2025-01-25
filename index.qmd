@@ -77,7 +77,7 @@ format:
 
 ::: column-page
 ::: {style="font-size: 2em; face: bold; color: #343a40;"}
-Click to go deeper on your your curiosity
+Click to go deeper on your curiosity
 :::
 :::
 
