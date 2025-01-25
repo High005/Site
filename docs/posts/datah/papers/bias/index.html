@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-01-25">
 
-<title>High005 - High 005</title>
+<title>High005 - Bias in Healthcare studies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,112 +67,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
-<style>
-  body {
-    font-family: 'Inter', sans-serif; /* Modern, clean font */
-    background-color: #fff8e1; /* Soft yellow background */
-    color: #333; /* Dark gray text for readability */
-  }
-  .quarto-listing-item {
-    border: 2px solid #ffc1e3; /* Pink border for listing items */
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff; /* White background for contrast */
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .quarto-listing-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-  }
-  .quarto-title-banner {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-  }
-  a {
-    color: #ff4081; /* Pink links */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">High005</span>
     </a>
   </div>
@@ -183,19 +89,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials.html"> 
+    <a class="nav-link" href="../../../../tutorials.html"> 
 <span class="menu-text">Discover</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jobs.html"> 
+    <a class="nav-link" href="../../../../jobs.html"> 
 <span class="menu-text">Click to solve together</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -206,200 +112,131 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Bias in Healthcare studies</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 25, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles content page-columns page-full">
-  <div class="about-entity">
-    <img src="images/logo.png" class="about-image
-  round " style="height: 25em; width: 25em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">High 005</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://orcid.org/0000-0002-4610-0950" class="about-link" rel="" target="">
-     <span class="about-link-text">Scientific activity papers</span>
-  </a>
-  <a href="https://www.youtube.com/@High_005" class="about-link" rel="" target="">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">Youtube news</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div id="animated-title" style="text-align: center; padding: 20px 0;">
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    new TypeIt("#animated-title", {
-      strings: ["The page of healthcare news and challenges for the next years. Curiosities and questions are the beginning of new journey, let's embrace together!", "Read. Enjoy. Share opinion with us"],
-      speed: 50,
-      breakLines: false,
-      loop: true,
-    }).go();
-  });
-</script>
-<div class="column-page">
-<div style="font-size: 2em; face: bold; color: #343a40;">
-<p>Click to go deeper on your your curiosity</p>
-</div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1736416225141" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./posts/datah/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts\datah\medical_datactor\longevity\images.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Newcare
-</h5>
-<div class="card-text listing-description">
-The news about revolution that are solving Medicine’s challenges
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1737788015870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="975">
-<a href="./posts/datah/papers/bias/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/papers/bias/img.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bias in Healthcare studies
-</h5>
-<div class="card-text listing-description">
-When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges…<br><br>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1737500400000" data-listing-file-modified-sort="1737583117954" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595">
-<a href="./posts/datah/medical_datactor/longevity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/longevity/images.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Chagpt and his Artificial intelligence will make us live longer
-</h5>
-<div class="card-text listing-description">
-OpenAI has recently announced an innovative partnership with Retro Biosciences, a biotech startup dedicated to advancing longevity research. This collaboration has resulted…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 22, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1737414000000" data-listing-file-modified-sort="1737451795910" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
-<a href="./posts/datah/medical_datactor/tech_challenge/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/tech_challenge/robot.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Is tech improving our healthcare journey?
-</h5>
-<div class="card-text listing-description">
-The integration of digital technologies in healthcare is an evolutionary process, marked by both advancements and initial challenges. While the introduction of new…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 21, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1737327600000" data-listing-file-modified-sort="1737389396331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="632">
-<a href="./posts/datah/medical_datactor/bitcoin/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/bitcoin/bit.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bitcoin like solutions and decentralized payments can help your healthcare’s balance
-</h5>
-<div class="card-text listing-description">
-Different medical practices experience varying degrees of benefit from cryptocurrency adoption. Practices that primarily operate on a cash basis, such as outpatient clinics…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 20, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1736550000000" data-listing-file-modified-sort="1737129185240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<a href="./posts/datah/medical_datactor/cardiology/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/cardiology/cuore.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Artificial intelligence will improve your healthcare job routine
-</h5>
-<div class="card-text listing-description">
-LLMs in medicine are nowadays super in hype. Or better, GenAI is super in hype. The last one is different from traditional AI in that it can generate content, such as…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 11, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main></div>
-</div>
- <!-- /main -->
+
+
+
+<section id="the-bias-in-healtchare-studies" class="level4">
+<h4 class="anchored" data-anchor-id="the-bias-in-healtchare-studies">The Bias in healtchare studies</h4>
+<p>When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges in research is bias—systematic errors that can distort findings and lead to incorrect conclusions.<br>
+Since then many choices in medical practice are made from fresh research papers it’s better to be well trained on get the idea of bias.<br>
+Here the main types of bias healthcare are explained with some examples, and offers strategies to reduce them. Bias in research can occur at various stages from study design to data collection and publication.</p>
+<p>SO, let’s find the bias when working in data analytics for evidence-Based Medicine:</p>
+</section>
+<section id="type-of-bias" class="level1">
+<h1>Type of Bias:</h1>
+<ol type="1">
+<li><strong>Selection Bias</strong></li>
+</ol>
+<p>Selection bias occurs when the participants included in a study are not representative of the target population. This often happens when the selection process is influenced by factors that are related to the outcome of interest.</p>
+<p><em>Example</em>: A clinical trial on a new hypertension drug recruits only younger, healthier patients, excluding older adults with comorbidities. The results may show the drug is effective, but this might not hold true for the broader population.</p>
+<p>Why It Matters: Selection bias can limit the generalizability of study findings, making it hard to apply results to real-world clinical practice.</p>
+<ol start="2" type="1">
+<li><strong>Observation Bias</strong></li>
+</ol>
+<p>Observation bias arises when there are errors in measuring exposure, outcomes, or other variables due to the way data is collected.</p>
+<p><em>Example</em>: In a study comparing pain levels after two types of surgeries, patients in one group know they received the “innovative” surgery and report lower pain levels because they expect better outcomes. This is an example of performance bias, a subtype of observation bias.</p>
+<p>Why It Matters: Observation bias can artificially inflate or deflate the apparent effectiveness of an intervention.</p>
+<ol start="3" type="1">
+<li><strong>Publication Bias</strong></li>
+</ol>
+<p>Publication bias occurs when studies with significant or “positive” results are more likely to be published than studies with “negative” or null results.</p>
+<p><em>Example</em>: A pharmaceutical company sponsors ten trials for a new antidepressant. Only the three trials showing significant improvements are published, while the seven with no benefit are ignored. This creates a skewed perception of the drug’s effectiveness.</p>
+<p>Why It Matters: Clinicians and researchers rely on published literature. If only favorable studies are accessible, it may lead to overestimation of treatment benefits.</p>
+<ol start="4" type="1">
+<li><strong>Confirmation Bias</strong></li>
+</ol>
+<p>Confirmation bias occurs when researchers unconsciously interpret or highlight data in ways that support their hypothesis.</p>
+<p><em>Example</em>: A researcher studying the benefits of a specific diet for diabetes patients may focus on data points that show improvements while ignoring data showing no change or worsening outcomes.</p>
+<p>Why It Matters: Confirmation bias can undermine the objectivity of scientific inquiry and mislead clinical decision-making.</p>
+<ol start="5" type="1">
+<li><strong>Attrition Bias</strong></li>
+</ol>
+<p>Attrition bias happens when participants drop out of a study in a way that is related to the exposure or outcome.</p>
+<p>Example: In a weight loss study, participants who struggle to lose weight are more likely to drop out. The final results may exaggerate the effectiveness of the program because only those who succeeded remain.</p>
+<p>Why It Matters: Attrition bias can distort findings, particularly in long-term studies.</p>
+</section>
+<section id="how-to-reduce-bias" class="level1">
+<h1>How to Reduce Bias ?</h1>
+<p>Reducing bias is critical to ensure the validity and reliability of research findings. Here are some strategies:</p>
+<ol type="1">
+<li><strong>Randomization</strong></li>
+</ol>
+<p>Randomization ensures that participants are assigned to groups purely by chance. This minimizes selection bias and balances known and unknown confounding factors between groups.</p>
+<p><em>Example</em>: In a randomized controlled trial (RCT) for a new vaccine, participants are randomly assigned to receive either the vaccine or a placebo.</p>
+<ol start="2" type="1">
+<li><strong>Blinding</strong></li>
+</ol>
+<p>Blinding prevents participants, researchers, or both from knowing which intervention has been assigned, reducing observation bias.</p>
+<p>Single-blind: The participants are unaware of their group allocation.</p>
+<p>Double-blind: Both participants and researchers are unaware of group allocation.</p>
+<p><em>Example</em>: In a drug trial, neither the patients nor the clinicians administering the medication know who receives the active drug versus the placebo.</p>
+<ol start="3" type="1">
+<li><strong>Pre-Registration of Study Protocols</strong></li>
+</ol>
+<p>Researchers can pre-register their study design, hypotheses, and planned analyses in databases like ClinicalTrials.gov. This reduces the risk of selective reporting and confirmation bias.</p>
+<p><em>Example</em>: By pre-registering, a researcher commits to publishing the findings, whether the results are significant or not.</p>
+<ol start="4" type="1">
+<li><strong>Intention-to-Treat Analysis</strong></li>
+</ol>
+<p>This approach analyzes participants based on the group to which they were originally assigned, regardless of whether they completed the intervention as planned. It helps address attrition bias.</p>
+<p><em>Example</em>: In a diabetes drug trial, a patient who stops taking the drug halfway through is still included in the final analysis.</p>
+<ol start="5" type="1">
+<li><strong>Systematic Reviews and Meta-Analyses</strong></li>
+</ol>
+<p>Systematic reviews and meta-analyses combine results from multiple studies, helping to counteract publication bias by including both published and unpublished data.</p>
+<p><em>Example</em>: A systematic review of antidepressant trials includes data from pharmaceutical companies that were not published in journals.</p>
+<ol start="6" type="1">
+<li><strong>Transparent Reporting</strong></li>
+</ol>
+<p>Adhering to reporting guidelines, such as CONSORT (for clinical trials) or PRISMA (for systematic reviews), ensures all relevant details are disclosed.</p>
+<p><em>Example</em>: A clinical trial includes detailed information about randomization, blinding, and attrition rates in its published report.</p>
+<ol start="7" type="1">
+<li><strong>Independent Replication</strong></li>
+</ol>
+<p>Encouraging independent replication of studies helps verify findings and reduce the influence of biases in individual studies.</p>
+<p><em>Example</em>: If multiple independent studies show the same results for a new cancer treatment, confidence in its effectiveness increases.</p>
+<p><strong>What’s to do now?</strong></p>
+<p>Bias is a common but manageable challenge in evidence-based medicine. By understanding the different types of bias—such as selection, observation, publication, confirmation, and attrition biases—and employing strategies like randomization, blinding, and transparent reporting, MDs can critically appraise research and make better clinical decisions. Reducing bias not only strengthens the validity of studies but also ensures that patients receive the best possible care based on reliable evidence.</p>
+<p>Material to go even deeper:</p>
+<p>Higgins JPT, Green S. Cochrane Handbook for Systematic Reviews of Interventions. Version 5.1.0. The Cochrane Collaboration, 2011.</p>
+<p>Moher D, Liberati A, Tetzlaff J, Altman DG. “Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement.” PLoS Med. 2009;6(7):e1000097.</p>
+<p>Schulz KF, Altman DG, Moher D. “CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials.” BMJ. 2010;340:c332.</p>
+<p>Ioannidis JPA. “Why most published research findings are false.” PLoS Med. 2005;2(8):e124.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -420,6 +257,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
