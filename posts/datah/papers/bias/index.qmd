@@ -15,7 +15,7 @@ When practicing evidence-based medicine, medical doctors and healthcare research
 Since then many choices in medical practice are made from fresh research papers it's better to be well trained on get the idea of bias. \
 Here the main types of bias healthcare are explained with some examples, and offers strategies to reduce them. Bias in research can occur at various stages from study design to data collection and publication.
 
-So, let's find the bias when working in data analytics for evidence-Based Medicine:
+So, let's find the bias when working in data analytics for evidence-Based Medicine.
 
 # Type of Bias:
 
