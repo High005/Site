@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-01-25">
 
-<title>High005 - High 005</title>
+<title>High005 - Survival analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,112 +67,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
-<style>
-  body {
-    font-family: 'Inter', sans-serif; /* Modern, clean font */
-    background-color: #fff8e1; /* Soft yellow background */
-    color: #333; /* Dark gray text for readability */
-  }
-  .quarto-listing-item {
-    border: 2px solid #ffc1e3; /* Pink border for listing items */
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff; /* White background for contrast */
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .quarto-listing-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-  }
-  .quarto-title-banner {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-  }
-  a {
-    color: #ff4081; /* Pink links */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">High005</span>
     </a>
   </div>
@@ -183,19 +89,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials.html"> 
+    <a class="nav-link" href="../../../../tutorials.html"> 
 <span class="menu-text">Discover</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jobs.html"> 
+    <a class="nav-link" href="../../../../jobs.html"> 
 <span class="menu-text">Click to solve together</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -206,200 +112,127 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Survival analysis</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 25, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles content page-columns page-full">
-  <div class="about-entity">
-    <img src="images/logo.png" class="about-image
-  round " style="height: 25em; width: 25em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">High 005</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://orcid.org/0000-0002-4610-0950" class="about-link" rel="" target="">
-     <span class="about-link-text">Scientific activity papers</span>
-  </a>
-  <a href="https://www.youtube.com/@High_005" class="about-link" rel="" target="">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">Youtube news</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div id="animated-title" style="text-align: center; padding: 20px 0;">
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    new TypeIt("#animated-title", {
-      strings: ["The page of healthcare news and challenges for the next years. Curiosities and questions are the beginning of new journey, let's embrace together!", "Read. Enjoy. Share opinion with us"],
-      speed: 50,
-      breakLines: false,
-      loop: true,
-    }).go();
-  });
-</script>
-<div class="column-page">
-<div style="font-size: 2em; face: bold; color: #343a40;">
-<p>Click to go deeper on your your curiosity</p>
-</div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1736416225141" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./posts/datah/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts\datah\medical_datactor\longevity\images.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Newcare
-</h5>
-<div class="card-text listing-description">
-The news about revolution that are solving Medicine’s challenges
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1737788454731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="981">
-<a href="./posts/datah/papers/bias/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/papers/bias/img.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bias in Healthcare studies
-</h5>
-<div class="card-text listing-description">
-When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges…<br><br>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1737789298073" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="996">
-<a href="./posts/datah/papers/survival/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/papers/survival/x1.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Survival analysis
-</h5>
-<div class="card-text listing-description">
-If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1737500400000" data-listing-file-modified-sort="1737583117954" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595">
-<a href="./posts/datah/medical_datactor/longevity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/longevity/images.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Chagpt and his Artificial intelligence will make us live longer
-</h5>
-<div class="card-text listing-description">
-OpenAI has recently announced an innovative partnership with Retro Biosciences, a biotech startup dedicated to advancing longevity research. This collaboration has resulted…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 22, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1737414000000" data-listing-file-modified-sort="1737451795910" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
-<a href="./posts/datah/medical_datactor/tech_challenge/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/tech_challenge/robot.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Is tech improving our healthcare journey?
-</h5>
-<div class="card-text listing-description">
-The integration of digital technologies in healthcare is an evolutionary process, marked by both advancements and initial challenges. While the introduction of new…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 21, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1737327600000" data-listing-file-modified-sort="1737389396331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="632">
-<a href="./posts/datah/medical_datactor/bitcoin/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/bitcoin/bit.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bitcoin like solutions and decentralized payments can help your healthcare’s balance
-</h5>
-<div class="card-text listing-description">
-Different medical practices experience varying degrees of benefit from cryptocurrency adoption. Practices that primarily operate on a cash basis, such as outpatient clinics…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 20, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main></div>
-</div>
- <!-- /main -->
+
+
+
+<section id="survival-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="survival-analysis">Survival analysis</h4>
+<p>If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t worry—it’s not (we hope!). Survival analysis is a statistical tool used to analyze time-to-event data, and it’s incredibly useful for understanding outcomes in medicine. Let’s break it down, step by step, with some examples.</p>
+<p>In a nutshell, survival analysis answers questions like:</p>
+<p>How long does it take for an event to occur?</p>
+<p>What factors influence the timing of that event?</p>
+<p>Here, the “event” could be a positive outcome (like recovery or a sneeze) or a less-than-ideal one (like disease progression or mortality). The key difference between survival analysis and other data analysis techniques is its ability to handle censored data. Censoring happens when you don’t observe the event during the study period—for example, a patient hasn’t died or relapsed by the time the study ends.</p>
+<p>Fun Fact: Survival analysis isn’t just for medicine! It’s also used in engineering (how long before a machine breaks) and business (how long a customer stays loyal to a subscription). But in medicine, it’s a literal life-saver.</p>
+<p>Common solution that Survival Analysis can gave us:</p>
+<ol type="1">
+<li><strong>Cancer Treatment Trials</strong></li>
+</ol>
+<p>Imagine you’re testing a new chemotherapy drug. You want to know how long patients survive after starting treatment. Some patients may still be alive when the study ends, so you’ll have censored data. Survival analysis lets you account for this.</p>
+<ol start="2" type="1">
+<li><strong>Organ Transplant Studies</strong></li>
+</ol>
+<p>You’re studying how long kidney transplants last before organ failure occurs. Here, time-to-event data (time until organ failure) is crucial to evaluating the success of different transplant techniques.</p>
+<ol start="3" type="1">
+<li><strong>Time to Readmission</strong></li>
+</ol>
+<p>If you’re analyzing how long patients stay out of the hospital after discharge, survival analysis helps identify risk factors for readmission and assess interventions to reduce it.</p>
+<p>SO, why is Survival Analysis Useful?</p>
+<p><strong>Handles Censored Data</strong>: Not everyone experiences the event during the study period, but survival analysis doesn’t leave their data out of the equation. It’s like giving everyone a voice, even if they didn’t “finish the race.”</p>
+<p><strong>Flexible Models</strong>: Survival analysis offers a variety of models to suit your needs (more on that in a moment).</p>
+<p><strong>Clinical Insights</strong>: It helps you understand which variables (age, treatment type, comorbidities) affect time to an event, aiding personalized medicine.</p>
+<p>Real-Life Applications: Whether you’re studying disease progression, treatment durability, or hospital outcomes, survival analysis has your back.</p>
+<p>Common Survival Models (Pick Your Poison, Statistically Speaking)</p>
+<ol type="1">
+<li><strong>Kaplan-Meier Curves</strong></li>
+</ol>
+<p>The Kaplan-Meier method is like the “intro course” to survival analysis. It estimates survival probabilities over time and creates a curve showing the proportion of patients surviving at different time points.</p>
+<p>Why Use It?</p>
+<p>Simple and visual.</p>
+<p>Great for comparing survival between groups (e.g., drug vs.&nbsp;placebo).</p>
+<p>Example: You’re evaluating survival after heart surgery in two groups: those who received a new device vs.&nbsp;standard care. Kaplan-Meier gives you a clear picture of how survival curves differ.</p>
+<ol start="2" type="1">
+<li><strong>Cox Proportional Hazards Model</strong></li>
+</ol>
+<p>The Cox model takes survival analysis to the next level. It examines the relationship between survival time and multiple predictors (like age, smoking status, or treatment type). It’s called “proportional hazards” because it assumes the effect of predictors remains constant over time.</p>
+<p>Why Use It?</p>
+<p>Adjusts for confounding variables.</p>
+<p>Helps identify which factors significantly impact survival.</p>
+<p>Example: In a cancer trial, the Cox model might reveal that tumor size and age significantly influence survival, while gender does not.</p>
+<ol start="3" type="1">
+<li><strong>Parametric Models</strong></li>
+</ol>
+<p>Unlike the Cox model, parametric models assume a specific distribution (e.g., exponential, Weibull) for survival times. These are great when you’re interested in modeling the actual shape of the survival curve.</p>
+<p>Why Use It?</p>
+<p>More informative when you can justify the assumptions.</p>
+<p>Useful for making predictions.</p>
+<p>Example: You’re studying time until remission in a chronic disease. A parametric model lets you estimate not just median survival but also probabilities at specific time points.</p>
+<ol start="4" type="1">
+<li><strong>Competing Risks Models</strong></li>
+</ol>
+<p>Sometimes, patients can experience more than one type of event, and these events compete. For example, in a study on cancer patients, death from heart disease is a competing risk for death from cancer.</p>
+<p>Why Use It?</p>
+<p>Accounts for competing risks, avoiding biased results.</p>
+<p>Example: You’re analyzing time to disease recurrence, but some patients die before recurrence occurs. Ignoring this competing risk would overestimate the recurrence risk.</p>
+<p>Common Pitfalls when dealing with survival analysis (And How to Avoid Them)</p>
+<ol type="1">
+<li><strong>Ignoring Censoring</strong></li>
+</ol>
+<p>Censoring is a cornerstone of survival analysis. Ignoring it is like ignoring patients who didn’t show up for their final follow-up—a big statistical no-no.</p>
+<p>Pro Tip: Always check that your survival model properly accounts for censored data.</p>
+<ol start="2" type="1">
+<li><strong>Overfitting</strong></li>
+</ol>
+<p>Using too many variables in your model can lead to overfitting, where the model fits the data too closely and performs poorly on new datasets.</p>
+<p>Pro Tip: Be parsimonious with predictors. Use stepwise selection or shrinkage techniques to avoid this.</p>
+<ol start="3" type="1">
+<li><strong>Assuming Proportional Hazards</strong></li>
+</ol>
+<p>The Cox model assumes that the hazard ratios are constant over time. If this assumption is violated, your results might be misleading.</p>
+<p>Pro Tip: Check proportionality with diagnostic plots or use time-varying covariates if needed.</p>
+<p>Let’s Wrap It Up (Like a Survival Blanket)</p>
+<p>Survival analysis isn’t as intimidating as it sounds. It’s an essential tool for MDs diving into clinical research, helping you understand and predict time-to-event outcomes. Whether you’re drawing Kaplan-Meier curves or diving into the depths of the Cox model, remember: survival analysis is all about making the most of your data, even when life (or research) gets complicated.</p>
+<p>So, the next time someone asks, “How long until the event occurs?” you can confidently say, “Let me run a survival analysis on that!” And if they ask what that means, feel free to share this article—or just tell them it’s not about your career. (We hope.)</p>
+<p>To go deeper on the topic:</p>
+<p>Kaplan EL, Meier P. “Nonparametric estimation from incomplete observations.” Journal of the American Statistical Association. 1958;53(282):457-481.</p>
+<p>Cox DR. “Regression models and life-tables.” Journal of the Royal Statistical Society: Series B (Methodological). 1972;34(2):187-220.</p>
+<p>Collett D. Modelling Survival Data in Medical Research. Chapman &amp; Hall/CRC, 2015.</p>
+<p>Kleinbaum DG, Klein M. Survival Analysis: A Self-Learning Text. Springer, 2012.</p>
+<p>Goel MK, Khanna P, Kishore J. “Understanding survival analysis: Kaplan-Meier estimate.” International Journal of Ayurveda Research. 2010;1(4):274-278.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -420,6 +253,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
