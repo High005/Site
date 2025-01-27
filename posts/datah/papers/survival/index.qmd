@@ -82,7 +82,7 @@ Sometimes, patients can experience more than one type of event, and these events
 
 Why Use It?
 
-Accounts for competing risks, avoiding biased results.
+* Accounts for competing risks, avoiding biased results.
 
 Example: You’re analyzing time to disease recurrence, but some patients die before recurrence occurs. Ignoring this competing risk would overestimate the recurrence risk.
 
@@ -127,12 +127,12 @@ So, the next time someone asks, “How long until the event occurs?” you can c
 
 To go deeper on the topic:
 
-Kaplan EL, Meier P. "Nonparametric estimation from incomplete observations." Journal of the American Statistical Association. 1958;53(282):457-481.
+* Kaplan EL, Meier P. "Nonparametric estimation from incomplete observations." Journal of the American Statistical Association. 1958;53(282):457-481.
 
-Cox DR. "Regression models and life-tables." Journal of the Royal Statistical Society: Series B (Methodological). 1972;34(2):187-220.
+* Cox DR. "Regression models and life-tables." Journal of the Royal Statistical Society: Series B (Methodological). 1972;34(2):187-220.
 
-Collett D. Modelling Survival Data in Medical Research. Chapman & Hall/CRC, 2015.
+* Collett D. Modelling Survival Data in Medical Research. Chapman & Hall/CRC, 2015.
 
-Kleinbaum DG, Klein M. Survival Analysis: A Self-Learning Text. Springer, 2012.
+* Kleinbaum DG, Klein M. Survival Analysis: A Self-Learning Text. Springer, 2012.
 
-Goel MK, Khanna P, Kishore J. "Understanding survival analysis: Kaplan-Meier estimate." International Journal of Ayurveda Research. 2010;1(4):274-278.
+* Goel MK, Khanna P, Kishore J. "Understanding survival analysis: Kaplan-Meier estimate." International Journal of Ayurveda Research. 2010;1(4):274-278.

@@ -73,9 +73,9 @@ Randomization ensures that participants are assigned to groups purely by chance.
 
 Blinding prevents participants, researchers, or both from knowing which intervention has been assigned, reducing observation bias.
 
-Single-blind: The participants are unaware of their group allocation.
+* Single-blind: The participants are unaware of their group allocation.
 
-Double-blind: Both participants and researchers are unaware of group allocation.
+* Double-blind: Both participants and researchers are unaware of group allocation.
 
 *Example*: In a drug trial, neither the patients nor the clinicians administering the medication know who receives the active drug versus the placebo.
 
@@ -115,10 +115,10 @@ Bias is a common but manageable challenge in evidence-based medicine. By underst
 
 Material to go even deeper on the topic:
 
-Higgins JPT, Green S. Cochrane Handbook for Systematic Reviews of Interventions. Version 5.1.0. The Cochrane Collaboration, 2011.
+* Higgins JPT, Green S. Cochrane Handbook for Systematic Reviews of Interventions. Version 5.1.0. The Cochrane Collaboration, 2011.
 
-Moher D, Liberati A, Tetzlaff J, Altman DG. "Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement." PLoS Med. 2009;6(7):e1000097.
+* Moher D, Liberati A, Tetzlaff J, Altman DG. "Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement." PLoS Med. 2009;6(7):e1000097.
 
-Schulz KF, Altman DG, Moher D. "CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials." BMJ. 2010;340:c332.
+* Schulz KF, Altman DG, Moher D. "CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials." BMJ. 2010;340:c332.
 
-Ioannidis JPA. "Why most published research findings are false." PLoS Med. 2005;2(8):e124.
+* Ioannidis JPA. "Why most published research findings are false." PLoS Med. 2005;2(8):e124.
