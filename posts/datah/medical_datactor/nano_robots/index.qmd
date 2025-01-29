@@ -1,0 +1,20 @@
+---
+title: "The world's smallest surgical robot is among us"
+date: "2025-01-29"
+categories:
+image: "image.jpg"
+draft: false
+layout: single
+execute: 
+  eval: false
+---
+
+####  The multifunctional biomedical robot can do imaging, sampling, and laser ablation. 
+
+Engineers at the Hong Kong University of Science and Technology (HKUST) have developed a tiny surgical robot, possibly the world's smallest.  This 0.95-millimeter robot is 60% smaller than current endoscopic robots and is made of a hollow skeleton, optical fibers, functionalized skin, and a gel-like coating.  HKUST researchers say it achieves the "impossible trinity" of combining imaging, precise movement, and multiple functions.  Their findings were published in *Nature Communications*.
+
+The study showed the robot significantly expands the imaging area (25 times the normal view) and can detect obstacles up to 9.4 mm away (10 times the theoretical limit).  It's capable of sampling, drug delivery, and laser ablation, and navigated smoothly through in vitro bronchial models and ex-vivo pig lungs.
+
+Professor Shen Yajing, who led the research team, explained that while small robots have potential for diagnosis and treatment, current models lack compactness, precise navigation, and diverse functions.  Their work aims to solve these problems.  Prof. Shen believes this robot could be a major step forward in clinical surgical robots, enabling early diagnosis and treatment in difficult-to-reach areas of the body, with broad biomedical applications.  The team plans to conduct in vivo trials next.
+
+The Asia-Pacific region is seeing increased investment in healthcare robotics, especially for surgery and rehabilitation.  For instance, Bangkok Hospital is investing $5 million in a robotic surgery center.  The University of Hong Kong is using robot-assisted spine surgery.  Chinese and South Korean wearable rehabilitation robots are now available in the US and Australia.  Separately, a Chinese team recently created a small, highly sensitive biosensor for continuous glucose monitoring.
