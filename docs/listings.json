@@ -11,6 +11,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/datah/index.html",
+      "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/nano_robots/index.html",
       "/posts/datah/papers/bias/index.html",
       "/posts/datah/papers/survival/index.html",
@@ -24,6 +25,7 @@
   {
     "listing": "/posts/datah/index.html",
     "items": [
+      "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/nano_robots/index.html",
       "/posts/datah/medical_datactor/longevity/index.html",
       "/posts/datah/medical_datactor/tech_challenge/index.html",
@@ -34,6 +36,7 @@
   {
     "listing": "/tech.html",
     "items": [
+      "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/nano_robots/index.html",
       "/posts/datah/medical_datactor/longevity/index.html",
       "/posts/datah/medical_datactor/tech_challenge/index.html",

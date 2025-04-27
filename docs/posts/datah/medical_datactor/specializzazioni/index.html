@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-04-27">
 
-<title>High005 - High 005</title>
+<title>High005 - How Artificial Intelligence is teaching medical oncology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,112 +67,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
-<style>
-  body {
-    font-family: 'Inter', sans-serif; /* Modern, clean font */
-    background-color: #fff8e1; /* Soft yellow background */
-    color: #333; /* Dark gray text for readability */
-  }
-  .quarto-listing-item {
-    border: 2px solid #ffc1e3; /* Pink border for listing items */
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff; /* White background for contrast */
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .quarto-listing-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-  }
-  .quarto-title-banner {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-  }
-  a {
-    color: #ff4081; /* Pink links */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">High005</span>
     </a>
   </div>
@@ -183,27 +89,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials.html"> 
+    <a class="nav-link" href="../../../../tutorials.html"> 
 <span class="menu-text">Discover</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jobs.html"> 
+    <a class="nav-link" href="../../../../jobs.html"> 
 <span class="menu-text">Click to solve together</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tech.html"> 
+    <a class="nav-link" href="../../../../tech.html"> 
 <span class="menu-text">Fresh tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./science.html"> 
+    <a class="nav-link" href="../../../../science.html"> 
 <span class="menu-text">Analytics tips</span></a>
   </li>  
 </ul>
@@ -214,200 +120,48 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">How Artificial Intelligence is teaching medical oncology</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 27, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles content page-columns page-full">
-  <div class="about-entity">
-    <img src="images/logo.png" class="about-image
-  round " style="height: 25em; width: 25em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">High 005</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://orcid.org/0000-0002-4610-0950" class="about-link" rel="" target="">
-     <span class="about-link-text">Scientific activity papers</span>
-  </a>
-  <a href="https://www.youtube.com/@High_005" class="about-link" rel="" target="">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">Youtube news</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div id="animated-title" style="text-align: center; padding: 20px 0;">
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    new TypeIt("#animated-title", {
-      strings: ["The page of healthcare news and challenges for the next years. Curiosities and questions are the beginning of new journey, let's embrace together!", "Read. Enjoy. Share opinion with us"],
-      speed: 50,
-      breakLines: false,
-      loop: true,
-    }).go();
-  });
-</script>
-<div class="column-page">
-<div style="font-size: 2em; face: bold; color: #343a40;">
-<p>Click to go deeper on your curiosity</p>
-</div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1738136062335" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./posts/datah/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts\datah\medical_datactor\ai_onco\onco.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Newscare
-</h5>
-<div class="card-text listing-description">
-The news about revolution that are solving Medicine’s challenges
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1745704800000" data-listing-file-modified-sort="1745740965980" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
-<a href="./posts/datah/medical_datactor/ai_onco/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/ai_onco/onco.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How Artificial Intelligence is teaching medical oncology
-</h5>
-<div class="card-text listing-description">
-Artificial intelligence is entering classrooms to teach medical oncology. Italy is leading the way with the first study of its kind, called “AI Learning,” which will assess…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Apr 27, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1738187174799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
-<a href="./posts/datah/medical_datactor/nano_robots/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/nano_robots/image.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The world’s smallest surgical robot is among us
-</h5>
-<div class="card-text listing-description">
-Engineers at the Hong Kong University of Science and Technology have developed a new surgical robot, maybe the world’s smallest one. The 0.95-millimeter robot is 60% smaller…<em></em>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 29, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
-<a href="./posts/datah/papers/bias/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/papers/bias/img.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bias in Healthcare studies
-</h5>
-<div class="card-text listing-description">
-When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges…<br><br>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
-<a href="./posts/datah/papers/survival/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/papers/survival/x1.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Survival analysis
-</h5>
-<div class="card-text listing-description">
-If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1737500400000" data-listing-file-modified-sort="1738136062336" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595">
-<a href="./posts/datah/medical_datactor/longevity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/datah/medical_datactor/longevity/images.jpg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-ChatGPT and his Artificial intelligence will make us live longer
-</h5>
-<div class="card-text listing-description">
-OpenAI has recently announced an innovative partnership with Retro Biosciences, a biotech startup dedicated to advancing longevity research. This collaboration has resulted…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-</div>
-<div class="listing-date">
-Jan 22, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main></div>
-</div>
- <!-- /main -->
+
+
+
+<p>Artificial intelligence is entering classrooms to teach medical oncology. Italy is leading the way with the first study of its kind, called “AI Learning,” which will assess how well medical students learn when taught by AI-powered avatars. This innovative teaching platform, developed by the start-up ctcHealth, is named Plato. It offers an immersive and personalized educational experience and was recently unveiled at the Italian Summit on Precision Medicine, an international event organized by the Foundation for Personalized Medicine (FMP) in Rome, attended by over 150 experts.</p>
+<p>The complexity of current diagnostic and therapeutic pathways requires highly specialized and tailored training, explains Paolo Marchetti, president of FMP and scientific director at IDI-IRCCS in Rome. Over the past fifty years, traditional teaching methods have seen very few changes, evolving from overhead projectors to electronic slides but without any real transformation in teaching practices. Plato represents a true leap forward, integrating advanced technology with a more interactive and engaging educational approach.</p>
+<p>The research project initially focuses on oncology but aims to expand into other fields of medicine. Giuseppe Curigliano, president-elect of the European Society for Medical Oncology (ESMO), professor of medical oncology at the University of Milan, and director of the Division for New Drug Development for Innovative Therapies at the European Institute of Oncology (IEO) in Milan, believes that Plato has the potential to revolutionize medical education. Developed by a team of experts in education and artificial intelligence, it marks an important Italian contribution to the global landscape of advanced educational technologies. Plato may also be used to train members of Molecular Tumor Boards, multidisciplinary teams that are key players in the evolving model of precision oncology. The system is capable of analyzing genomic profiling data along with clinical information derived from precision oncology research within these boards.</p>
+<p>The AI Learning study, promoted by FMP and hosted at Sapienza University of Rome, will start in September 2025. It will involve around 120 medical students in the final two years of their program.</p>
+<p>Domenico Alvaro, Dean of the Faculty of Medicine and Dentistry at Sapienza University, emphasizes the institution’s strong commitment to experimenting with innovative teaching strategies to enhance the education of future healthcare professionals. In a time marked by the digital and technological transformation of health sciences, it is crucial to prepare highly skilled professionals in new technologies. The educational project coordinated by Professor Botticelli, along with several initiatives led by Professor Marchetti, perfectly fits into this vision.</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -428,6 +182,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
