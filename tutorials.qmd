@@ -44,7 +44,7 @@ format:
 
 Build your first data collection tool :
 
-1 - How to collect quantitative and discrete data in RedCap:
+1 - How to collect quantitative and discrete data in REDCap:
 
 <html>
 
@@ -170,6 +170,46 @@ Build your first data collection tool :
 </html>
 
 
+4 - How to export data your data from REDCap to Excel:
+
+<html>
+
+<head>
+
+```{=html}
+<style>
+        .logo-tutorial-button {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(45deg, #FFD700, #FF69B4);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 20px;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(222,105,180,0.3);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .logo-tutorial-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(222,215,0,0.5);
+            background: linear-gradient(45deg, #FFD700, #FF1493);
+        }
+        .logo-tutorial-button::before {
+            content: '🎥';
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+```
+</head>
+
+<body><a href="https://youtu.be/HoHrexo8ix0" target="_blank" class="logo-tutorial-button"> III RedCap Tutorial </a></body>
+
+</html>
 
 
 email : bisturiep005\@gmail.com
