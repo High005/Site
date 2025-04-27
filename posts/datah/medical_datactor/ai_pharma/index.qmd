@@ -1,0 +1,19 @@
+---
+title: "How Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI"
+date: "2025-04-27"
+categories:
+image: "csr.jpg"
+draft: false
+layout: single
+execute: 
+  eval: false
+---
+
+Novo Nordisk, a global leader in diabetes and chronic disease care, has reimagined the way it creates clinical study reports, by using MongoDB Atlas together with Amazon Bedrock.
+Traditionally, compiling a clinical study reports took around 12 weeks and required collaboration across teams of statisticians, scientists, and technical writers. The process was slow and often delayed both regulatory approval and the delivery of new treatments to patients.
+
+In 2023, Novo Nordisk introduced NovoScribe, a new platform that automates much of the CSR writing process. NovoScribe uses retrieval-augmented generation combined with large language models like Claude 3, Titan, and a private version of ChatGPT. MongoDB Atlas plays a central role by managing the structured data that powers the system. By integrating clinical trial data with smart templates, the platform helps the AI models produce complete and accurate reports in just 10 minutes.
+
+From such investments, Novo Nordisk has become the first pharmaceutical company to automate CSR generation at scale. Faster reporting not only helps the company accelerate regulatory submissions but also means patients can access new therapies more quickly. It is a major shift in how the pharmaceutical industry approaches reporting and data management.
+
+Source: https://www.mongodb.com/solutions/customer-case-studies/novo-nordisk
