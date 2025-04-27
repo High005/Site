@@ -1,5 +1,5 @@
 ---
-title: "How Artificial Intelligence is teaching medical oncology"
+title: "How Artificial Intelligence is improving the teaching journey in medical oncology"
 date: "2025-04-27"
 categories:
 image: "onco.jpg"
