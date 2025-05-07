@@ -11,7 +11,7 @@
     "href": "science.html",
     "title": "Statistics tips",
     "section": "",
-    "text": "Bias in Healthcare studies\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival analysis\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Bias in Healthcare studies\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nYour P-value is much more than you think\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival analysis\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/datah/papers/bias/index.html",
@@ -74,7 +74,7 @@
     "href": "index.html",
     "title": "High 005",
     "section": "",
-    "text": "Click to go deeper on your curiosity\n\n\n\n\n\n\n\n\n\n\n\n\nNewscare\n\n\nThe news about revolution that are solving Medicine’s challenges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Artificial Intelligence is improving the teaching journey in medical oncology\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe world’s smallest surgical robot is among us\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBias in Healthcare studies\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival analysis\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Click to go deeper on your curiosity\n\n\n\n\n\n\n\n\n\n\n\n\nNewscare\n\n\nThe news about revolution that are solving Medicine’s challenges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Artificial Intelligence is improving the teaching journey in medical oncology\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe world’s smallest surgical robot is among us\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBias in Healthcare studies\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour P-value is much more than you think\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/datah/index.html",
@@ -138,5 +138,54 @@
     "title": "How Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI",
     "section": "",
     "text": "Novo Nordisk, a global leader in diabetes and chronic disease care, has reimagined the way it creates clinical study reports, by using MongoDB Atlas together with Amazon Bedrock. Traditionally, compiling a clinical study reports took around 12 weeks and required collaboration across teams of statisticians, scientists, and technical writers. The process was slow and often delayed both regulatory approval and the delivery of new treatments to patients.\nIn 2023, Novo Nordisk introduced NovoScribe, a new platform that automates much of the CSR writing process. NovoScribe uses retrieval-augmented generation combined with large language models like Claude 3, Titan, and a private version of ChatGPT. MongoDB Atlas plays a central role by managing the structured data that powers the system. By integrating clinical trial data with smart templates, the platform helps the AI models produce complete and accurate reports in just 10 minutes.\nFrom such investments, Novo Nordisk has become the first pharmaceutical company to automate CSR generation at scale. Faster reporting not only helps the company accelerate regulatory submissions but also means patients can access new therapies more quickly. It is a major shift in how the pharmaceutical industry approaches reporting and data management.\nSource: https://www.mongodb.com/solutions/customer-case-studies/novo-nordisk"
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html",
+    "href": "posts/datah/papers/p_value/index.html",
+    "title": "Your P-value is much more than you think",
+    "section": "",
+    "text": "The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null hypothesis is true. In other words, it estimates the likelihood that what we are claiming is correct, within a small margin of error.\nWhen comparing two treatments, like the classical treatment A and treatment B, the whole work starts with the assumption of the null hypothesis: that there is no difference between the two. The alternative hypothesis so that there is a difference and can be accepted if the null hypothesis is rejected.\nIn a nutshell statistical significance reflects how likely it is that the observed difference is real. There can never be absolute certainty, as a predefined margin of error must always be taken into account.\nConventionally, a threshold of p &lt; 0.05 (i.e., a 5% margin of error) is used to define statistical significance. This means there is less than a 5 in 100 chance that Treatment A would appear more effective than Treatment B purely by random chance.\n\nIf p &gt; 0.05: no statistically significant difference (null hypothesis is not rejected).\nIf p &lt; 0.05: statistically significant difference (null hypothesis is rejected)."
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html#lets-start-what-does-the-p-value-depicts",
+    "href": "posts/datah/papers/p_value/index.html#lets-start-what-does-the-p-value-depicts",
+    "title": "Your P-value is much more than you think",
+    "section": "",
+    "text": "The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null hypothesis is true. In other words, it estimates the likelihood that what we are claiming is correct, within a small margin of error.\nWhen comparing two treatments, like the classical treatment A and treatment B, the whole work starts with the assumption of the null hypothesis: that there is no difference between the two. The alternative hypothesis so that there is a difference and can be accepted if the null hypothesis is rejected.\nIn a nutshell statistical significance reflects how likely it is that the observed difference is real. There can never be absolute certainty, as a predefined margin of error must always be taken into account.\nConventionally, a threshold of p &lt; 0.05 (i.e., a 5% margin of error) is used to define statistical significance. This means there is less than a 5 in 100 chance that Treatment A would appear more effective than Treatment B purely by random chance.\n\nIf p &gt; 0.05: no statistically significant difference (null hypothesis is not rejected).\nIf p &lt; 0.05: statistically significant difference (null hypothesis is rejected)."
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html#why-is-p-0.05-considered-statistically-significant",
+    "href": "posts/datah/papers/p_value/index.html#why-is-p-0.05-considered-statistically-significant",
+    "title": "Your P-value is much more than you think",
+    "section": "Why is p < 0.05 considered statistically significant?",
+    "text": "Why is p &lt; 0.05 considered statistically significant?\nThe 0.05 cut-off is a conventional threshold. It dates back to 1926 when R.A. Fisher wrote:\n\n“It is convenient to draw a line at about the level at which we can say: ‘Either there is something in the treatment, or a coincidence has occurred such as does not occur more than once in twenty trials.’”\n\nHowever, Fisher later clarified:\n\n“No scientific worker has a fixed level of significance at which from every experiment and in all circumstances he rejects hypotheses.”"
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html#the-limitations-of-a-fixed-0.05-threshold-the-winlose-fallacy",
+    "href": "posts/datah/papers/p_value/index.html#the-limitations-of-a-fixed-0.05-threshold-the-winlose-fallacy",
+    "title": "Your P-value is much more than you think",
+    "section": "The limitations of a fixed 0.05 threshold: the win/lose fallacy",
+    "text": "The limitations of a fixed 0.05 threshold: the win/lose fallacy\nThe threshold is often misinterpreted as a strict decision rule:\n\np &lt; 0.05: you “win”\np &gt; 0.05: you “lose”\n\nThis dichotomous view is misleading both statistically and clinically. Small changes in sample size or data can push a p-value above or below 0.05 without reflecting any real difference in effect size or clinical relevance. This shows that:\n\np-values are sensitive to sample size.\nThey depend heavily on study design and data quality."
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html#key-takeaways",
+    "href": "posts/datah/papers/p_value/index.html#key-takeaways",
+    "title": "Your P-value is much more than you think",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nThe p-value is not a measure of the truth of the hypothesis.\nScientific conclusions should not rely solely on whether p is above or below 0.05.\nThe p-value does not indicate the size or importance of an effect.\nA p-value, taken out of context, is not a good measure of evidence."
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html#a-better-approach-to-interpretation",
+    "href": "posts/datah/papers/p_value/index.html#a-better-approach-to-interpretation",
+    "title": "Your P-value is much more than you think",
+    "section": "A Better Approach to Interpretation",
+    "text": "A Better Approach to Interpretation\nInstead of relying on a dichotomized hypothesis test based on a fixed p-value threshold, a more nuanced method should be used, incorporating:\n\nEffect estimates (e.g., relative risk, odds ratio, hazard ratio)\nAbsolute measures (e.g., absolute risk, number needed to treat – NNT)\nUncertainty estimates (e.g., confidence intervals)\nP-values, in context\n\nThis allows for informed, inferential reasoning by clinicians and statisticians to assess the scientific and clinical significance of findings."
+  },
+  {
+    "objectID": "posts/datah/papers/p_value/index.html#example-the-elan-study",
+    "href": "posts/datah/papers/p_value/index.html#example-the-elan-study",
+    "title": "Your P-value is much more than you think",
+    "section": "Example: The ELAN Study",
+    "text": "Example: The ELAN Study\nThe ELAN (Early versus Later Anticoagulation for Stroke with Atrial Fibrillation) study was a randomized controlled trial involving 2,013 patients with recent ischemic stroke and atrial fibrillation.\nPatients were randomized to: - Early anticoagulation: within 48 hours (minor/moderate stroke) or day 6–7 (major stroke). - Delayed anticoagulation: day 3–4 (minor), day 6–7 (moderate), or day 12–14 (major).\n\nPrimary Endpoint\nA composite of ischemic stroke, systemic embolism, major extracranial bleeding, symptomatic intracranial hemorrhage, or vascular death within 30 days.\n\nEarly group: 2.9% experienced the event\nDelayed group: 4.1%\nAbsolute risk difference: -1.18 percentage points (95% CI: -2.84 to 0.47)\nOdds of ischemic stroke recurrence were nearly halved (OR 0.57; 95% CI: 0.29 to 1.07)\n\nAt 90 days, the primary outcome was also lower in the early treatment group: - OR 0.65; 95% CI: 0.42 to 0.99\n\n\nInterpretation\nThe study design did not include formal superiority or non-inferiority testing. Instead, it used descriptive statistics with confidence intervals, not relying on the p-value alone. This provides clinicians with useful context: the 30-day risk difference may range from a 2.8% reduction to a 0.5% increase, helping inform decisions about when to restart anticoagulation therapy."
   }
 ]

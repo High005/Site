@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-01-25">
 
-<title>High005 - Statistics tips</title>
+<title>High005 - Your P-value is much more than you think</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,112 +67,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
-<style>
-  body {
-    font-family: 'Inter', sans-serif; /* Modern, clean font */
-    background-color: #fff8e1; /* Soft yellow background */
-    color: #333; /* Dark gray text for readability */
-  }
-  .quarto-listing-item {
-    border: 2px solid #ffc1e3; /* Pink border for listing items */
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff; /* White background for contrast */
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .quarto-listing-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-  }
-  .quarto-title-banner {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-  }
-  a {
-    color: #ff4081; /* Pink links */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">High005</span>
     </a>
   </div>
@@ -184,27 +89,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials.html"> 
+    <a class="nav-link" href="../../../../tutorials.html"> 
 <span class="menu-text">Discover</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jobs.html"> 
+    <a class="nav-link" href="../../../../jobs.html"> 
 <span class="menu-text">Click to solve together</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tech.html"> 
+    <a class="nav-link" href="../../../../tech.html"> 
 <span class="menu-text">Fresh tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./science.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../science.html"> 
 <span class="menu-text">Analytics tips</span></a>
   </li>  
 </ul>
@@ -215,143 +120,118 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Your P-value is much more than you think</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 25, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Statistics tips</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="lets-start-what-does-the-p-value-depicts" class="level2">
+<h2 class="anchored" data-anchor-id="lets-start-what-does-the-p-value-depicts">Let’s start: what does the p-value depicts?</h2>
+<p>The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null hypothesis is true. In other words, it estimates the likelihood that what we are claiming is correct, within a small margin of error.</p>
+<p>When comparing two treatments, like the classical treatment A and treatment B, the whole work starts with the assumption of the <strong>null hypothesis</strong>: that there is no difference between the two. The <strong>alternative hypothesis</strong> so that there is a difference and can be accepted if the null hypothesis is rejected.</p>
+<p>In a nutshell statistical significance reflects how likely it is that the observed difference is real. There can never be absolute certainty, as a predefined margin of error must always be taken into account.</p>
+<p>Conventionally, a threshold of <code>p &lt; 0.05</code> (i.e., a 5% margin of error) is used to define statistical significance. This means there is less than a 5 in 100 chance that Treatment A would appear more effective than Treatment B purely by random chance.</p>
+<ul>
+<li>If <code>p &gt; 0.05</code>: no statistically significant difference (null hypothesis is not rejected).</li>
+<li>If <code>p &lt; 0.05</code>: statistically significant difference (null hypothesis is rejected).</li>
+</ul>
+</section>
+<section id="why-is-p-0.05-considered-statistically-significant" class="level2">
+<h2 class="anchored" data-anchor-id="why-is-p-0.05-considered-statistically-significant">Why is <code>p &lt; 0.05</code> considered statistically significant?</h2>
+<p>The 0.05 cut-off is a conventional threshold. It dates back to 1926 when R.A. Fisher wrote:</p>
+<blockquote class="blockquote">
+<p>“It is convenient to draw a line at about the level at which we can say: ‘Either there is something in the treatment, or a coincidence has occurred such as does not occur more than once in twenty trials.’”</p>
+</blockquote>
+<p>However, Fisher later clarified:</p>
+<blockquote class="blockquote">
+<p>“No scientific worker has a fixed level of significance at which from every experiment and in all circumstances he rejects hypotheses.”</p>
+</blockquote>
+</section>
+<section id="the-limitations-of-a-fixed-0.05-threshold-the-winlose-fallacy" class="level2">
+<h2 class="anchored" data-anchor-id="the-limitations-of-a-fixed-0.05-threshold-the-winlose-fallacy">The limitations of a fixed 0.05 threshold: the win/lose fallacy</h2>
+<p>The threshold is often misinterpreted as a strict decision rule:</p>
+<ul>
+<li><code>p &lt; 0.05</code>: you “win”</li>
+<li><code>p &gt; 0.05</code>: you “lose”</li>
+</ul>
+<p>This dichotomous view is misleading both statistically and clinically. Small changes in sample size or data can push a p-value above or below 0.05 without reflecting any real difference in effect size or clinical relevance. This shows that:</p>
+<ul>
+<li>p-values are sensitive to sample size.</li>
+<li>They depend heavily on study design and data quality.</li>
+</ul>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<ol type="1">
+<li>The p-value <strong>is not</strong> a measure of the truth of the hypothesis.</li>
+<li>Scientific conclusions <strong>should not</strong> rely solely on whether <code>p</code> is above or below 0.05.</li>
+<li>The p-value <strong>does not</strong> indicate the size or importance of an effect.</li>
+<li>A p-value, taken out of context, <strong>is not</strong> a good measure of evidence.</li>
+</ol>
+</section>
+<section id="a-better-approach-to-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="a-better-approach-to-interpretation">A Better Approach to Interpretation</h2>
+<p>Instead of relying on a dichotomized hypothesis test based on a fixed p-value threshold, a more nuanced method should be used, incorporating:</p>
+<ul>
+<li><strong>Effect estimates</strong> (e.g., relative risk, odds ratio, hazard ratio)</li>
+<li><strong>Absolute measures</strong> (e.g., absolute risk, number needed to treat – NNT)</li>
+<li><strong>Uncertainty estimates</strong> (e.g., confidence intervals)</li>
+<li><strong>P-values</strong>, in context</li>
+</ul>
+<p>This allows for informed, inferential reasoning by clinicians and statisticians to assess the scientific and clinical significance of findings.</p>
+</section>
+<section id="example-the-elan-study" class="level2">
+<h2 class="anchored" data-anchor-id="example-the-elan-study">Example: The ELAN Study</h2>
+<p>The <strong>ELAN</strong> (Early versus Later Anticoagulation for Stroke with Atrial Fibrillation) study was a randomized controlled trial involving 2,013 patients with recent ischemic stroke and atrial fibrillation.</p>
+<p>Patients were randomized to: - <strong>Early anticoagulation</strong>: within 48 hours (minor/moderate stroke) or day 6–7 (major stroke). - <strong>Delayed anticoagulation</strong>: day 3–4 (minor), day 6–7 (moderate), or day 12–14 (major).</p>
+<section id="primary-endpoint" class="level3">
+<h3 class="anchored" data-anchor-id="primary-endpoint">Primary Endpoint</h3>
+<p>A composite of ischemic stroke, systemic embolism, major extracranial bleeding, symptomatic intracranial hemorrhage, or vascular death within 30 days.</p>
+<ul>
+<li>Early group: 2.9% experienced the event</li>
+<li>Delayed group: 4.1%</li>
+<li>Absolute risk difference: -1.18 percentage points (95% CI: -2.84 to 0.47)</li>
+<li>Odds of ischemic stroke recurrence were nearly halved (OR 0.57; 95% CI: 0.29 to 1.07)</li>
+</ul>
+<p>At 90 days, the primary outcome was also lower in the early treatment group: - OR 0.65; 95% CI: 0.42 to 0.99</p>
+</section>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
+<p>The study design did not include formal superiority or non-inferiority testing. Instead, it used <strong>descriptive statistics</strong> with <strong>confidence intervals</strong>, not relying on the p-value alone. This provides clinicians with useful context: the 30-day risk difference may range from a 2.8% reduction to a 0.5% increase, helping inform decisions about when to restart anticoagulation therapy.</p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/bias/index.html" class="no-external"></a></p><a href="./posts/datah/papers/bias/index.html" class="no-external">
-<p><img src="./posts/datah/papers/bias/img.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/bias/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">Bias in Healthcare studies</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/bias/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges…<br><br></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1746609433227" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="677">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/p_value/index.html" class="no-external"></a></p><a href="./posts/datah/papers/p_value/index.html" class="no-external">
-<p><img src="./posts/datah/papers/p_value/pvalue.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/p_value/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">Your P-value is much more than you think</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/survival/index.html" class="no-external"></a></p><a href="./posts/datah/papers/survival/index.html" class="no-external">
-<p><img src="./posts/datah/papers/survival/x1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/survival/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">Survival analysis</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/survival/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1716415200000" data-listing-file-modified-sort="1737957194135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/aspirin/index.html" class="no-external"></a></p><a href="./posts/datah/papers/aspirin/index.html" class="no-external">
-<p><img src="./posts/datah/papers/aspirin/cells.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/aspirin/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">Aspirin Vs Cancer</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

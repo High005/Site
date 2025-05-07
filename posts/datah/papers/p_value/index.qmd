@@ -1,0 +1,90 @@
+---
+title: "Your P-value is much more than you think"
+date: "2025-01-25"
+categories:
+image: "pvalue.png"
+draft: false
+layout: single
+execute: 
+  eval: false
+---
+
+## Let's start: what does the p-value depicts?
+
+The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null hypothesis is true. In other words, it estimates the likelihood that what we are claiming is correct, within a small margin of error.
+
+When comparing two treatments, like the classical treatment A and treatment B, the whole work starts with the assumption of the **null hypothesis**: that there is no difference between the two. The **alternative hypothesis** so that there is a difference and can be accepted if the null hypothesis is rejected.
+
+In a nutshell statistical significance reflects how likely it is that the observed difference is real. There can never be absolute certainty, as a predefined margin of error must always be taken into account.
+
+Conventionally, a threshold of `p < 0.05` (i.e., a 5% margin of error) is used to define statistical significance. This means there is less than a 5 in 100 chance that Treatment A would appear more effective than Treatment B purely by random chance.
+
+- If `p > 0.05`: no statistically significant difference (null hypothesis is not rejected).
+- If `p < 0.05`: statistically significant difference (null hypothesis is rejected).
+
+## Why is `p < 0.05` considered statistically significant?
+
+The 0.05 cut-off is a conventional threshold. It dates back to 1926 when R.A. Fisher wrote:
+
+> "It is convenient to draw a line at about the level at which we can say: 'Either there is something in the treatment, or a coincidence has occurred such as does not occur more than once in twenty trials.'"
+
+However, Fisher later clarified:
+
+> "No scientific worker has a fixed level of significance at which from every experiment and in all circumstances he rejects hypotheses."
+
+## The limitations of a fixed 0.05 threshold: the win/lose fallacy
+
+The threshold is often misinterpreted as a strict decision rule:
+
+- `p < 0.05`: you "win"
+- `p > 0.05`: you "lose"
+
+This dichotomous view is misleading both statistically and clinically. Small changes in sample size or data can push a p-value above or below 0.05 without reflecting any real difference in effect size or clinical relevance. This shows that:
+
+- p-values are sensitive to sample size.
+- They depend heavily on study design and data quality.
+
+## Key Takeaways
+
+1. The p-value **is not** a measure of the truth of the hypothesis.
+2. Scientific conclusions **should not** rely solely on whether `p` is above or below 0.05.
+3. The p-value **does not** indicate the size or importance of an effect.
+4. A p-value, taken out of context, **is not** a good measure of evidence.
+
+## A Better Approach to Interpretation
+
+Instead of relying on a dichotomized hypothesis test based on a fixed p-value threshold, a more nuanced method should be used, incorporating:
+
+- **Effect estimates** (e.g., relative risk, odds ratio, hazard ratio)
+- **Absolute measures** (e.g., absolute risk, number needed to treat – NNT)
+- **Uncertainty estimates** (e.g., confidence intervals)
+- **P-values**, in context
+
+This allows for informed, inferential reasoning by clinicians and statisticians to assess the scientific and clinical significance of findings.
+
+## Example: The ELAN Study
+
+The **ELAN** (Early versus Later Anticoagulation for Stroke with Atrial Fibrillation) study was a randomized controlled trial involving 2,013 patients with recent ischemic stroke and atrial fibrillation.
+
+Patients were randomized to:
+- **Early anticoagulation**: within 48 hours (minor/moderate stroke) or day 6–7 (major stroke).
+- **Delayed anticoagulation**: day 3–4 (minor), day 6–7 (moderate), or day 12–14 (major).
+
+### Primary Endpoint
+
+A composite of ischemic stroke, systemic embolism, bleeding, symptomatic hemorrhage, or vascular death within 30 days.
+
+- Early group: 2.9% experienced the event
+- Delayed group: 4.1%
+- Absolute risk difference: -1.18 percentage points (95% CI: -2.84 to 0.47)
+- Odds of ischemic stroke recurrence were nearly halved (OR 0.57; 95% CI: 0.29 to 1.07)
+
+At 90 days, the primary outcome was also lower in the early treatment group:
+- OR 0.65; 95% CI: 0.42 to 0.99
+
+### Final interpretation
+
+The study design did not include formal superiority or non-inferiority testing. Instead, it used **descriptive statistics** with **confidence intervals**, not relying on the p-value alone. This provides clinicians with useful context: the 30-day risk difference may range from a 2.8% reduction to a 0.5% increase, helping inform decisions about when to restart anti coagulation therapy.
+
+
+
