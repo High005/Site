@@ -1,6 +1,6 @@
 ---
 title: "Your P-value is much more than you think"
-date: "2025-01-25"
+date: "2025-05-07"
 categories:
 image: "pvalue.png"
 draft: false
@@ -17,7 +17,7 @@ When comparing two treatments, like the classical treatment A and treatment B, t
 
 In a nutshell statistical significance reflects how likely it is that the observed difference is real. There can never be absolute certainty, as a predefined margin of error must always be taken into account.
 
-Conventionally, a threshold of `p < 0.05` (i.e., a 5% margin of error) is used to define statistical significance. This means there is less than a 5 in 100 chance that Treatment A would appear more effective than Treatment B purely by random chance.
+Conventionally, a threshold of `p < 0.05` like a 5% margin of error is used to define statistical significance. This means there is less than a 5 in 100 chance that Treatment A would appear more effective than Treatment B purely by random chance.
 
 - If `p > 0.05`: no statistically significant difference (null hypothesis is not rejected).
 - If `p < 0.05`: statistically significant difference (null hypothesis is rejected).
@@ -55,9 +55,9 @@ This dichotomous view is misleading both statistically and clinically. Small cha
 
 Instead of relying on a dichotomized hypothesis test based on a fixed p-value threshold, a more nuanced method should be used, incorporating:
 
-- **Effect estimates** (e.g., relative risk, odds ratio, hazard ratio)
-- **Absolute measures** (e.g., absolute risk, number needed to treat – NNT)
-- **Uncertainty estimates** (e.g., confidence intervals)
+- **Effect estimates** like relative risk, odds ratio, hazard ratio
+- **Absolute measures**  like absolute risk, number needed to treat – NNT
+- **Uncertainty estimates** like confidence intervals
 - **P-values**, in context
 
 This allows for informed, inferential reasoning by clinicians and statisticians to assess the scientific and clinical significance of findings.
