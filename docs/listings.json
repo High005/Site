@@ -2,6 +2,7 @@
   {
     "listing": "/science.html",
     "items": [
+      "/posts/datah/papers/standard dev/index.html",
       "/posts/datah/papers/p_value/index.html",
       "/posts/datah/papers/bias/index.html",
       "/posts/datah/papers/survival/index.html",
@@ -12,6 +13,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/datah/index.html",
+      "/posts/datah/papers/standard dev/index.html",
       "/posts/datah/papers/p_value/index.html",
       "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/ai_pharma/index.html",

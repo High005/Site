@@ -11,7 +11,7 @@
     "href": "science.html",
     "title": "Statistics tips",
     "section": "",
-    "text": "Your P-value is much more than you think\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBias in Healthcare studies\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival analysis\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Standard Deviation Vs Standard Error\n\n\n\n\n\n\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nYour P-value is much more than you think\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBias in Healthcare studies\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival analysis\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAspirin Vs Cancer\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/datah/papers/bias/index.html",
@@ -74,7 +74,7 @@
     "href": "index.html",
     "title": "High 005",
     "section": "",
-    "text": "Click to go deeper on your curiosity\n\n\n\n\n\n\n\n\n\n\n\n\nNewscare\n\n\nThe news about revolution that are solving Medicine’s challenges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour P-value is much more than you think\n\n\n\n\n\n\n\n\nMay 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Artificial Intelligence is improving the teaching journey in medical oncology\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe world’s smallest surgical robot is among us\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBias in Healthcare studies\n\n\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Click to go deeper on your curiosity\n\n\n\n\n\n\n\n\n\n\n\n\nNewscare\n\n\nThe news about revolution that are solving Medicine’s challenges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStandard Deviation Vs Standard Error\n\n\n\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour P-value is much more than you think\n\n\n\n\n\n\n\n\nMay 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Artificial Intelligence is improving the teaching journey in medical oncology\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI\n\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe world’s smallest surgical robot is among us\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/datah/index.html",
@@ -187,5 +187,82 @@
     "title": "Your P-value is much more than you think",
     "section": "Example: The ELAN Study",
     "text": "Example: The ELAN Study\nThe ELAN (Early versus Later Anticoagulation for Stroke with Atrial Fibrillation) study was a randomized controlled trial involving 2,013 patients with recent ischemic stroke and atrial fibrillation.\nPatients were randomized to: - Early anticoagulation: within 48 hours (minor/moderate stroke) or day 6–7 (major stroke). - Delayed anticoagulation: day 3–4 (minor), day 6–7 (moderate), or day 12–14 (major).\n\nPrimary Endpoint\nA composite of ischemic stroke, systemic embolism, bleeding, symptomatic hemorrhage, or vascular death within 30 days.\n\nEarly group: 2.9% experienced the event\nDelayed group: 4.1%\nAbsolute risk difference: -1.18 percentage points (95% CI: -2.84 to 0.47)\nOdds of ischemic stroke recurrence were nearly halved (OR 0.57; 95% CI: 0.29 to 1.07)\n\nAt 90 days, the primary outcome was also lower in the early treatment group: - OR 0.65; 95% CI: 0.42 to 0.99\n\n\nFinal interpretation\nThe study design did not include formal superiority or non-inferiority testing. Instead, it used descriptive statistics with confidence intervals, not relying on the p-value alone. This provides clinicians with useful context: the 30-day risk difference may range from a 2.8% reduction to a 0.5% increase, helping inform decisions about when to restart anti coagulation therapy."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html",
+    "href": "posts/datah/papers/standard dev/index.html",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Here we are with the big match between standard deviation (SD) and standard error (SE).\nOK, let’s say it their names sound similar and both involve measuring variability, they serve fundamentally different purposes in statistical analysis. Understanding this difference is crucial for interpreting research findings correctly and avoiding common misinterpretations in biomedical literature.\n\n\nStandard deviation measures the spread of individual observations around the mean within a single sample. It quantifies how much individual data points deviate from the average value in your dataset.\n\n\n\nDescribes the data itself: SD tells you about the natural variability present in your sample\nUnits: Expressed in the same units as your original measurements\nSample size independence: Generally remains stable regardless of sample size (assuming you’re sampling from the same population)\nPopulation parameter: Estimates the true population standard deviation (σ)\n\n\n\n\nSuppose you measure systolic blood pressure in 100 patients and find a mean of 130 mmHg with an SD of 15 mmHg. This tells you that most patients’ blood pressure readings fall within about 15 mmHg of the average—some patients might have readings around 115 mmHg, others around 145 mmHg. The SD describes this natural biological variation in blood pressure among individuals.\n\n\n\n\nStandard error measures how precisely you’ve estimated a population parameter (like the mean) based on your sample. It quantifies how much your sample statistic would vary if you repeated the study multiple times with different samples from the same population.\n\n\n\nDescribes estimation precision: SE tells you about the reliability of your sample statistic\nUnits: Same as the original measurements, but conceptually different meaning\nSample size dependent: Gets smaller as sample size increases (SE = SD/√n)\nSampling distribution: Relates to the theoretical distribution of sample means\n\n\n\n\nUsing the same blood pressure study, if your SE is 1.5 mmHg, this means that if you repeated the study many times with different groups of 100 patients, about 68% of your sample means would fall within 1.5 mmHg of the true population mean. The smaller the SE, the more confident you can be that your sample mean is close to the true population mean.\n\n\n\n\nWhile this guide focuses on conceptual understanding, the relationship between SD and SE is straightforward:\nSE = SD ÷ √(sample size)\nThis formula reveals why SE decreases as sample size increases—you’re dividing by a larger number. However, SD typically remains relatively constant across different sample sizes from the same population.\n\n\n\n\n\n\nDescribing your sample: “The patients had diverse responses, with individual scores ranging widely (SD = 12 points)”\nClinical interpretation: Understanding the range of individual patient outcomes\nAssessing biological variability: Showing how much individuals differ from each other\nSample characteristics: Describing what you actually observed in your study\n\n\n\n\n\nEstimating precision: “We can be confident our estimate is accurate (SE = 0.8)”\nStatistical inference: Calculating confidence intervals and p-values\nComparing studies: Evaluating how reliable different estimates are\nMeta-analyses: Weighing studies based on their precision\n\n\n\n\n\n\n\nSome researchers inappropriately report SE instead of SD because SE values are always smaller, making results appear more precise than they actually are. This is misleading because it doesn’t accurately represent the variability in the actual data.\n\n\n\nSE doesn’t tell you about the spread of individual observations. A small SE doesn’t mean your patients had similar outcomes—it means you estimated the average outcome precisely.\n\n\n\nUnlike SE, SD doesn’t necessarily get smaller with larger sample sizes. If you’re sampling from the same population, SD should remain relatively stable regardless of whether you have 50 or 500 participants.\n\n\n\n\n\n\n\nSD perspective: “Individual patients showed varied responses to the drug, with some improving dramatically and others showing little change (SD = 8.5 points on the symptom scale)”\nSE perspective: “We can be confident that the average drug effect is between 12-16 points improvement (mean = 14, SE = 1.0)”\n\n\n\n\n\nSD perspective: “Normal glucose levels in healthy adults range widely due to individual biological differences (mean = 90 mg/dL, SD = 10 mg/dL)”\nSE perspective: “Our estimate of the population mean glucose level is quite precise (SE = 0.8 mg/dL based on 156 participants)”\n\n\n\n\n\nWhen you see error bars in research papers: - SD error bars: Show the spread of individual data points - SE error bars: Show the precision of the mean estimate - 95% CI error bars: Show the range likely to contain the true population mean\nAlways check figure legends to understand which type of error bar is being used, as this dramatically affects interpretation.\n\n\n\nUnderstanding the SD vs SE distinction is crucial for proper statistical analysis:\n\nt-tests and confidence intervals: Use SE for calculations\nSample size planning: Consider both the expected SD (effect size) and desired SE (precision)\nPower analysis: Requires understanding of population SD to estimate SE for different sample sizes\n\n\n\n\nProfessional medical journals typically require: - Descriptive statistics: Report means with SD to characterize your sample - Inferential statistics: Report means with SE or confidence intervals when making population inferences - Clear labeling: Always specify whether you’re reporting SD, SE, or CI\n\n\n\nThink of SD as describing “what you found” in your sample, while SE describes “how sure you can be” about what that finding means for the broader population. Both are essential, but for different purposes in the research process.\nRemember: Good statistical practice involves reporting the right measure for your intended message. Use SD to help readers understand your data, and SE to help them understand your conclusions."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#what-is-standard-deviation-sd",
+    "href": "posts/datah/papers/standard dev/index.html#what-is-standard-deviation-sd",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Standard deviation measures the spread of individual observations around the mean within a single sample. It quantifies how much individual data points deviate from the average value in your dataset.\n\n\n\nDescribes the data itself: SD tells you about the natural variability present in your sample\nUnits: Expressed in the same units as your original measurements\nSample size independence: Generally remains stable regardless of sample size (assuming you’re sampling from the same population)\nPopulation parameter: Estimates the true population standard deviation (σ)\n\n\n\n\nSuppose you measure systolic blood pressure in 100 patients and find a mean of 130 mmHg with an SD of 15 mmHg. This tells you that most patients’ blood pressure readings fall within about 15 mmHg of the average—some patients might have readings around 115 mmHg, others around 145 mmHg. The SD describes this natural biological variation in blood pressure among individuals."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#what-is-standard-error-se",
+    "href": "posts/datah/papers/standard dev/index.html#what-is-standard-error-se",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Standard error measures how precisely you’ve estimated a population parameter (like the mean) based on your sample. It quantifies how much your sample statistic would vary if you repeated the study multiple times with different samples from the same population.\n\n\n\nDescribes estimation precision: SE tells you about the reliability of your sample statistic\nUnits: Same as the original measurements, but conceptually different meaning\nSample size dependent: Gets smaller as sample size increases (SE = SD/√n)\nSampling distribution: Relates to the theoretical distribution of sample means\n\n\n\n\nUsing the same blood pressure study, if your SE is 1.5 mmHg, this means that if you repeated the study many times with different groups of 100 patients, about 68% of your sample means would fall within 1.5 mmHg of the true population mean. The smaller the SE, the more confident you can be that your sample mean is close to the true population mean."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#the-mathematical-relationship",
+    "href": "posts/datah/papers/standard dev/index.html#the-mathematical-relationship",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "While this guide focuses on conceptual understanding, the relationship between SD and SE is straightforward:\nSE = SD ÷ √(sample size)\nThis formula reveals why SE decreases as sample size increases—you’re dividing by a larger number. However, SD typically remains relatively constant across different sample sizes from the same population."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#when-to-use-each-measure",
+    "href": "posts/datah/papers/standard dev/index.html#when-to-use-each-measure",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Describing your sample: “The patients had diverse responses, with individual scores ranging widely (SD = 12 points)”\nClinical interpretation: Understanding the range of individual patient outcomes\nAssessing biological variability: Showing how much individuals differ from each other\nSample characteristics: Describing what you actually observed in your study\n\n\n\n\n\nEstimating precision: “We can be confident our estimate is accurate (SE = 0.8)”\nStatistical inference: Calculating confidence intervals and p-values\nComparing studies: Evaluating how reliable different estimates are\nMeta-analyses: Weighing studies based on their precision"
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#common-mistakes-and-misconceptions",
+    "href": "posts/datah/papers/standard dev/index.html#common-mistakes-and-misconceptions",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Some researchers inappropriately report SE instead of SD because SE values are always smaller, making results appear more precise than they actually are. This is misleading because it doesn’t accurately represent the variability in the actual data.\n\n\n\nSE doesn’t tell you about the spread of individual observations. A small SE doesn’t mean your patients had similar outcomes—it means you estimated the average outcome precisely.\n\n\n\nUnlike SE, SD doesn’t necessarily get smaller with larger sample sizes. If you’re sampling from the same population, SD should remain relatively stable regardless of whether you have 50 or 500 participants."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#practical-examples-in-biomedical-research",
+    "href": "posts/datah/papers/standard dev/index.html#practical-examples-in-biomedical-research",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "SD perspective: “Individual patients showed varied responses to the drug, with some improving dramatically and others showing little change (SD = 8.5 points on the symptom scale)”\nSE perspective: “We can be confident that the average drug effect is between 12-16 points improvement (mean = 14, SE = 1.0)”\n\n\n\n\n\nSD perspective: “Normal glucose levels in healthy adults range widely due to individual biological differences (mean = 90 mg/dL, SD = 10 mg/dL)”\nSE perspective: “Our estimate of the population mean glucose level is quite precise (SE = 0.8 mg/dL based on 156 participants)”"
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#visual-understanding-error-bars-in-graphs",
+    "href": "posts/datah/papers/standard dev/index.html#visual-understanding-error-bars-in-graphs",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "When you see error bars in research papers: - SD error bars: Show the spread of individual data points - SE error bars: Show the precision of the mean estimate - 95% CI error bars: Show the range likely to contain the true population mean\nAlways check figure legends to understand which type of error bar is being used, as this dramatically affects interpretation."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#impact-on-statistical-testing",
+    "href": "posts/datah/papers/standard dev/index.html#impact-on-statistical-testing",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Understanding the SD vs SE distinction is crucial for proper statistical analysis:\n\nt-tests and confidence intervals: Use SE for calculations\nSample size planning: Consider both the expected SD (effect size) and desired SE (precision)\nPower analysis: Requires understanding of population SD to estimate SE for different sample sizes"
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#reporting-guidelines",
+    "href": "posts/datah/papers/standard dev/index.html#reporting-guidelines",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Professional medical journals typically require: - Descriptive statistics: Report means with SD to characterize your sample - Inferential statistics: Report means with SE or confidence intervals when making population inferences - Clear labeling: Always specify whether you’re reporting SD, SE, or CI"
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#key-takeaway",
+    "href": "posts/datah/papers/standard dev/index.html#key-takeaway",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Think of SD as describing “what you found” in your sample, while SE describes “how sure you can be” about what that finding means for the broader population. Both are essential, but for different purposes in the research process.\nRemember: Good statistical practice involves reporting the right measure for your intended message. Use SD to help readers understand your data, and SE to help them understand your conclusions."
   }
 ]

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-09-06">
 
-<title>High005 - Statistics tips</title>
+<title>High005 - Standard Deviation Vs Standard Error</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,112 +67,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
-<style>
-  body {
-    font-family: 'Inter', sans-serif; /* Modern, clean font */
-    background-color: #fff8e1; /* Soft yellow background */
-    color: #333; /* Dark gray text for readability */
-  }
-  .quarto-listing-item {
-    border: 2px solid #ffc1e3; /* Pink border for listing items */
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff; /* White background for contrast */
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .quarto-listing-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-  }
-  .quarto-title-banner {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-  }
-  a {
-    color: #ff4081; /* Pink links */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">High005</span>
     </a>
   </div>
@@ -184,27 +89,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials.html"> 
+    <a class="nav-link" href="../../../../tutorials.html"> 
 <span class="menu-text">Discover</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jobs.html"> 
+    <a class="nav-link" href="../../../../jobs.html"> 
 <span class="menu-text">Click to solve together</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tech.html"> 
+    <a class="nav-link" href="../../../../tech.html"> 
 <span class="menu-text">Fresh tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./science.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../science.html"> 
 <span class="menu-text">Analytics tips</span></a>
   </li>  
 </ul>
@@ -215,168 +120,164 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Standard Deviation Vs Standard Error</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 6, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Statistics tips</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="standard-deviation-vs-standard-error-the-final-match" class="level1">
+<h1>Standard Deviation vs Standard Error: The final match</h1>
+<p>Here we are with the big match between <strong>standard deviation (SD)</strong> and <strong>standard error (SE)</strong>.</p>
+<p>OK, let’s say it their names sound similar and both involve measuring variability, they serve fundamentally different purposes in statistical analysis. Understanding this difference is crucial for interpreting research findings correctly and avoiding common misinterpretations in biomedical literature.</p>
+<section id="what-is-standard-deviation-sd" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-standard-deviation-sd">What is Standard Deviation (SD)?</h2>
+<p><strong>Standard deviation measures the spread of individual observations around the mean within a single sample.</strong> It quantifies how much individual data points deviate from the average value in your dataset.</p>
+<section id="key-characteristics-of-sd" class="level3">
+<h3 class="anchored" data-anchor-id="key-characteristics-of-sd">Key Characteristics of SD:</h3>
+<ul>
+<li><strong>Describes the data itself</strong>: SD tells you about the natural variability present in your sample</li>
+<li><strong>Units</strong>: Expressed in the same units as your original measurements</li>
+<li><strong>Sample size independence</strong>: Generally remains stable regardless of sample size (assuming you’re sampling from the same population)</li>
+<li><strong>Population parameter</strong>: Estimates the true population standard deviation (σ)</li>
+</ul>
+</section>
+<section id="real-world-example" class="level3">
+<h3 class="anchored" data-anchor-id="real-world-example">Real-World Example:</h3>
+<p>Suppose you measure systolic blood pressure in 100 patients and find a mean of 130 mmHg with an SD of 15 mmHg. This tells you that most patients’ blood pressure readings fall within about 15 mmHg of the average—some patients might have readings around 115 mmHg, others around 145 mmHg. The SD describes this natural biological variation in blood pressure among individuals.</p>
+</section>
+</section>
+<section id="what-is-standard-error-se" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-standard-error-se">What is Standard Error (SE)?</h2>
+<p><strong>Standard error measures how precisely you’ve estimated a population parameter (like the mean) based on your sample.</strong> It quantifies how much your sample statistic would vary if you repeated the study multiple times with different samples from the same population.</p>
+<section id="key-characteristics-of-se" class="level3">
+<h3 class="anchored" data-anchor-id="key-characteristics-of-se">Key Characteristics of SE:</h3>
+<ul>
+<li><strong>Describes estimation precision</strong>: SE tells you about the reliability of your sample statistic</li>
+<li><strong>Units</strong>: Same as the original measurements, but conceptually different meaning</li>
+<li><strong>Sample size dependent</strong>: Gets smaller as sample size increases (SE = SD/√n)</li>
+<li><strong>Sampling distribution</strong>: Relates to the theoretical distribution of sample means</li>
+</ul>
+</section>
+<section id="real-world-example-1" class="level3">
+<h3 class="anchored" data-anchor-id="real-world-example-1">Real-World Example:</h3>
+<p>Using the same blood pressure study, if your SE is 1.5 mmHg, this means that if you repeated the study many times with different groups of 100 patients, about 68% of your sample means would fall within 1.5 mmHg of the true population mean. The smaller the SE, the more confident you can be that your sample mean is close to the true population mean.</p>
+</section>
+</section>
+<section id="the-mathematical-relationship" class="level2">
+<h2 class="anchored" data-anchor-id="the-mathematical-relationship">The Mathematical Relationship</h2>
+<p>While this guide focuses on conceptual understanding, the relationship between SD and SE is straightforward:</p>
+<p><strong>SE = SD ÷ √(sample size)</strong></p>
+<p>This formula reveals why SE decreases as sample size increases—you’re dividing by a larger number. However, SD typically remains relatively constant across different sample sizes from the same population.</p>
+</section>
+<section id="when-to-use-each-measure" class="level2">
+<h2 class="anchored" data-anchor-id="when-to-use-each-measure">When to Use Each Measure</h2>
+<section id="use-standard-deviation-when" class="level3">
+<h3 class="anchored" data-anchor-id="use-standard-deviation-when">Use Standard Deviation When:</h3>
+<ul>
+<li><strong>Describing your sample</strong>: “The patients had diverse responses, with individual scores ranging widely (SD = 12 points)”</li>
+<li><strong>Clinical interpretation</strong>: Understanding the range of individual patient outcomes</li>
+<li><strong>Assessing biological variability</strong>: Showing how much individuals differ from each other</li>
+<li><strong>Sample characteristics</strong>: Describing what you actually observed in your study</li>
+</ul>
+</section>
+<section id="use-standard-error-when" class="level3">
+<h3 class="anchored" data-anchor-id="use-standard-error-when">Use Standard Error When:</h3>
+<ul>
+<li><strong>Estimating precision</strong>: “We can be confident our estimate is accurate (SE = 0.8)”</li>
+<li><strong>Statistical inference</strong>: Calculating confidence intervals and p-values</li>
+<li><strong>Comparing studies</strong>: Evaluating how reliable different estimates are</li>
+<li><strong>Meta-analyses</strong>: Weighing studies based on their precision</li>
+</ul>
+</section>
+</section>
+<section id="common-mistakes-and-misconceptions" class="level2">
+<h2 class="anchored" data-anchor-id="common-mistakes-and-misconceptions">Common Mistakes and Misconceptions</h2>
+<section id="mistake-1-using-se-to-make-data-look-less-variable" class="level3">
+<h3 class="anchored" data-anchor-id="mistake-1-using-se-to-make-data-look-less-variable">Mistake 1: Using SE to Make Data Look Less Variable</h3>
+<p>Some researchers inappropriately report SE instead of SD because SE values are always smaller, making results appear more precise than they actually are. This is misleading because it doesn’t accurately represent the variability in the actual data.</p>
+</section>
+<section id="mistake-2-interpreting-se-as-data-spread" class="level3">
+<h3 class="anchored" data-anchor-id="mistake-2-interpreting-se-as-data-spread">Mistake 2: Interpreting SE as Data Spread</h3>
+<p>SE doesn’t tell you about the spread of individual observations. A small SE doesn’t mean your patients had similar outcomes—it means you estimated the average outcome precisely.</p>
+</section>
+<section id="mistake-3-expecting-sd-to-decrease-with-larger-samples" class="level3">
+<h3 class="anchored" data-anchor-id="mistake-3-expecting-sd-to-decrease-with-larger-samples">Mistake 3: Expecting SD to Decrease with Larger Samples</h3>
+<p>Unlike SE, SD doesn’t necessarily get smaller with larger sample sizes. If you’re sampling from the same population, SD should remain relatively stable regardless of whether you have 50 or 500 participants.</p>
+</section>
+</section>
+<section id="practical-examples-in-biomedical-research" class="level2">
+<h2 class="anchored" data-anchor-id="practical-examples-in-biomedical-research">Practical Examples in Biomedical Research</h2>
+<section id="example-1-drug-efficacy-study" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-drug-efficacy-study">Example 1: Drug Efficacy Study</h3>
+<ul>
+<li><strong>SD perspective</strong>: “Individual patients showed varied responses to the drug, with some improving dramatically and others showing little change (SD = 8.5 points on the symptom scale)”</li>
+<li><strong>SE perspective</strong>: “We can be confident that the average drug effect is between 12-16 points improvement (mean = 14, SE = 1.0)”</li>
+</ul>
+</section>
+<section id="example-2-laboratory-reference-values" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-laboratory-reference-values">Example 2: Laboratory Reference Values</h3>
+<ul>
+<li><strong>SD perspective</strong>: “Normal glucose levels in healthy adults range widely due to individual biological differences (mean = 90 mg/dL, SD = 10 mg/dL)”</li>
+<li><strong>SE perspective</strong>: “Our estimate of the population mean glucose level is quite precise (SE = 0.8 mg/dL based on 156 participants)”</li>
+</ul>
+</section>
+</section>
+<section id="visual-understanding-error-bars-in-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="visual-understanding-error-bars-in-graphs">Visual Understanding: Error Bars in Graphs</h2>
+<p>When you see error bars in research papers: - <strong>SD error bars</strong>: Show the spread of individual data points - <strong>SE error bars</strong>: Show the precision of the mean estimate - <strong>95% CI error bars</strong>: Show the range likely to contain the true population mean</p>
+<p>Always check figure legends to understand which type of error bar is being used, as this dramatically affects interpretation.</p>
+</section>
+<section id="impact-on-statistical-testing" class="level2">
+<h2 class="anchored" data-anchor-id="impact-on-statistical-testing">Impact on Statistical Testing</h2>
+<p>Understanding the SD vs SE distinction is crucial for proper statistical analysis:</p>
+<ul>
+<li><strong>t-tests and confidence intervals</strong>: Use SE for calculations</li>
+<li><strong>Sample size planning</strong>: Consider both the expected SD (effect size) and desired SE (precision)</li>
+<li><strong>Power analysis</strong>: Requires understanding of population SD to estimate SE for different sample sizes</li>
+</ul>
+</section>
+<section id="reporting-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="reporting-guidelines">Reporting Guidelines</h2>
+<p>Professional medical journals typically require: - <strong>Descriptive statistics</strong>: Report means with SD to characterize your sample - <strong>Inferential statistics</strong>: Report means with SE or confidence intervals when making population inferences - <strong>Clear labeling</strong>: Always specify whether you’re reporting SD, SE, or CI</p>
+</section>
+<section id="key-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaway">Key Takeaway</h2>
+<p>Think of SD as describing <strong>“what you found”</strong> in your sample, while SE describes <strong>“how sure you can be”</strong> about what that finding means for the broader population. Both are essential, but for different purposes in the research process.</p>
+<p>Remember: Good statistical practice involves reporting the right measure for your intended message. Use SD to help readers understand your data, and SE to help them understand your conclusions.</p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1757109600000" data-listing-file-modified-sort="1757143677858" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="964">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/standard dev/index.html" class="no-external"></a></p><a href="./posts/datah/papers/standard dev/index.html" class="no-external">
-<p><img src="./posts/datah/papers/standard dev/x11.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/standard dev/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/standard dev/index.html" class="no-external">Standard Deviation Vs Standard Error</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/standard dev/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/standard dev/index.html" class="no-external">Here we are with the big match between <strong>standard deviation (SD)</strong> and <strong>standard error (SE)</strong>.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/standard dev/index.html" class="no-external">
-<div class="listing-date">
-Sep 6, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1746568800000" data-listing-file-modified-sort="1746611800942" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="677">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/p_value/index.html" class="no-external"></a></p><a href="./posts/datah/papers/p_value/index.html" class="no-external">
-<p><img src="./posts/datah/papers/p_value/pvalue.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/p_value/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">Your P-value is much more than you think</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">
-<div class="listing-date">
-May 7, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/bias/index.html" class="no-external"></a></p><a href="./posts/datah/papers/bias/index.html" class="no-external">
-<p><img src="./posts/datah/papers/bias/img.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/bias/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">Bias in Healthcare studies</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/bias/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges…<br><br></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/survival/index.html" class="no-external"></a></p><a href="./posts/datah/papers/survival/index.html" class="no-external">
-<p><img src="./posts/datah/papers/survival/x1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/survival/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">Survival analysis</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/survival/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">
-<div class="listing-date">
-Jan 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1716415200000" data-listing-file-modified-sort="1737957194135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
-<div class="thumbnail">
-<p><a href="./posts/datah/papers/aspirin/index.html" class="no-external"></a></p><a href="./posts/datah/papers/aspirin/index.html" class="no-external">
-<p><img src="./posts/datah/papers/aspirin/cells.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/datah/papers/aspirin/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">Aspirin Vs Cancer</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
