@@ -6,7 +6,7 @@ about:
     image-width: 25em
     image-shape: round
     links:
-    - text: Scientific activity papers
+    - text: Scientific Activity
       url: https://orcid.org/0000-0002-4610-0950
     - icon: youtube
       text: Youtube news 

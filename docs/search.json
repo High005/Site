@@ -264,5 +264,26 @@
     "title": "Standard Deviation Vs Standard Error",
     "section": "",
     "text": "Think of SD as describing “what you found” in your sample, while SE describes “how sure you can be” about what that finding means for the broader population. Both are essential, but for different purposes in the research process.\nRemember: Good statistical practice involves reporting the right measure for your intended message. Use SD to help readers understand your data, and SE to help them understand your conclusions."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#what-is-standard-error",
+    "href": "posts/datah/papers/standard dev/index.html#what-is-standard-error",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Standard error measures how precisely you’ve estimated a population parameter (like the mean) based on your sample. It quantifies how much your sample statistic would vary if you repeated the study multiple times with different samples from the same population.\n\n\n\nDescribes estimation precision: SE tells you about the reliability of your sample statistic\nUnits: Same as the original measurements, but conceptually different meaning\nSample size dependent: Gets smaller as sample size increases (SE = SD/√n)\nSampling distribution: Relates to the theoretical distribution of sample means\n\n\n\n\nUsing the same blood pressure study, if your SE is 1.5 mmHg, this means that if you repeated the study many times with different groups of 100 patients, about 68% of your sample means would fall within 1.5 mmHg of the true population mean. The smaller the SE, the more confident you can be that your sample mean is close to the true population mean."
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#when-to-shine-with-each-measure",
+    "href": "posts/datah/papers/standard dev/index.html#when-to-shine-with-each-measure",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Describing your sample: “The patients had diverse responses, with individual scores ranging widely (SD = 12 points)”\nClinical interpretation: Understanding the range of individual patient outcomes\nAssessing biological variability: Showing how much individuals differ from each other\nSample characteristics: Describing what you actually observed in your study\n\n\n\n\n\nEstimating precision: “We can be confident our estimate is accurate (SE = 0.8)”\nStatistical inference: Calculating confidence intervals and p-values\nComparing studies: Evaluating how reliable different estimates are\nMeta-analyses: Weighing studies based on their precision"
+  },
+  {
+    "objectID": "posts/datah/papers/standard dev/index.html#fancy-takeaway",
+    "href": "posts/datah/papers/standard dev/index.html#fancy-takeaway",
+    "title": "Standard Deviation Vs Standard Error",
+    "section": "",
+    "text": "Think of SD as describing “what you found” in your sample, while SE describes “how sure you can be” about what that finding means for the broader population. Both are essential, but for different purposes in the research process.\nRemember: Good statistical practice involves reporting the right measure for your intended message. Use SD to help readers understand your data, and SE to help them understand your conclusions."
   }
 ]

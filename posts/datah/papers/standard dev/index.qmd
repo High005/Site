@@ -20,7 +20,7 @@ OK, let's say it their names sound similar and both involve measuring variabilit
 
 **Standard deviation measures the spread of individual observations around the mean within a single sample.** It quantifies how much individual data points deviate from the average value in your dataset.
 
-### Key Characteristics of SD:
+### Fancy Characteristics of SD:
 - **Describes the data itself**: SD tells you about the natural variability present in your sample
 - **Units**: Expressed in the same units as your original measurements
 - **Sample size independence**: Generally remains stable regardless of sample size (assuming you're sampling from the same population)
@@ -29,11 +29,11 @@ OK, let's say it their names sound similar and both involve measuring variabilit
 ### Real-World Example:
 Suppose you measure systolic blood pressure in 100 patients and find a mean of 130 mmHg with an SD of 15 mmHg. This tells you that most patients' blood pressure readings fall within about 15 mmHg of the average—some patients might have readings around 115 mmHg, others around 145 mmHg. The SD describes this natural biological variation in blood pressure among individuals.
 
-## What is Standard Error (SE)?
+## What is Standard Error ?
 
 **Standard error measures how precisely you've estimated a population parameter (like the mean) based on your sample.** It quantifies how much your sample statistic would vary if you repeated the study multiple times with different samples from the same population.
 
-### Key Characteristics of SE:
+### Fancy Characteristics of Standard Error:
 - **Describes estimation precision**: SE tells you about the reliability of your sample statistic
 - **Units**: Same as the original measurements, but conceptually different meaning
 - **Sample size dependent**: Gets smaller as sample size increases (SE = SD/√n)
@@ -50,7 +50,7 @@ While this guide focuses on conceptual understanding, the relationship between S
 
 This formula reveals why SE decreases as sample size increases—you're dividing by a larger number. However, SD typically remains relatively constant across different sample sizes from the same population.
 
-## When to Use Each Measure
+## When to Shine with Each Measure
 
 ### Use Standard Deviation When:
 - **Describing your sample**: "The patients had diverse responses, with individual scores ranging widely (SD = 12 points)"
@@ -66,13 +66,13 @@ This formula reveals why SE decreases as sample size increases—you're dividing
 
 ## Common Mistakes and Misconceptions
 
-### Mistake 1: Using SE to Make Data Look Less Variable
+### Oppalà 1: Using SE to Make Data Look Less Variable
 Some researchers inappropriately report SE instead of SD because SE values are always smaller, making results appear more precise than they actually are. This is misleading because it doesn't accurately represent the variability in the actual data.
 
-### Mistake 2: Interpreting SE as Data Spread
+### Oppalà 2: Interpreting SE as Data Spread
 SE doesn't tell you about the spread of individual observations. A small SE doesn't mean your patients had similar outcomes—it means you estimated the average outcome precisely.
 
-### Mistake 3: Expecting SD to Decrease with Larger Samples
+### Oppalà 3: Expecting SD to Decrease with Larger Samples
 Unlike SE, SD doesn't necessarily get smaller with larger sample sizes. If you're sampling from the same population, SD should remain relatively stable regardless of whether you have 50 or 500 participants.
 
 ## Practical Examples in Biomedical Research
@@ -109,7 +109,7 @@ Professional medical journals typically require:
 - **Inferential statistics**: Report means with SE or confidence intervals when making population inferences
 - **Clear labeling**: Always specify whether you're reporting SD, SE, or CI
 
-## Key Takeaway
+## Fancy Takeaway
 
 Think of SD as describing **"what you found"** in your sample, while SE describes **"how sure you can be"** about what that finding means for the broader population. Both are essential, but for different purposes in the research process.
 
