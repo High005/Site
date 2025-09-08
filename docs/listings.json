@@ -2,10 +2,10 @@
   {
     "listing": "/science.html",
     "items": [
+      "/posts/datah/papers/regression_result/index.html",
       "/posts/datah/papers/standard dev/index.html",
       "/posts/datah/papers/p_value/index.html",
       "/posts/datah/papers/bias/index.html",
-      "/posts/datah/papers/regression_result/index.html",
       "/posts/datah/papers/survival/index.html",
       "/posts/datah/papers/aspirin/index.html"
     ]
@@ -14,13 +14,13 @@
     "listing": "/index.html",
     "items": [
       "/posts/datah/index.html",
+      "/posts/datah/papers/regression_result/index.html",
       "/posts/datah/papers/standard dev/index.html",
       "/posts/datah/papers/p_value/index.html",
       "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/ai_pharma/index.html",
       "/posts/datah/medical_datactor/nano_robots/index.html",
       "/posts/datah/papers/bias/index.html",
-      "/posts/datah/papers/regression_result/index.html",
       "/posts/datah/papers/survival/index.html",
       "/posts/datah/medical_datactor/longevity/index.html",
       "/posts/datah/medical_datactor/tech_challenge/index.html",

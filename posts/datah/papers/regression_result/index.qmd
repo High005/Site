@@ -1,6 +1,6 @@
 ---
-title: "Show your results in an easy way"
-date: "2025-01-25"
+title: "Simplest Way to Present Your Statistical Results"
+date: "2025-09-08"
 categories:
 image: "xx22.jpg"
 draft: false
