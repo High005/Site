@@ -14,6 +14,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/datah/index.html",
+      "/posts/datah/medical_datactor/deepseek/index.html",
       "/posts/datah/papers/regression_result/index.html",
       "/posts/datah/papers/standard dev/index.html",
       "/posts/datah/papers/p_value/index.html",
@@ -32,6 +33,7 @@
   {
     "listing": "/posts/datah/index.html",
     "items": [
+      "/posts/datah/medical_datactor/deepseek/index.html",
       "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/ai_pharma/index.html",
       "/posts/datah/medical_datactor/nano_robots/index.html",
@@ -44,6 +46,7 @@
   {
     "listing": "/tech.html",
     "items": [
+      "/posts/datah/medical_datactor/deepseek/index.html",
       "/posts/datah/medical_datactor/ai_onco/index.html",
       "/posts/datah/medical_datactor/ai_pharma/index.html",
       "/posts/datah/medical_datactor/nano_robots/index.html",
