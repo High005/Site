@@ -17,3 +17,7 @@ website:
         href: tech.qmd
       - text: "Analytics tips"
         href: science.qmd
+format:
+  html:
+    theme: cosmo
+    css: styles.css

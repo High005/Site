@@ -1,1 +1,85 @@
-/* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*-Global Styles-*/
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*-Navbar-*/
+.navbar {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007aff;
+}
+
+/*-Homepage-*/
+.quarto-title-banner {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2e 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.quarto-listing-item {
+  background-color: #2c2c2e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quarto-listing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
+}
+
+/*-Blog Posts-*/
+.quarto-body h1, .quarto-body h2, .quarto-body h3 {
+  color: #ffffff;
+}
+
+.quarto-body p {
+  line-height: 1.6;
+}
+
+/*-About Page-*/
+.about-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+.about-page p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
