@@ -9,17 +9,29 @@ If it is clinical data, statistics, or evidence for your product, it has almost
 certainly come up before. The fastest way to start is a short message
 describing what you are building and where you are stuck.
 
+<<<<<<< HEAD
 ::: {.grid-3 style="margin: 2rem 0;"}
 ::: {.card-lite}
 [✉️]{.card-icon}
 
 ### Email us
+=======
+- Diecimilauno S.P.A. (Treviso, IT) [July 2024 - ongoing]
+>>>>>>> 3449e6b5f24ecb9a971578e3931dbc975003a9bb
 
 A few lines about your product, your data, or your question is enough to get
 going.
 
+<<<<<<< HEAD
 [bisturiep005@gmail.com](mailto:bisturiep005@gmail.com){.btn-primary-cta}
 :::
+=======
+- Broken Pot, Energy startup (Padua, IT) [2025 - Accomplished]
+
+- Medicilio, telemedicine startup (Milano, IT) [2025 - Accomplished]
+
+- Stealth deeptech startup (Verona, IT) [2024 - Accomplished]
+>>>>>>> 3449e6b5f24ecb9a971578e3931dbc975003a9bb
 
 ::: {.card-lite}
 [▶️]{.card-icon}

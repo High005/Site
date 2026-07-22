@@ -46,7 +46,11 @@
     "href": "posts/datah/papers/standard dev/index.html#when-to-shine-with-each-measure",
     "title": "Standard Deviation Vs Standard Error",
     "section": "",
+<<<<<<< HEAD
     "text": "Describing your sample: “The patients had diverse responses, with individual scores ranging widely (SD = 12 points)”\nClinical interpretation: Understanding the range of individual patient outcomes\nAssessing biological variability: Showing how much individuals differ from each other\nSample characteristics: Describing what you actually observed in your study\n\n\n\n\n\nEstimating precision: “We can be confident our estimate is accurate (SE = 0.8)”\nStatistical inference: Calculating confidence intervals and p-values\nComparing studies: Evaluating how reliable different estimates are\nMeta-analyses: Weighing studies based on their precision"
+=======
+    "text": "Affiliations and ongoing projects:\n\nWith you [today - future]\nDiecimilauno S.P.A. (Treviso, IT) [July 2024 - ongoing]\nPadua University with the department of: Cardiology - internal Medicine - Surgery - Oncology (Padua, IT) [2021 - ongoing]\nBroken Pot, Energy startup (Padua, IT) [2025 - Accomplished]\nMedicilio, telemedicine startup (Milano, IT) [2025 - Accomplished]\nStealth deeptech startup (Verona, IT) [2024 - Accomplished]\nASST Ospedale Papa Giovanni XXIII di Bergamo [2024 - Accomplished]\nMainz University (Mainz, DE) [2024 - Accomplished]\n\nemail : bisturiep005@gmail.com"
+>>>>>>> 3449e6b5f24ecb9a971578e3931dbc975003a9bb
   },
   {
     "objectID": "posts/datah/papers/standard dev/index.html#common-mistakes-and-misconceptions",
