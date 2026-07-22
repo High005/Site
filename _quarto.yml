@@ -1,12 +1,14 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - .nojekyll
 
 website:
   title: "High 0.05"
-  description: "Biostatistics and clinical data for health-tech. We turn health data into evidence you can build a business on."
+  description: "Biostatistics and clinical data for health-tech. Turning health data into evidence you can build a business on."
   favicon: images/logo.png
-  site-url: https://high005.com
+  site-url: https://high005.github.io/Site
   open-graph: true
   twitter-card: true
   navbar:

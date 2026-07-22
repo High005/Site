@@ -1,1 +1,1 @@
-Sitemap: https://high005.com/sitemap.xml
+Sitemap: https://high005.github.io/Site/sitemap.xml
