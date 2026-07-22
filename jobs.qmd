@@ -1,58 +1,21 @@
 ---
-title: "Work with us"
+title: "Contact"
 description: "Tell us what you are dealing with: data capture, statistics, or clinical evidence for your product."
 ---
 
 ## Tell us what you are stuck on
 
 If it is clinical data, statistics, or evidence for your product, it has almost
-certainly come up before. The fastest way to start is a short message
-describing what you are building and where you are stuck.
+certainly come up before. The fastest way to start is a short message about
+what you are building and where you are stuck.
 
-<<<<<<< HEAD
-::: {.grid-3 style="margin: 2rem 0;"}
-::: {.card-lite}
-[✉️]{.card-icon}
-
-### Email us
-=======
-- Diecimilauno S.P.A. (Treviso, IT) [July 2024 - ongoing]
->>>>>>> 3449e6b5f24ecb9a971578e3931dbc975003a9bb
-
-A few lines about your product, your data, or your question is enough to get
-going.
-
-<<<<<<< HEAD
 [bisturiep005@gmail.com](mailto:bisturiep005@gmail.com){.btn-primary-cta}
-:::
-=======
-- Broken Pot, Energy startup (Padua, IT) [2025 - Accomplished]
 
-- Medicilio, telemedicine startup (Milano, IT) [2025 - Accomplished]
+## Ways to reach us
 
-- Stealth deeptech startup (Verona, IT) [2024 - Accomplished]
->>>>>>> 3449e6b5f24ecb9a971578e3931dbc975003a9bb
-
-::: {.card-lite}
-[▶️]{.card-icon}
-
-### See the work
-
-Practical guides and worked examples that show the approach before any call.
-
-[YouTube channel](https://www.youtube.com/@High_005)
-:::
-
-::: {.card-lite}
-[🔗]{.card-icon}
-
-### Check the track record
-
-Publicly verifiable work and collaborations.
-
-[ORCID profile](https://orcid.org/0000-0002-4610-0950)
-:::
-:::
+- **Email:** [bisturiep005@gmail.com](mailto:bisturiep005@gmail.com)
+- **YouTube:** practical guides and worked examples at [High 005](https://www.youtube.com/@High_005)
+- **ORCID:** publicly verifiable work at [orcid.org/0000-0002-4610-0950](https://orcid.org/0000-0002-4610-0950)
 
 ## Who it's for
 
@@ -61,7 +24,12 @@ Publicly verifiable work and collaborations.
 - Hospitals and clinical teams
 - Research groups
 
-Recent and ongoing engagements include Diecimilauno S.p.A. (Treviso),
-telemedicine and energy startups in Milan and Padua, a deeptech startup in
-Verona, clinical departments at the University of Padua, ASST Ospedale Papa
-Giovanni XXIII in Bergamo, and Mainz University.
+## Selected engagements
+
+- Diecimilauno S.p.A. (Treviso, IT), July 2024 to ongoing
+- University of Padua: Cardiology, Internal Medicine, Surgery, Oncology (Padua, IT), 2021 to ongoing
+- Broken Pot, energy startup (Padua, IT), 2025
+- Medicilio, telemedicine startup (Milan, IT), 2025
+- Stealth deeptech startup (Verona, IT), 2024
+- ASST Ospedale Papa Giovanni XXIII (Bergamo, IT), 2024
+- Mainz University (Mainz, DE), 2024

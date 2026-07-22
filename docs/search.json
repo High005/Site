@@ -46,11 +46,7 @@
     "href": "posts/datah/papers/standard dev/index.html#when-to-shine-with-each-measure",
     "title": "Standard Deviation Vs Standard Error",
     "section": "",
-<<<<<<< HEAD
     "text": "Describing your sample: “The patients had diverse responses, with individual scores ranging widely (SD = 12 points)”\nClinical interpretation: Understanding the range of individual patient outcomes\nAssessing biological variability: Showing how much individuals differ from each other\nSample characteristics: Describing what you actually observed in your study\n\n\n\n\n\nEstimating precision: “We can be confident our estimate is accurate (SE = 0.8)”\nStatistical inference: Calculating confidence intervals and p-values\nComparing studies: Evaluating how reliable different estimates are\nMeta-analyses: Weighing studies based on their precision"
-=======
-    "text": "Affiliations and ongoing projects:\n\nWith you [today - future]\nDiecimilauno S.P.A. (Treviso, IT) [July 2024 - ongoing]\nPadua University with the department of: Cardiology - internal Medicine - Surgery - Oncology (Padua, IT) [2021 - ongoing]\nBroken Pot, Energy startup (Padua, IT) [2025 - Accomplished]\nMedicilio, telemedicine startup (Milano, IT) [2025 - Accomplished]\nStealth deeptech startup (Verona, IT) [2024 - Accomplished]\nASST Ospedale Papa Giovanni XXIII di Bergamo [2024 - Accomplished]\nMainz University (Mainz, DE) [2024 - Accomplished]\n\nemail : bisturiep005@gmail.com"
->>>>>>> 3449e6b5f24ecb9a971578e3931dbc975003a9bb
   },
   {
     "objectID": "posts/datah/papers/standard dev/index.html#common-mistakes-and-misconceptions",
@@ -230,23 +226,37 @@
   {
     "objectID": "jobs.html",
     "href": "jobs.html",
-    "title": "Work with us",
+    "title": "Contact",
     "section": "",
-    "text": "If it is clinical data, statistics, or evidence for your product, it has almost certainly come up before. The fastest way to start is a short message describing what you are building and where you are stuck.\n\n\n✉️\n\n\nA few lines about your product, your data, or your question is enough to get going.\nbisturiep005@gmail.com\n\n\n\n▶️\n\n\nPractical guides and worked examples that show the approach before any call.\nYouTube channel\n\n\n\n🔗\n\n\nPublicly verifiable work and collaborations.\nORCID profile"
+    "text": "If it is clinical data, statistics, or evidence for your product, it has almost certainly come up before. The fastest way to start is a short message about what you are building and where you are stuck.\nbisturiep005@gmail.com"
   },
   {
     "objectID": "jobs.html#tell-us-what-you-are-stuck-on",
     "href": "jobs.html#tell-us-what-you-are-stuck-on",
-    "title": "Work with us",
+    "title": "Contact",
     "section": "",
-    "text": "If it is clinical data, statistics, or evidence for your product, it has almost certainly come up before. The fastest way to start is a short message describing what you are building and where you are stuck.\n\n\n✉️\n\n\nA few lines about your product, your data, or your question is enough to get going.\nbisturiep005@gmail.com\n\n\n\n▶️\n\n\nPractical guides and worked examples that show the approach before any call.\nYouTube channel\n\n\n\n🔗\n\n\nPublicly verifiable work and collaborations.\nORCID profile"
+    "text": "If it is clinical data, statistics, or evidence for your product, it has almost certainly come up before. The fastest way to start is a short message about what you are building and where you are stuck.\nbisturiep005@gmail.com"
+  },
+  {
+    "objectID": "jobs.html#ways-to-reach-us",
+    "href": "jobs.html#ways-to-reach-us",
+    "title": "Contact",
+    "section": "Ways to reach us",
+    "text": "Ways to reach us\n\nEmail: bisturiep005@gmail.com\nYouTube: practical guides and worked examples at High 005\nORCID: publicly verifiable work at orcid.org/0000-0002-4610-0950"
   },
   {
     "objectID": "jobs.html#who-its-for",
     "href": "jobs.html#who-its-for",
-    "title": "Work with us",
+    "title": "Contact",
     "section": "Who it’s for",
-    "text": "Who it’s for\n\nHealth-tech and digital-health startups\nMedtech and life-science companies\nHospitals and clinical teams\nResearch groups\n\nRecent and ongoing engagements include Diecimilauno S.p.A. (Treviso), telemedicine and energy startups in Milan and Padua, a deeptech startup in Verona, clinical departments at the University of Padua, ASST Ospedale Papa Giovanni XXIII in Bergamo, and Mainz University."
+    "text": "Who it’s for\n\nHealth-tech and digital-health startups\nMedtech and life-science companies\nHospitals and clinical teams\nResearch groups"
+  },
+  {
+    "objectID": "jobs.html#selected-engagements",
+    "href": "jobs.html#selected-engagements",
+    "title": "Contact",
+    "section": "Selected engagements",
+    "text": "Selected engagements\n\nDiecimilauno S.p.A. (Treviso, IT), July 2024 to ongoing\nUniversity of Padua: Cardiology, Internal Medicine, Surgery, Oncology (Padua, IT), 2021 to ongoing\nBroken Pot, energy startup (Padua, IT), 2025\nMedicilio, telemedicine startup (Milan, IT), 2025\nStealth deeptech startup (Verona, IT), 2024\nASST Ospedale Papa Giovanni XXIII (Bergamo, IT), 2024\nMainz University (Mainz, DE), 2024"
   },
   {
     "objectID": "Chicche.html",
