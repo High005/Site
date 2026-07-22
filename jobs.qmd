@@ -1,62 +1,55 @@
 ---
-title: "Let's keep in touch to find solutions"
-format:
-  html:
-    include-in-header: 
-      - text: |
-          <!-- Include TypeIt for text animations -->
-          <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-          <!-- Custom CSS for Yellow and Pink Theme -->
-          <style>
-            body {
-              font-family: 'Inter', sans-serif; /* Modern, clean font */
-              background-color: #fff8e1; /* Soft yellow background */
-              color: #333; /* Dark gray text for readability */
-            }
-            .quarto-listing-item {
-              border: 2px solid #ffc1e3; /* Pink border for listing items */
-              padding: 10px;
-              border-radius: 8px;
-              background: #fff; /* White background for contrast */
-              transition: transform 0.3s, box-shadow 0.3s;
-            }
-            .quarto-listing-item:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-            }
-            .quarto-title-banner {
-              text-align: center;
-              padding: 50px 20px;
-              background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-              color: white;
-              font-size: 2.5em;
-              text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-            }
-            a {
-              color: #ff4081; /* Pink links */
-              text-decoration: none;
-            }
-            a:hover {
-              text-decoration: underline;
-            }
-          </style>
+title: "Work with us"
+description: "Tell us what you are dealing with: data capture, statistics, or clinical evidence for your product."
 ---
 
-Affiliations and ongoing projects:
+## Tell us what you are stuck on
 
-- With you [today - future]
+If it is clinical data, statistics, or evidence for your product, it has almost
+certainly come up before. The fastest way to start is a short message
+describing what you are building and where you are stuck.
 
-- Data Scientist and programmer for Diecimilauno S.P.A. (Treviso, IT) [July 2024 - ongoing]
+::: {.grid-3 style="margin: 2rem 0;"}
+::: {.card-lite}
+[✉️]{.card-icon}
 
-- Stealth deeptech Med-Tech startup (Milano, IT) [2025 - ongoing]
+### Email us
 
-- Padua University with the department of: Cardiology - internal Medicine - Surgery - Oncology (Padua, IT) [2021 - ongoing]
+A few lines about your product, your data, or your question is enough to get
+going.
 
-- Stealth deeptech startup (Verona, IT) [2024 - Accomplished]
+[bisturiep005@gmail.com](mailto:bisturiep005@gmail.com){.btn-primary-cta}
+:::
 
-- ASST Ospedale Papa Giovanni XXIII di Bergamo [2024 - Accomplished]
+::: {.card-lite}
+[▶️]{.card-icon}
 
-- Mainz University (Mainz, DE) [2024 - Accomplished]
+### See the work
 
+Practical guides and worked examples that show the approach before any call.
 
-email : bisturiep005@gmail.com
+[YouTube channel](https://www.youtube.com/@High_005)
+:::
+
+::: {.card-lite}
+[🔗]{.card-icon}
+
+### Check the track record
+
+Publicly verifiable work and collaborations.
+
+[ORCID profile](https://orcid.org/0000-0002-4610-0950)
+:::
+:::
+
+## Who it's for
+
+- Health-tech and digital-health startups
+- Medtech and life-science companies
+- Hospitals and clinical teams
+- Research groups
+
+Recent and ongoing engagements include Diecimilauno S.p.A. (Treviso),
+telemedicine and energy startups in Milan and Padua, a deeptech startup in
+Verona, clinical departments at the University of Padua, ASST Ospedale Papa
+Giovanni XXIII in Bergamo, and Mainz University.

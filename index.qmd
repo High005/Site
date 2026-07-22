@@ -1,85 +1,149 @@
 ---
-title: "High 005"
-image: images/logo.png
-about:
-    template: trestles
-    image-width: 25em
-    image-shape: round
-    links:
-    - text: Scientific Activity
-      url: https://orcid.org/0000-0002-4610-0950
-    - icon: youtube
-      text: Youtube news 
-      url: https://www.youtube.com/@High_005
+pagetitle: "High 0.05 | prove your health product works"
+description: "High 0.05 turns clinical data into evidence that regulators, buyers and investors accept: captured cleanly, analysed honestly, presented clearly."
+page-layout: full
+toc: false
+title-block-banner: false
 listing:
-  contents: posts
-  sort: "date desc"
-  type: grid # Enhanced grid layout
-  max-items: 6 # Display more items
-  categories: false 
-  feed: true
-  image-height: 200px # Uniform thumbnail size      
-format:
-  html:
-    include-in-header: 
-      - text: |
-          <!-- Include TypeIt for text animations -->
-          <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-          <!-- Custom CSS for Yellow and Pink Theme -->
-          <style>
-            body {
-              font-family: 'Inter', sans-serif; /* Modern, clean font */
-              background-color: #fff8e1; /* Soft yellow background */
-              color: #333; /* Dark gray text for readability */
-            }
-            .quarto-listing-item {
-              border: 2px solid #ffc1e3; /* Pink border for listing items */
-              padding: 10px;
-              border-radius: 8px;
-              background: #fff; /* White background for contrast */
-              transition: transform 0.3s, box-shadow 0.3s;
-            }
-            .quarto-listing-item:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-            }
-            .quarto-title-banner {
-              text-align: center;
-              padding: 50px 20px;
-              background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-              color: white;
-              font-size: 2.5em;
-              text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-            }
-            a {
-              color: #ff4081; /* Pink links */
-              text-decoration: none;
-            }
-            a:hover {
-              text-decoration: underline;
-            }
-          </style>
+  - id: listing-home
+    contents:
+      - "posts/datah/papers"
+      - "posts/datah/medical_datactor"
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    image-height: 180px
+    categories: false
+    feed: true
 ---
 
-<div id="animated-title" style="text-align: center; padding: 20px 0;"></div>
+::: {.hero}
+::: {.hero-inner}
+[Clinical evidence &amp; biostatistics · a CUAMM spin-off]{.eyebrow}
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    new TypeIt("#animated-title", {
-      strings: ["The page of healthcare news and challenges for the next years. Curiosities and questions are the beginning of new journey, let's embrace together!", "Read. Enjoy. Share opinion with us"],
-      speed: 50,
-      breakLines: false,
-      loop: true,
-    }).go();
-  });
-</script>
+# Prove your health product [works]{.u}.
+
+::: {.lede}
+High 0.05 turns clinical data into evidence that regulators, buyers and
+investors accept. Captured cleanly, analysed honestly, and presented so anyone
+in the room can read it.
+:::
+
+::: {.hero-actions}
+[Get in touch](jobs.qmd){.btn-primary-cta}
+[See how it works](#how){.btn-secondary-cta}
+:::
+:::
+:::
 
 
-::: column-page
-::: {style="font-size: 2em; face: bold; color: #343a40;"}
-Click to go deeper on your curiosity
+::: {.section .section-alt}
+::: {.section-head}
+## From raw data to proof, in three steps {#how}
+
+Each step is where teams get stuck. Here is what the fix looks like.
+:::
+:::
+
+```{=html}
+<div class="section" style="padding-top:0; padding-bottom:4.5rem;">
+<div class="pipeline">
+
+  <div class="stage">
+    <div class="stage-num">01 · Capture</div>
+    <h3>Data that lands clean</h3>
+    <p>Validation and automatic calculations built into data capture, so errors are caught at entry, not months later.</p>
+    <div class="demo demo-capture">
+      <div class="dc-row">
+        <span class="dc-label">Systolic BP</span>
+        <span class="dc-val">
+          <span class="v v-bad">320 <span class="dc-chip bad">out of range</span></span>
+          <span class="v v-good">128 <span class="dc-chip good">valid</span></span>
+        </span>
+      </div>
+      <div class="dc-row"><span class="dc-label">Weight</span><span class="dc-val">72 kg</span></div>
+      <div class="dc-row"><span class="dc-label">eGFR (auto)</span><span class="dc-val"><span class="dc-auto">74 mL/min</span></span></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stage-num">02 · Analyse</div>
+    <h3>Analysis that holds up</h3>
+    <p>Study design, survival, regression and effect sizes, run properly and read in context, not just "p &lt; 0.05".</p>
+    <div class="demo demo-chart">
+      <svg viewBox="0 0 360 160" role="img" aria-label="Two outcome curves compared over time">
+        <line class="axis" x1="20" y1="10" x2="20" y2="138"></line>
+        <line class="axis" x1="20" y1="138" x2="346" y2="138"></line>
+        <polyline class="line2" points="20,24 72,34 122,48 182,66 242,88 302,104 346,112"></polyline>
+        <polyline class="line1" points="20,26 72,44 122,64 182,92 242,112 302,126 346,132"></polyline>
+      </svg>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stage-num">03 · Prove</div>
+    <h3>Results anyone can read</h3>
+    <p>Raw model output turned into a clear table a board or a regulator understands in seconds.</p>
+    <div class="demo demo-prove">
+      <div class="layer raw">
+<pre>Coefficients:
+             Estimate Std.Err     p
+(Intercept)    0.5405  4.2458  0.90
+Exposure       0.0177  0.0028  0.00036
+Age            0.1500  0.0306  0.00001</pre>
+      </div>
+      <div class="layer tbl">
+        <table class="pv-table">
+          <thead><tr><th>Characteristic</th><th>Effect</th><th>95% CI</th><th>p</th></tr></thead>
+          <tbody>
+            <tr><td>Exposure</td><td>0.02</td><td>0.01, 0.02</td><td>&lt;0.001</td></tr>
+            <tr><td>Age</td><td>0.15</td><td>0.09, 0.21</td><td>&lt;0.001</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+```
+
+
+::: {.section}
+::: {.trust}
+Trusted with clinical data and analysis by <b>health-tech companies, hospitals
+and research teams across Europe.</b>
 :::
 :::
 
 
+::: {.section .tight}
+::: {.trust}
+High 0.05 is a spin-off of <b>Medici con l'Africa CUAMM</b>, which has run health
+programs across sub-Saharan Africa since 1950. That is where the standard comes
+from: decisions backed by evidence, not opinion.
+:::
+:::
 
+
+::: {.section .section-alt}
+::: {.section-head}
+## Insights
+
+Short, practical notes on statistics, data and health tech.
+:::
+
+::: {#listing-home}
+:::
+:::
+
+
+::: {.section}
+::: {.cta-final}
+## Have a product you need to prove?
+Tell us what you are building and where the evidence gap is. If it involves
+data, statistics or clinical validation, it has almost certainly come up before.
+
+[Get in touch](jobs.qmd){.btn-primary-cta}
+:::
+:::

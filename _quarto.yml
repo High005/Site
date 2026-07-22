@@ -1,19 +1,49 @@
 project:
   type: website
   output-dir: docs
+
 website:
-  title: "High005"
+  title: "High 0.05"
+  description: "Biostatistics and clinical data for health-tech. We turn health data into evidence you can build a business on."
+  favicon: images/logo.png
+  site-url: https://high005.com
+  open-graph: true
+  twitter-card: true
   navbar:
+    logo: images/logo.png
+    title: false
+    background: light
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Discover"
+      - text: "Data guides"
         href: tutorials.qmd
-      - text: "Click to solve together"
-        href: jobs.qmd
+      - text: "Stats, explained"
+        href: science.qmd
+      - text: "Health-tech radar"
+        href: tech.qmd
       - text: "About"
         href: about.qmd
-      - text: "Fresh tech"
-        href: tech.qmd
-      - text: "Analytics tips"
-        href: science.qmd
+    right:
+      - text: "Contact"
+        href: jobs.qmd
+  page-footer:
+    left: "High 0.05. A spin-off of Medici con l'Africa CUAMM."
+    right:
+      - icon: youtube
+        href: https://www.youtube.com/@High_005
+      - text: "ORCID"
+        href: https://orcid.org/0000-0002-4610-0950
+      - icon: envelope
+        href: "mailto:bisturiep005@gmail.com"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    grid:
+      body-width: 900px

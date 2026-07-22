@@ -1,0 +1,235 @@
+/*-- scss:defaults --*/
+
+// ==========================================================================
+// High 0.05 — minimal corporate theme
+// White canvas, near-black text, a single restrained accent, lots of
+// whitespace, clean sans-serif. Serious enough for senior industry leaders.
+// ==========================================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+
+$ink:        #16181d;   // near-black text
+$ink-soft:   #3a3e46;
+$muted:      #61666f;   // secondary text
+$accent:     #b23a30;   // restrained CUAMM red, used sparingly
+$accent-deep:#8f2c24;
+$line:       #e6e8ec;   // hairline borders
+$surface:    #f7f8fa;   // light grey section background
+$surface-2:  #eef0f3;
+
+$body-color:        $ink;
+$body-bg:           #ffffff;
+$primary:           $accent;
+$link-color:        $accent;
+$link-hover-color:  $accent-deep;
+$headings-font-weight: 700;
+$border-radius:     8px;
+
+$navbar-bg:  #ffffff;
+$navbar-fg:  $ink;
+$navbar-hl:  $accent;
+
+/*-- scss:rules --*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+}
+
+html, body { overflow-x: hidden; max-width: 100%; }
+img, svg, video, iframe { max-width: 100%; }
+#quarto-content, main.content, .page-columns,
+.page-columns > *, .quarto-listing, .list { min-width: 0; }
+
+h1, h2, h3, h4 { letter-spacing: -0.025em; color: $ink; }
+
+// ---- Navbar --------------------------------------------------------------
+.navbar {
+  border-bottom: 1px solid $line;
+  box-shadow: none;
+  padding-top: 0.35rem; padding-bottom: 0.35rem;
+}
+.navbar .nav-link { font-weight: 500; font-size: 0.95rem; color: $ink-soft; }
+.navbar .nav-link:hover { color: $ink; }
+.navbar-brand-logo, .navbar .navbar-logo { max-height: 34px; width: auto; }
+
+.navbar-nav.ms-auto .nav-item .nav-link {
+  background: $accent;
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 0.4rem 1rem !important;
+  font-weight: 600;
+  transition: background 0.15s ease;
+  &:hover { background: $accent-deep; }
+}
+
+// ---- Links ---------------------------------------------------------------
+a { text-decoration: none; &:hover { text-decoration: underline; } }
+
+// ---- Buttons -------------------------------------------------------------
+.btn-primary-cta, .btn-secondary-cta {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.98rem;
+  padding: 0.7rem 1.35rem;
+  border-radius: 6px;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+}
+.btn-primary-cta {
+  background: $accent; color: #fff !important; border: 1px solid $accent;
+  &:hover { background: $accent-deep; border-color: $accent-deep; text-decoration: none; }
+}
+.btn-secondary-cta {
+  background: #fff; color: $ink !important; border: 1px solid $line;
+  &:hover { border-color: $ink-soft; text-decoration: none; }
+}
+
+// ---- Layout scaffolding --------------------------------------------------
+.section { max-width: 1080px; margin: 0 auto; padding: 4.5rem 1.5rem; }
+.section.tight { padding-top: 0; }
+.section-alt { background: $surface; border-top: 1px solid $line; border-bottom: 1px solid $line; }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.09em;
+  text-transform: uppercase; color: $accent; margin-bottom: 1rem;
+}
+.section-head { max-width: 640px; margin: 0 auto 3rem; text-align: center; }
+.section-head h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 0.6rem; }
+.section-head p { color: $muted; font-size: 1.08rem; margin-bottom: 0; }
+
+// ---- Hero ----------------------------------------------------------------
+.hero { border-bottom: 1px solid $line; }
+.hero-inner {
+  max-width: 1080px; margin: 0 auto; padding: 5.5rem 1.5rem 5rem;
+}
+.hero .eyebrow { color: $muted; }
+.hero h1 {
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-weight: 800; line-height: 1.05; margin-bottom: 1.4rem;
+  max-width: 15ch;
+}
+.hero h1 .u {
+  color: $accent;
+  background-image: linear-gradient(transparent 62%, rgba(178,58,48,0.16) 0);
+}
+.hero .lede {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  color: $muted; max-width: 46ch; margin-bottom: 2.2rem; line-height: 1.5;
+}
+.hero-actions { margin-bottom: 0; }
+
+// ---- Pipeline demos (Capture / Analyze / Prove) --------------------------
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.5rem;
+  max-width: 1080px; margin: 0 auto;
+}
+.stage {
+  background: #fff; border: 1px solid $line; border-radius: 12px;
+  padding: 1.5rem 1.5rem 1.75rem; display: flex; flex-direction: column;
+}
+.stage-num {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: $accent; margin-bottom: 0.75rem;
+}
+.stage h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.4rem; }
+.stage p { color: $muted; font-size: 0.96rem; margin-bottom: 1.25rem; }
+.stage .demo { margin-top: auto; }
+
+// Shared demo frame
+.demo {
+  position: relative;
+  background: $surface; border: 1px solid $line; border-radius: 8px;
+  height: 188px; overflow: hidden;
+}
+
+// Clean toggle (only one state visible at a time; ~2% quick fade, no overlap)
+@keyframes hi-swapA { 0%,47%{opacity:1} 49%,98%{opacity:0} 100%{opacity:1} }
+@keyframes hi-swapB { 0%,47%{opacity:0} 49%,98%{opacity:1} 100%{opacity:0} }
+@keyframes hi-draw  { 0%{stroke-dashoffset:1400} 55%{stroke-dashoffset:0} 100%{stroke-dashoffset:0} }
+@keyframes hi-fillin{ 0%,16%{opacity:0; transform:translateY(4px)} 34%,100%{opacity:1; transform:none} }
+
+@media (prefers-reduced-motion: reduce) {
+  .demo * { animation: none !important; }
+}
+
+// Demo: capture (validation + auto-calc)
+.demo-capture { padding: 1.1rem 1.2rem; }
+.dc-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.5rem 0; border-bottom: 1px solid $line; font-size: 0.9rem;
+}
+.dc-row:last-child { border-bottom: 0; }
+.dc-label { color: $ink-soft; }
+.dc-val { position: relative; height: 1.4em; font-variant-numeric: tabular-nums; font-weight: 600; min-width: 120px; text-align: right; }
+.dc-val .v { position: absolute; right: 0; top: 0; display: inline-flex; align-items: center; gap: 6px; }
+.dc-val .v-bad  { color: $accent;  opacity: 1; animation: hi-swapA 6s ease-in-out infinite; }
+.dc-val .v-good { color: #1f8a5b; opacity: 0; animation: hi-swapB 6s ease-in-out infinite; }
+.dc-chip { font-size: 0.68rem; font-weight: 600; padding: 1px 6px; border-radius: 4px; }
+.dc-chip.bad { background: rgba(178,58,48,0.12); color: $accent; }
+.dc-chip.good { background: rgba(31,138,91,0.12); color: #1f8a5b; }
+.dc-auto { color: $ink; animation: hi-fillin 6s ease-in-out infinite; }
+
+// Demo: analyze (chart draws itself)
+.demo-chart svg { display: block; width: 100%; height: 100%; }
+.demo-chart .axis { stroke: #c8ccd2; stroke-width: 1; }
+.demo-chart .line1 { fill: none; stroke: $accent; stroke-width: 2.5; stroke-dasharray: 1400; animation: hi-draw 6s ease-in-out infinite; }
+.demo-chart .line2 { fill: none; stroke: #9aa0a8; stroke-width: 2.5; stroke-dasharray: 1400; animation: hi-draw 6s ease-in-out infinite; }
+
+// Demo: prove (raw -> table)
+.demo-prove { }
+.demo-prove .layer { position: absolute; inset: 0; padding: 0.9rem 1rem; display: flex; flex-direction: column; justify-content: center; }
+.demo-prove .raw  { opacity: 1; animation: hi-swapA 6s ease-in-out infinite; }
+.demo-prove .tbl  { opacity: 0; animation: hi-swapB 6s ease-in-out infinite; }
+.demo-prove pre { margin: 0; font-size: 0.66rem; line-height: 1.5; color: $ink-soft; background: none; white-space: pre; overflow: hidden; }
+.pv-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.pv-table th, .pv-table td { text-align: left; padding: 0.32rem 0.4rem; border-bottom: 1px solid $line; }
+.pv-table th { color: $muted; font-weight: 600; }
+.pv-table td { color: $ink; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+// ---- Trust line ----------------------------------------------------------
+.trust { text-align: center; color: $muted; font-size: 1rem; max-width: 760px; margin: 0 auto; }
+.trust b { color: $ink; font-weight: 600; }
+
+// ---- Listing cards -------------------------------------------------------
+.quarto-listing-item, .quarto-grid-item {
+  border: 1px solid $line !important; border-radius: 10px !important;
+  background: #fff; transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.quarto-listing-item:hover, .quarto-grid-item:hover {
+  border-color: $ink-soft !important;
+  box-shadow: 0 8px 24px rgba(22,24,29,0.06);
+}
+
+// ---- Tutorial buttons ----------------------------------------------------
+.logo-tutorial-button {
+  display: inline-flex; align-items: center;
+  background: $accent; color: #fff !important;
+  padding: 10px 18px; border-radius: 6px; font-weight: 600;
+  text-decoration: none; margin: 0.3rem 0;
+  transition: background 0.15s ease;
+}
+.logo-tutorial-button:hover { background: $accent-deep; text-decoration: none; }
+.logo-tutorial-button::before { content: '▶'; margin-right: 8px; font-size: 0.85em; }
+
+// ---- CTA banner ----------------------------------------------------------
+.cta-final {
+  text-align: center; background: $ink; color: #fff;
+  border-radius: 14px; padding: 3.25rem 2rem; max-width: 1080px; margin: 0 auto;
+}
+.cta-final h2 { color: #fff; margin-bottom: 0.6rem; font-size: clamp(1.6rem,3vw,2.1rem); }
+.cta-final p { color: rgba(255,255,255,0.72); margin-bottom: 1.6rem; max-width: 52ch; margin-left: auto; margin-right: auto; }
+.cta-final .btn-primary-cta { background: $accent; border-color: $accent; &:hover { background: $accent-deep; } }
+
+// ---- Interior page titles ------------------------------------------------
+.quarto-title-banner { background: $ink !important; }
+
+// ---- Footer --------------------------------------------------------------
+.nav-footer { border-top: 1px solid $line; color: $muted; font-size: 0.9rem; }

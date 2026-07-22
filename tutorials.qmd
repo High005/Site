@@ -1,215 +1,29 @@
 ---
-title: "Useful tutorial for your data journey"
-format:
-  html:
-    include-in-header: 
-      - text: |
-          <!-- Include TypeIt for text animations -->
-          <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-          <!-- Custom CSS for Yellow and Pink Theme -->
-          <style>
-            body {
-              font-family: 'Inter', sans-serif; /* Modern, clean font */
-              background-color: #fff8e1; /* Soft yellow background */
-              color: #333; /* Dark gray text for readability */
-            }
-            .quarto-listing-item {
-              border: 2px solid #ffc1e3; /* Pink border for listing items */
-              padding: 10px;
-              border-radius: 8px;
-              background: #fff; /* White background for contrast */
-              transition: transform 0.3s, box-shadow 0.3s;
-            }
-            .quarto-listing-item:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 4px 20px rgba(255, 193, 227, 0.5); /* Pink shadow */
-            }
-            .quarto-title-banner {
-              text-align: center;
-              padding: 50px 20px;
-              background: linear-gradient(135deg, #ffb74d, #ff80ab); /* Gradient: yellow to pink */
-              color: white;
-              font-size: 2.5em;
-              text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-            }
-            a {
-              color: #ff4081; /* Pink links */
-              text-decoration: none;
-            }
-            a:hover {
-              text-decoration: underline;
-            }
-          </style>
+title: "Data guides"
+description: "Build a clinical data collection tool that works: practical REDCap tutorials."
 ---
 
-Build your first data collection tool :
+Build a data collection tool that works, step by step. These are the exact
+techniques we use to make clinical data arrive clean instead of costing months
+of cleanup later.
 
-1 - How to collect quantitative and discrete data in REDCap:
+### 1. Collect quantitative and discrete data in REDCap
 
-<html>
+<a href="https://youtu.be/zWWHXvnTTBA" target="_blank" class="logo-tutorial-button">REDCap Tutorial I</a>
 
-<head>
+### 2. Build calculated fields and automated tools
 
-```{=html}
-<style>
-        .logo-tutorial-button {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(45deg, #FFD700, #FF69B4);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 20px;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255,105,180,0.3);
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .logo-tutorial-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(255,215,0,0.5);
-            background: linear-gradient(45deg, #FFD700, #FF1493);
-        }
-        .logo-tutorial-button::before {
-            content: '🎥';
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
-```
-</head>
+<a href="https://youtu.be/aua_uhDR6mQ" target="_blank" class="logo-tutorial-button">REDCap Tutorial II</a>
 
-<body><a href="https://youtu.be/zWWHXvnTTBA" target="_blank" class="logo-tutorial-button"> I RedCap Tutorial </a></body>
+### 3. Weighted formulas on a calculated field
 
-</html>
+<a href="https://youtu.be/xaNZHfuCG4A" target="_blank" class="logo-tutorial-button">REDCap Tutorial IIb</a>
 
+### 4. Export your data from REDCap to Excel
 
+<a href="https://youtu.be/HoHrexo8ix0" target="_blank" class="logo-tutorial-button">REDCap Tutorial III</a>
 
-2 - How to build calculated field & automated tools:
+---
 
-<html>
-
-<head>
-
-```{=html}
-<style>
-        .logo-tutorial-button {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(45deg, #FFD700, #FF69B4);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 20px;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(222,105,180,0.3);
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .logo-tutorial-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(222,215,0,0.5);
-            background: linear-gradient(45deg, #FFD700, #FF1493);
-        }
-        .logo-tutorial-button::before {
-            content: '🎥';
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
-```
-</head>
-
-<body><a href="https://youtu.be/aua_uhDR6mQ" target="_blank" class="logo-tutorial-button"> II RedCap Tutorial </a></body>
-
-</html>
-
-3 - Weighted formula on calculated field:
-
-<html>
-
-<head>
-
-```{=html}
-<style>
-        .logo-tutorial-button {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(45deg, #FFD700, #FF69B4);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 20px;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(222,105,180,0.3);
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .logo-tutorial-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(222,215,0,0.5);
-            background: linear-gradient(45deg, #FFD700, #FF1493);
-        }
-        .logo-tutorial-button::before {
-            content: '🎥';
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
-```
-</head>
-
-<body><a href="https://youtu.be/xaNZHfuCG4A" target="_blank" class="logo-tutorial-button"> IIb RedCap Tutorial </a></body>
-
-</html>
-
-
-4 - How to export data your data from REDCap to Excel:
-
-<html>
-
-<head>
-
-```{=html}
-<style>
-        .logo-tutorial-button {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(45deg, #FFD700, #FF69B4);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 20px;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(222,105,180,0.3);
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .logo-tutorial-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(222,215,0,0.5);
-            background: linear-gradient(45deg, #FFD700, #FF1493);
-        }
-        .logo-tutorial-button::before {
-            content: '🎥';
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
-```
-</head>
-
-<body><a href="https://youtu.be/HoHrexo8ix0" target="_blank" class="logo-tutorial-button"> III RedCap Tutorial </a></body>
-
-</html>
-
-
-email : bisturiep005\@gmail.com
+Need a build that isn't covered here? [Tell us about it](jobs.qmd) or email
+[bisturiep005@gmail.com](mailto:bisturiep005@gmail.com).
