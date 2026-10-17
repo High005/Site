@@ -65,6 +65,43 @@ listing:
     </ul>
   </div>
 </section>
+
+<section class="segments">
+  <div class="segments-inner">
+    <div class="section-head">
+      <span class="eyebrow">Who we work with</span>
+      <h2>Built for teams whose decisions depend on evidence</h2>
+      <p>Pick the one that sounds like you.</p>
+    </div>
+    <div class="seg-grid">
+      <a class="seg seg-feature" href="jobs.html?topic=analysis">
+        <span class="seg-tag">Pharma &amp; biotech</span>
+        <h3>Extra biostatistics capacity, without hiring</h3>
+        <p>Statistical analysis plans, real-world evidence and clear reporting for clinical development and medical affairs teams.</p>
+        <ul><li>SAPs and sample size</li><li>Real-world evidence and survival analysis</li><li>Publication-ready tables and figures</li></ul>
+        <span class="seg-cta">Talk to us about your study →</span>
+      </a>
+      <a class="seg" href="jobs.html?topic=evidence">
+        <span class="seg-tag">Medtech &amp; devices</span>
+        <h3>Clinical evidence that passes review</h3>
+        <p>Study design and analysis for clinical investigations and post-market follow-up.</p>
+        <span class="seg-cta">Plan your clinical evidence →</span>
+      </a>
+      <a class="seg" href="jobs.html?topic=evidence">
+        <span class="seg-tag">Digital health &amp; startups</span>
+        <h3>Proof for investors and buyers</h3>
+        <p>Turn pilot data into an honest outcome story that hospitals and investors believe.</p>
+        <span class="seg-cta">Show your product works →</span>
+      </a>
+      <a class="seg" href="jobs.html?topic=design">
+        <span class="seg-tag">Hospitals &amp; research</span>
+        <h3>From protocol to paper</h3>
+        <p>Protocols, REDCap databases and analyses for clinical and academic teams.</p>
+        <span class="seg-cta">Start your project →</span>
+      </a>
+    </div>
+  </div>
+</section>
 ```
 
 

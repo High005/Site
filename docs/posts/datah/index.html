@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d922ecdff24379936c7dac54fba27993.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-54d247c538416c43a0ce7dbd2f82e41d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -542,6 +542,10 @@ window.Quarto = {
   // ---- Contact form: validation, loading, success and error states -------
   var form = document.getElementById("contact-form");
   if (!form) return;
+  // Preselect the topic when arriving from a segment card (jobs.html?topic=...)
+  var topicMap = { design: 0, capture: 1, analysis: 2, evidence: 3 };
+  var wanted = new URLSearchParams(location.search).get("topic");
+  if (wanted in topicMap) form.elements.topic.selectedIndex = topicMap[wanted];
   var status = document.getElementById("form-status");
   var btn = form.querySelector("button[type=submit]");
   var rules = {

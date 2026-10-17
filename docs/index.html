@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d922ecdff24379936c7dac54fba27993.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-54d247c538416c43a0ce7dbd2f82e41d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -261,6 +261,43 @@ window.Quarto = {
       <li><b>Medicilio</b><small>Telemedicine · Milan</small></li>
       <li><b>Medici con l'Africa CUAMM</b><small>Our parent organisation</small></li>
     </ul>
+  </div>
+</section>
+
+<section class="segments">
+  <div class="segments-inner">
+    <div class="section-head">
+      <span class="eyebrow">Who we work with</span>
+      <h2 class="anchored">Built for teams whose decisions depend on evidence</h2>
+      <p>Pick the one that sounds like you.</p>
+    </div>
+    <div class="seg-grid">
+      <a class="seg seg-feature" href="jobs.html?topic=analysis">
+        <span class="seg-tag">Pharma &amp; biotech</span>
+        <h3 class="anchored">Extra biostatistics capacity, without hiring</h3>
+        <p>Statistical analysis plans, real-world evidence and clear reporting for clinical development and medical affairs teams.</p>
+        <ul><li>SAPs and sample size</li><li>Real-world evidence and survival analysis</li><li>Publication-ready tables and figures</li></ul>
+        <span class="seg-cta">Talk to us about your study →</span>
+      </a>
+      <a class="seg" href="jobs.html?topic=evidence">
+        <span class="seg-tag">Medtech &amp; devices</span>
+        <h3 class="anchored">Clinical evidence that passes review</h3>
+        <p>Study design and analysis for clinical investigations and post-market follow-up.</p>
+        <span class="seg-cta">Plan your clinical evidence →</span>
+      </a>
+      <a class="seg" href="jobs.html?topic=evidence">
+        <span class="seg-tag">Digital health &amp; startups</span>
+        <h3 class="anchored">Proof for investors and buyers</h3>
+        <p>Turn pilot data into an honest outcome story that hospitals and investors believe.</p>
+        <span class="seg-cta">Show your product works →</span>
+      </a>
+      <a class="seg" href="jobs.html?topic=design">
+        <span class="seg-tag">Hospitals &amp; research</span>
+        <h3 class="anchored">From protocol to paper</h3>
+        <p>Protocols, REDCap databases and analyses for clinical and academic teams.</p>
+        <span class="seg-cta">Start your project →</span>
+      </a>
+    </div>
   </div>
 </section>
 <section class="section-alt">
@@ -534,6 +571,10 @@ Standard deviation vs standard error
   // ---- Contact form: validation, loading, success and error states -------
   var form = document.getElementById("contact-form");
   if (!form) return;
+  // Preselect the topic when arriving from a segment card (jobs.html?topic=...)
+  var topicMap = { design: 0, capture: 1, analysis: 2, evidence: 3 };
+  var wanted = new URLSearchParams(location.search).get("topic");
+  if (wanted in topicMap) form.elements.topic.selectedIndex = topicMap[wanted];
   var status = document.getElementById("form-status");
   var btn = form.querySelector("button[type=submit]");
   var rules = {
