@@ -15,27 +15,57 @@ listing:
     max-items: 3
     image-height: 180px
     categories: false
+    fields: [image, title, description]
     feed: true
 ---
 
-::: {.hero}
-::: {.hero-inner}
-[Clinical evidence &amp; biostatistics · a CUAMM spin-off]{.eyebrow}
+```{=html}
+<section class="hero">
+  <div class="hero-inner hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Clinical evidence &amp; biostatistics · a CUAMM spin-off</span>
+      <h1>Prove your health product <span class="u">works</span>.</h1>
+      <p class="lede">We turn clinical data into evidence that regulators, buyers and
+      investors accept. Captured cleanly, analysed honestly, presented so anyone in the room can read it.</p>
+      <div class="hero-actions">
+        <a href="jobs.html" class="btn-primary-cta">Tell us about your project</a>
+        <a href="#how" class="btn-secondary-cta">See how it works</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-card">
+        <div class="hv-head"><span>Primary endpoint</span><span class="hv-pill">p &lt; 0.001</span></div>
+        <svg viewBox="0 0 320 170">
+          <g class="hv-grid"><line x1="24" y1="20" x2="310" y2="20"/><line x1="24" y1="70" x2="310" y2="70"/><line x1="24" y1="120" x2="310" y2="120"/></g>
+          <line class="hv-axis" x1="24" y1="10" x2="24" y2="150"/><line class="hv-axis" x1="24" y1="150" x2="310" y2="150"/>
+          <polyline class="hv-ctrl" points="24,20 70,20 70,38 120,38 120,62 168,62 168,88 220,88 220,112 270,112 270,128 310,128"/>
+          <polyline class="hv-trt" points="24,20 82,20 82,28 136,28 136,40 190,40 190,52 244,52 244,62 310,62"/>
+        </svg>
+        <div class="hv-legend"><span><i class="k-trt"></i>With your product</span><span><i class="k-ctrl"></i>Standard care</span></div>
+        <div class="hv-stats">
+          <div><b>0.62</b><small>Hazard ratio</small></div>
+          <div><b>0.48–0.80</b><small>95% CI</small></div>
+          <div><b>n = 412</b><small>Patients</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-# Prove your health product [works]{.u}.
-
-::: {.lede}
-High 0.05 turns clinical data into evidence that regulators, buyers and
-investors accept. Captured cleanly, analysed honestly, and presented so anyone
-in the room can read it.
-:::
-
-::: {.hero-actions}
-[Tell us about your project](jobs.qmd){.btn-primary-cta}
-[See how it works](#how){.btn-secondary-cta}
-:::
-:::
-:::
+<section class="trusted">
+  <div class="trusted-inner">
+    <p class="trusted-kicker">Our methods are trusted by leading hospitals, universities and health companies</p>
+    <ul class="trusted-list">
+      <li><b>University of Padua</b><small>Cardiology · Oncology · Surgery</small></li>
+      <li><b>ASST Papa Giovanni XXIII</b><small>Hospital · Bergamo</small></li>
+      <li><b>Mainz University</b><small>Germany</small></li>
+      <li><b>Diecimilauno</b><small>Treviso</small></li>
+      <li><b>Medicilio</b><small>Telemedicine · Milan</small></li>
+      <li><b>Medici con l'Africa CUAMM</b><small>Our parent organisation</small></li>
+    </ul>
+  </div>
+</section>
+```
 
 
 ::: {.section .section-alt}
@@ -110,13 +140,6 @@ Age            0.1500  0.0306  0.00001</pre>
 ```
 
 
-::: {.section}
-::: {.trust}
-Clinical data and analysis for <b>University of Padua</b> · <b>ASST Papa
-Giovanni XXIII</b> · <b>Mainz University</b> · <b>Diecimilauno</b> ·
-<b>Medicilio</b>, and health-tech startups across Italy.
-:::
-:::
 
 
 ::: {.section .section-alt}
@@ -161,13 +184,6 @@ can read.
 :::
 
 
-::: {.section .tight}
-::: {.trust}
-High 0.05 is a spin-off of <b>Medici con l'Africa CUAMM</b>, which has run health
-programs across sub-Saharan Africa since 1950. That is where the standard comes
-from: decisions backed by evidence, not opinion.
-:::
-:::
 
 
 ::: {.section .section-alt}

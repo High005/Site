@@ -4,6 +4,7 @@ description: "News on the innovations tackling medicine's biggest challenges."
 listing:
   contents: medical_datactor
   sort: "date desc"
+  fields: [image, title, description, categories]
   type: default
   categories: true
   sort-ui: false

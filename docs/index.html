@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0802301d16eac291a7d15c79213164f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-95a0c2fbdce08120e8dcea3d618a2062.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
@@ -218,20 +218,51 @@ window.Quarto = {
 
 
 
-<div class="hero">
-<div class="hero-inner">
-<p><span class="eyebrow">Clinical evidence &amp; biostatistics · a CUAMM spin-off</span></p>
-<section id="prove-your-health-product-works." class="level1">
-<h1>Prove your health product <span class="u">works</span>.</h1>
-<div class="lede">
-<p>High 0.05 turns clinical data into evidence that regulators, buyers and investors accept. Captured cleanly, analysed honestly, and presented so anyone in the room can read it.</p>
-</div>
-<div class="hero-actions">
-<p><a href="./jobs.html" class="btn-primary-cta">Tell us about your project</a> <a href="#how" class="btn-secondary-cta">See how it works</a></p>
-</div>
+<section class="hero">
+  <div class="hero-inner hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Clinical evidence &amp; biostatistics · a CUAMM spin-off</span>
+      <h1>Prove your health product <span class="u">works</span>.</h1>
+      <p class="lede">We turn clinical data into evidence that regulators, buyers and
+      investors accept. Captured cleanly, analysed honestly, presented so anyone in the room can read it.</p>
+      <div class="hero-actions">
+        <a href="jobs.html" class="btn-primary-cta">Tell us about your project</a>
+        <a href="#how" class="btn-secondary-cta">See how it works</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-card">
+        <div class="hv-head"><span>Primary endpoint</span><span class="hv-pill">p &lt; 0.001</span></div>
+        <svg viewbox="0 0 320 170">
+          <g class="hv-grid"><line x1="24" y1="20" x2="310" y2="20"></line><line x1="24" y1="70" x2="310" y2="70"></line><line x1="24" y1="120" x2="310" y2="120"></line></g>
+          <line class="hv-axis" x1="24" y1="10" x2="24" y2="150"></line><line class="hv-axis" x1="24" y1="150" x2="310" y2="150"></line>
+          <polyline class="hv-ctrl" points="24,20 70,20 70,38 120,38 120,62 168,62 168,88 220,88 220,112 270,112 270,128 310,128"></polyline>
+          <polyline class="hv-trt" points="24,20 82,20 82,28 136,28 136,40 190,40 190,52 244,52 244,62 310,62"></polyline>
+        </svg>
+        <div class="hv-legend"><span><i class="k-trt"></i>With your product</span><span><i class="k-ctrl"></i>Standard care</span></div>
+        <div class="hv-stats">
+          <div><b>0.62</b><small>Hazard ratio</small></div>
+          <div><b>0.48–0.80</b><small>95% CI</small></div>
+          <div><b>n = 412</b><small>Patients</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-</div>
-</div>
+
+<section class="trusted">
+  <div class="trusted-inner">
+    <p class="trusted-kicker">Our methods are trusted by leading hospitals, universities and health companies</p>
+    <ul class="trusted-list">
+      <li><b>University of Padua</b><small>Cardiology · Oncology · Surgery</small></li>
+      <li><b>ASST Papa Giovanni XXIII</b><small>Hospital · Bergamo</small></li>
+      <li><b>Mainz University</b><small>Germany</small></li>
+      <li><b>Diecimilauno</b><small>Treviso</small></li>
+      <li><b>Medicilio</b><small>Telemedicine · Milan</small></li>
+      <li><b>Medici con l'Africa CUAMM</b><small>Our parent organisation</small></li>
+    </ul>
+  </div>
+</section>
 <section class="section-alt">
 <section id="how" class="level2 section-head">
 <h2 class="anchored" data-anchor-id="how">From raw data to proof, in three steps</h2>
@@ -317,11 +348,6 @@ Age            0.1500  0.0306  0.00001</pre>
 
 </div>
 </div>
-<section>
-<div class="trust">
-<p>Clinical data and analysis for <b>University of Padua</b> · <b>ASST Papa Giovanni XXIII</b> · <b>Mainz University</b> · <b>Diecimilauno</b> · <b>Medicilio</b>, and health-tech startups across Italy.</p>
-</div>
-</section>
 <section class="section-alt">
 <section id="how-working-together-goes" class="level2 section-head">
 <h2 class="anchored" data-anchor-id="how-working-together-goes">How working together goes</h2>
@@ -354,11 +380,6 @@ Age            0.1500  0.0306  0.00001</pre>
 <p><a href="./jobs.html" class="btn-primary-cta">Start with a message</a></p>
 </div>
 </section>
-<section class="tight">
-<div class="trust">
-<p>High 0.05 is a spin-off of <b>Medici con l’Africa CUAMM</b>, which has run health programs across sub-Saharan Africa since 1950. That is where the standard comes from: decisions backed by evidence, not opinion.</p>
-</div>
-</section>
 <section class="section-alt">
 <section id="insights" class="level2 section-head">
 <h2 class="anchored" data-anchor-id="insights">Insights</h2>
@@ -379,14 +400,6 @@ The DeepSeek deception: how fake accounts fooled markets
 <div class="card-text listing-description delink">
 <p>An analysis of 41,864 profiles shows how coordinated fake accounts inflated DeepSeek’s rise, and what that means for judging AI hype.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 9, 2025
-</div>
-</div>
 </div>
 </div></a>
 </div>
@@ -403,14 +416,6 @@ The simplest way to present statistical results
 <div class="card-text listing-description delink">
 <p>Turn raw R regression output into clear, publication-ready tables with gtsummary that any stakeholder can read.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 8, 2025
-</div>
-</div>
 </div>
 </div></a>
 </div>
@@ -426,14 +431,6 @@ Standard deviation vs standard error
 </h5>
 <div class="card-text listing-description delink">
 <p>SD describes your data; SE describes your estimate. A clear guide to which one to report, and when.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 6, 2025
-</div>
 </div>
 </div>
 </div></a>

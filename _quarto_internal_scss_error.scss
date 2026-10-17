@@ -13309,5 +13309,85 @@ body.has-sticky-cta { padding-bottom: 4.25rem; }
   .sticky-cta-btn { flex: 1; text-align: center; }
 }
 
+// ==========================================================================
+// Refinement pass (Oct 2026): editorial headings, two-column hero, trusted band
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+// No dates anywhere on articles (kept in front matter only for ordering)
+.quarto-title-meta, .listing-date, .listing-reading-time, .quarto-post .metadata { display: none !important; }
+
+h1, h2, .hero h1, .section-head h2, .cta-final h2, .quarto-title h1.title {
+  font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -0.02em;
+}
+
+// Hero
+.hero {
+  border-bottom: 0;
+  background:
+    radial-gradient(900px 420px at 85% 10%, rgba(178,58,48,0.07), transparent 60%),
+    linear-gradient(180deg, #fbfaf8 0%, #fff 100%);
+}
+.hero-grid {
+  display: grid; grid-template-columns: 1.15fr 1fr; gap: 3.5rem; align-items: center;
+  padding-top: 5rem; padding-bottom: 4.5rem;
+}
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4.1rem); line-height: 1.04; max-width: 14ch; }
+.hero h1 .u { background-image: none; color: $accent; font-style: italic; }
+.hero .lede { color: $ink-soft; }
+.hero .eyebrow { color: $accent; }
+
+.hv-card {
+  background: #fff; border: 1px solid $line; border-radius: 16px; padding: 1.4rem 1.4rem 1.2rem;
+  box-shadow: 0 1px 2px rgba(22,24,29,0.04), 0 24px 60px -20px rgba(22,24,29,0.18);
+  transform: rotate(-1deg);
+}
+.hv-head { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem;
+  font-weight: 600; color: $muted; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem; }
+.hv-pill { background: rgba(31,138,91,0.12); color: #17694a; padding: 2px 9px; border-radius: 999px;
+  text-transform: none; letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.hv-card svg { width: 100%; height: auto; display: block; }
+.hv-grid line { stroke: $surface-2; stroke-width: 1; }
+.hv-axis { stroke: #c8ccd2; stroke-width: 1; }
+.hv-ctrl, .hv-trt { fill: none; stroke-width: 2.6; stroke-linejoin: round;
+  stroke-dasharray: 700; animation: hi-draw 7s ease-in-out infinite; }
+.hv-ctrl { stroke: #a3a8b0; }
+.hv-trt { stroke: $accent; }
+.hv-legend { display: flex; gap: 1.2rem; font-size: 0.8rem; color: $muted; margin: 0.4rem 0 1rem; }
+.hv-legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+.k-trt { background: $accent; } .k-ctrl { background: #a3a8b0; }
+.hv-stats { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid $line; padding-top: 0.9rem; }
+.hv-stats div { text-align: center; }
+.hv-stats b { display: block; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.hv-stats small { color: $muted; font-size: 0.75rem; }
+
+// Trusted band
+.trusted { background: $ink; color: #fff; }
+.trusted-inner { max-width: 1080px; margin: 0 auto; padding: 2.6rem 1.5rem 2.8rem; text-align: center; }
+.trusted-kicker { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.6); margin-bottom: 1.6rem; }
+.trusted-list { list-style: none; margin: 0; padding: 0; display: grid;
+  grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; }
+.trusted-list li { background: $ink; padding: 1.25rem 1rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.trusted-list b { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.2rem; letter-spacing: -0.01em; }
+.trusted-list small { color: rgba(255,255,255,0.55); font-size: 0.8rem; }
+
+// Softer cards and sections
+.stage, .step { border-radius: 14px; transition: transform .2s ease, box-shadow .2s ease; }
+.stage:hover, .step:hover { transform: translateY(-3px); box-shadow: 0 16px 40px -18px rgba(22,24,29,0.22); }
+.section-alt { background: #fbfaf8; }
+.quarto-grid-item { overflow: hidden; }
+.quarto-grid-item .card-title { font-weight: 700; }
+
+@media (max-width: 991.98px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3rem; padding-bottom: 3rem; }
+  .hv-card { transform: none; max-width: 480px; }
+  .trusted-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .trusted-list { grid-template-columns: 1fr; }
+}
+
 
 // quarto-scss-analysis-annotation { "origin": null }
