@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Worked biostatistics: p-values, bias, survival, regression, read in context.">
 
-<title>Statistics, explained – High 0.05</title>
+<title>Biostatistics explained: p-values, bias, survival – High 0.05</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logo.png" rel="icon" type="image/png">
+<link href="./images/icons/favicon-32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -43,10 +46,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8de4b4513e6de6461bb76bf2a6679a3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0802301d16eac291a7d15c79213164f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,9 +107,12 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="apple-touch-icon" sizes="180x180" href="https://high005.github.io/Site/images/icons/apple-touch-icon.png">
+<link rel="manifest" href="https://high005.github.io/Site/images/icons/site.webmanifest">
+<meta name="theme-color" content="#16181d">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -135,14 +141,17 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Statistics, explained – High 0.05">
+<meta property="og:title" content="Biostatistics explained: p-values, bias, survival">
 <meta property="og:description" content="Worked biostatistics: p-values, bias, survival, regression, read in context.">
 <meta property="og:image" content="https://high005.github.io/Site/posts/datah/papers/regression_result/xx22.jpg">
 <meta property="og:site_name" content="High 0.05">
-<meta name="twitter:title" content="Statistics, explained – High 0.05">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image:alt" content="Meme comparing raw R summary(fit) output with a clean gtsummary regression table">
+<meta name="twitter:title" content="Biostatistics explained: p-values, bias, survival">
 <meta name="twitter:description" content="Worked biostatistics: p-values, bias, survival, regression, read in context.">
 <meta name="twitter:image" content="https://high005.github.io/Site/posts/datah/papers/regression_result/xx22.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Meme comparing raw R summary(fit) output with a clean gtsummary regression table">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -153,8 +162,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="./images/logo.png" alt="High 0.05 home" class="navbar-logo light-content">
+    <img src="./images/logo.png" alt="High 0.05 home" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -187,7 +196,7 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./jobs.html"> 
-<span class="menu-text">Contact</span></a>
+<span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -202,7 +211,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Q2xpbmljYWwlMjByZXNlYXJjaA==">Clinical research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T25jb2xvZ3k=">Oncology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGlzdGljcw==">Statistics <span class="quarto-category-count">(5)</span></div><div class="category" data-category="U3R1ZHklMjBkZXNpZ24=">Study design <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -237,18 +246,18 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1757282400000" data-listing-file-modified-sort="1757312252000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
+<div class="quarto-post image-right" data-index="0" data-categories="U3RhdGlzdGljcyUyQ1I=" data-listing-date-sort="1757282400000" data-listing-file-modified-sort="1792248284312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
 <div class="thumbnail"><a href="./posts/datah/papers/regression_result/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/papers/regression_result/xx22.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/papers/regression_result/xx22.jpg" class="thumbnail-image" alt="Meme comparing raw R summary(fit) output with a clean gtsummary regression table">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/regression_result/index.html" class="no-external">Simplest Way to Present Your Statistical Results</a>
+<a href="./posts/datah/papers/regression_result/index.html" class="no-external">The simplest way to present statistical results</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/papers/regression_result/index.html" class="no-external">
-In this article you’ll see the way to communicate to your stakeholders the way to present the results in a clear, accessible format. The <code>gtsummary</code> package transform complex…
+<p>Turn raw R regression output into clear, publication-ready tables with gtsummary that any stakeholder can read.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -259,18 +268,18 @@ Sep 8, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1757109600000" data-listing-file-modified-sort="1757144345000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="966">
+<div class="quarto-post image-right" data-index="1" data-categories="U3RhdGlzdGljcw==" data-listing-date-sort="1757109600000" data-listing-file-modified-sort="1792248284313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="966">
 <div class="thumbnail"><a href="./posts/datah/papers/standard dev/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/papers/standard dev/x11.png" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/papers/standard dev/x11.png" class="thumbnail-image" alt="Side-by-side diagram: standard deviation as spread of data points, standard error as precision of the sample mean">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/standard dev/index.html" class="no-external">Standard Deviation Vs Standard Error</a>
+<a href="./posts/datah/papers/standard dev/index.html" class="no-external">Standard deviation vs standard error</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/papers/standard dev/index.html" class="no-external">
-Here we are with the big match between <strong>standard deviation (SD)</strong> and <strong>standard error (SE)</strong>.
+<p>SD describes your data; SE describes your estimate. A clear guide to which one to report, and when.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -281,18 +290,18 @@ Sep 6, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1746568800000" data-listing-file-modified-sort="1746611800000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="677">
+<div class="quarto-post image-right" data-index="2" data-categories="U3RhdGlzdGljcw==" data-listing-date-sort="1746568800000" data-listing-file-modified-sort="1792248284311" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="677">
 <div class="thumbnail"><a href="./posts/datah/papers/p_value/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/papers/p_value/pvalue.png" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/papers/p_value/pvalue.png" class="thumbnail-image" alt="Cartoon of a flipping coin and a p &amp;lt; 0.05 sign: rejecting the null hypothesis because the result happens less than 1 in 20 times">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/p_value/index.html" class="no-external">Your P-value is much more than you think</a>
+<a href="./posts/datah/papers/p_value/index.html" class="no-external">Your p-value means more (and less) than you think</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/papers/p_value/index.html" class="no-external">
-The p-value is a tool used to interpret statistical tests. It represents the probability that the observed results could have occurred under the assumption that the null…
+<p>What a p-value really tells you, why p &lt; 0.05 is not the whole story, and how to read it with effect sizes.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -303,18 +312,18 @@ May 7, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
+<div class="quarto-post image-right" data-index="3" data-categories="U3RhdGlzdGljcyUyQ1N0dWR5JTIwZGVzaWdu" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1792248284308" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
 <div class="thumbnail"><a href="./posts/datah/papers/bias/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/papers/bias/img.png" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/papers/bias/img.png" class="thumbnail-image" alt="Four targets showing accurate, biased, noisy, and biased-and-noisy measurements">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/bias/index.html" class="no-external">Bias in Healthcare studies</a>
+<a href="./posts/datah/papers/bias/index.html" class="no-external">Bias in healthcare studies, and how to reduce it</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/papers/bias/index.html" class="no-external">
-When practicing evidence-based medicine, medical doctors and healthcare researchers often on data analysis to make informed decisions. However, one of the biggest challenges…<br><br>
+<p>The main types of bias in clinical research, with examples and practical ways to limit them, from design to publication.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -325,18 +334,18 @@ Jan 25, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1738136062000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
+<div class="quarto-post image-right" data-index="4" data-categories="U3RhdGlzdGljcyUyQ0NsaW5pY2FsJTIwcmVzZWFyY2g=" data-listing-date-sort="1737759600000" data-listing-file-modified-sort="1792248284315" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
 <div class="thumbnail"><a href="./posts/datah/papers/survival/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/papers/survival/x1.png" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/papers/survival/x1.png" class="thumbnail-image" alt="Kaplan-Meier curves comparing survival with and without hormonal therapy, with confidence bands">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/survival/index.html" class="no-external">Survival analysis</a>
+<a href="./posts/datah/papers/survival/index.html" class="no-external">Survival analysis, explained simply</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/papers/survival/index.html" class="no-external">
-If you’re new to the world of medical research, you may have heard the term “survival analysis” thrown around and thought, “Sounds serious… is this about my career?” Don’t…
+<p>What survival analysis answers, why censored data matters, and how to read a survival curve.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -347,18 +356,18 @@ Jan 25, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1716415200000" data-listing-file-modified-sort="1737957194000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
+<div class="quarto-post image-right" data-index="5" data-categories="UmVzZWFyY2glMkNPbmNvbG9neQ==" data-listing-date-sort="1716415200000" data-listing-file-modified-sort="1792248284307" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
 <div class="thumbnail"><a href="./posts/datah/papers/aspirin/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/papers/aspirin/cells.png" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/papers/aspirin/cells.png" class="thumbnail-image" alt="Fluorescence microscopy image of cells with blue nuclei and green cytoskeleton">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/papers/aspirin/index.html" class="no-external">Aspirin Vs Cancer</a>
+<a href="./posts/datah/papers/aspirin/index.html" class="no-external">Aspirin may help the immune system find cancer cells</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/papers/aspirin/index.html" class="no-external">
-“It is a rather unexpected effect, because aspirin is mainly used as an anti-inflammatory drug,” says Marco Scarpa, a researcher at the University of Padova, and one of the…
+<p>A University of Padova study suggests aspirin helps immune cells detect and target cancer cells.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -372,6 +381,158 @@ May 23, 2024
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<!-- Sticky mobile CTA (shown on small screens after scrolling) -->
+<div class="sticky-cta" id="sticky-cta" hidden="">
+  <span>Need evidence for your product?</span>
+  <a class="sticky-cta-btn" data-href="jobs.html">Get in touch</a>
+</div>
+
+<!-- Cookie consent: analytics only load after "Accept" -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden="">
+  <p>We use one optional analytics cookie to see which pages are useful. No ads, no selling data.
+    <a data-href="privacy.html#cookies">Read more</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" class="btn-secondary-cta" data-consent="denied">Decline</button>
+    <button type="button" class="btn-primary-cta" data-consent="granted">Accept</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ---- Site configuration ------------------------------------------------
+  // GA4 measurement ID, e.g. "G-ABC123XYZ". Leave empty to disable analytics.
+  var GA4_ID = "";
+  // Form backend (e.g. a Formspree endpoint "https://formspree.io/f/xxxxxxx").
+  // Leave empty and the contact form falls back to opening the visitor's email app.
+  var FORM_ENDPOINT = "";
+  var CONTACT_EMAIL = "bisturiep005@gmail.com";
+  // -------------------------------------------------------------------------
+
+  var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+  var root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+  document.querySelectorAll("[data-href]").forEach(function (a) {
+    a.setAttribute("href", root + a.getAttribute("data-href"));
+  });
+
+  function store(k, v) {
+    try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; }
+  }
+
+  // ---- Analytics, gated on consent ----------------------------------------
+  function loadAnalytics() {
+    if (!GA4_ID || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", GA4_ID, { anonymize_ip: true });
+  }
+  var banner = document.getElementById("cookie-banner");
+  var consent = store("h005-consent");
+  if (consent === "granted") loadAnalytics();
+  else if (!consent) banner.hidden = false;
+  banner.addEventListener("click", function (e) {
+    var choice = e.target.getAttribute && e.target.getAttribute("data-consent");
+    if (!choice) return;
+    store("h005-consent", choice);
+    banner.hidden = true;
+    if (choice === "granted") loadAnalytics();
+  });
+  document.querySelectorAll(".cookie-settings").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); banner.hidden = false; });
+  });
+
+  // ---- Sticky mobile CTA -------------------------------------------------
+  var cta = document.getElementById("sticky-cta");
+  var onContact = /\/jobs\.html$/.test(location.pathname);
+  if (!onContact) {
+    var toggle = function () {
+      var show = window.innerWidth < 768 && window.scrollY > 420 && banner.hidden;
+      cta.hidden = !show;
+      document.body.classList.toggle("has-sticky-cta", show);
+    };
+    window.addEventListener("scroll", toggle, { passive: true });
+    window.addEventListener("resize", toggle);
+    banner.addEventListener("click", toggle);
+    toggle();
+  }
+
+  // ---- Contact form: validation, loading, success and error states -------
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+  var status = document.getElementById("form-status");
+  var btn = form.querySelector("button[type=submit]");
+  var rules = {
+    name: function (v) { return v.trim().length >= 2 || "Please tell us your name."; },
+    email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || "Please enter a valid email address, e.g. name@company.com."; },
+    message: function (v) { return v.trim().length >= 20 || "A couple of sentences helps us reply usefully (at least 20 characters)."; },
+    consent: function (v, el) { return el.checked || "Please confirm you have read the privacy policy."; }
+  };
+  function check(el) {
+    var rule = rules[el.name];
+    if (!rule) return true;
+    var res = rule(el.value, el);
+    var err = document.getElementById(el.name + "-error");
+    var ok = res === true;
+    el.setAttribute("aria-invalid", ok ? "false" : "true");
+    el.closest(".field").classList.toggle("is-invalid", !ok);
+    err.textContent = ok ? "" : res;
+    return ok;
+  }
+  Object.keys(rules).forEach(function (n) {
+    var el = form.elements[n];
+    el.addEventListener("blur", function () { check(el); });
+    el.addEventListener("input", function () { if (el.getAttribute("aria-invalid") === "true") check(el); });
+  });
+  function setStatus(kind, html) {
+    status.className = "form-status " + kind;
+    status.innerHTML = html;
+    status.hidden = false;
+    status.focus();
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (form.elements._gotcha.value) return; // spam honeypot
+    var bad = Object.keys(rules).map(function (n) { return check(form.elements[n]) ? null : form.elements[n]; }).filter(Boolean);
+    if (bad.length) {
+      setStatus("error", "Please fix the " + (bad.length === 1 ? "highlighted field" : bad.length + " highlighted fields") + " and try again.");
+      bad[0].focus();
+      return;
+    }
+    var data = new FormData(form);
+    btn.disabled = true;
+    btn.classList.add("is-loading");
+    btn.setAttribute("aria-busy", "true");
+    var done = function () { btn.disabled = false; btn.classList.remove("is-loading"); btn.removeAttribute("aria-busy"); };
+
+    if (!FORM_ENDPOINT) {
+      var body = "Name: " + data.get("name") + "\nOrganisation: " + (data.get("org") || "-") +
+        "\nTopic: " + data.get("topic") + "\n\n" + data.get("message");
+      window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" +
+        encodeURIComponent("Enquiry: " + data.get("topic")) + "&body=" + encodeURIComponent(body);
+      setTimeout(function () {
+        done();
+        setStatus("success", "Your email app should now be open with the message ready to send. Nothing opened? Write to <a href=\"mailto:" + CONTACT_EMAIL + "\">" + CONTACT_EMAIL + "</a>.");
+      }, 600);
+      return;
+    }
+    fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); })
+      .then(function () {
+        form.reset();
+        setStatus("success", "<strong>Thanks, message received.</strong> We will reply by email.");
+      })
+      .catch(function () {
+        setStatus("error", "Sorry, the message could not be sent. Please try again, or email <a href=\"mailto:" + CONTACT_EMAIL + "\">" + CONTACT_EMAIL + "</a>.");
+      })
+      .then(done);
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -776,7 +937,7 @@ May 23, 2024
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>High 0.05. A spin-off of Medici con l’Africa CUAMM.</p>
+<p><strong>High 0.05</strong> · TODO: street, number, 35100 Padova (PD), Italy · P.IVA TODO: P.IVA<br> A spin-off of Medici con l’Africa CUAMM · <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a> · <a href="#" class="cookie-settings">Cookie settings</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
@@ -785,7 +946,7 @@ May 23, 2024
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://www.youtube.com/@High_005">
-      <i class="bi bi-youtube" role="img">
+      <i class="bi bi-youtube" role="img" aria-label="YouTube channel">
 </i> 
     </a>
   </li>  
@@ -796,7 +957,7 @@ May 23, 2024
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:bisturiep005@gmail.com">
-      <i class="bi bi-envelope" role="img">
+      <i class="bi bi-envelope" role="img" aria-label="Email us">
 </i> 
     </a>
   </li>  

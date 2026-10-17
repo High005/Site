@@ -1,8 +1,10 @@
 ---
-title: "How Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI"
+title: "How Novo Nordisk cut clinical study reports from 12 weeks to 10 minutes"
+description: "How generative AI and retrieval-augmented generation automate clinical study report writing, and what it means for regulatory timelines."
 date: "2025-04-27"
-categories:
+categories: [AI, Pharma, Regulatory]
 image: "csr.jpg"
+image-alt: "Digital graphic with the words Clinical trial surrounded by connected icons"
 draft: false
 layout: single
 execute: 

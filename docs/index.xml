@@ -9,10 +9,17 @@
 <link>https://high005.github.io/Site/</link>
 <atom:link href="https://high005.github.io/Site/index.xml" rel="self" type="application/rss+xml"/>
 <description>High 0.05 turns clinical data into evidence that regulators, buyers and investors accept: captured cleanly, analysed honestly, presented clearly.</description>
-<generator>quarto-1.9.38</generator>
+<image>
+<url>https://high005.github.io/Site/images/og-image.png</url>
+<title>High 0.05</title>
+<link>https://high005.github.io/Site/</link>
+<height>76</height>
+<width>144</width>
+</image>
+<generator>quarto-1.10.18</generator>
 <lastBuildDate>Mon, 08 Sep 2025 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>The DeepSeek deception: How fake accounts fooled markets and what it means for AI investment</title>
+  <title>The DeepSeek deception: how fake accounts fooled markets</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/deepseek/</link>
   <description><![CDATA[ 
 
@@ -97,12 +104,14 @@
 </section>
 
  ]]></description>
+  <category>AI</category>
+  <category>Evidence</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/deepseek/</guid>
   <pubDate>Mon, 08 Sep 2025 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/deepseek/dpsk.png" medium="image" type="image/png" height="101" width="144"/>
 </item>
 <item>
-  <title>Simplest Way to Present Your Statistical Results</title>
+  <title>The simplest way to present statistical results</title>
   <link>https://high005.github.io/Site/posts/datah/papers/regression_result/</link>
   <description><![CDATA[ 
 
@@ -353,12 +362,14 @@ treatment       1.2345     0.3456    3.57   0.0004</code></pre>
 </section>
 
  ]]></description>
+  <category>Statistics</category>
+  <category>R</category>
   <guid>https://high005.github.io/Site/posts/datah/papers/regression_result/</guid>
   <pubDate>Sun, 07 Sep 2025 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/papers/regression_result/xx22.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Standard Deviation Vs Standard Error</title>
+  <title>Standard deviation vs standard error</title>
   <link>https://high005.github.io/Site/posts/datah/papers/standard dev/</link>
   <description><![CDATA[ 
 
@@ -491,12 +502,13 @@ treatment       1.2345     0.3456    3.57   0.0004</code></pre>
 </section>
 
  ]]></description>
+  <category>Statistics</category>
   <guid>https://high005.github.io/Site/posts/datah/papers/standard dev/</guid>
   <pubDate>Fri, 05 Sep 2025 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/papers/standard dev/x11.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
-  <title>Your P-value is much more than you think</title>
+  <title>Your p-value means more (and less) than you think</title>
   <link>https://high005.github.io/Site/posts/datah/papers/p_value/</link>
   <description><![CDATA[ 
 
@@ -583,12 +595,13 @@ treatment       1.2345     0.3456    3.57   0.0004</code></pre>
 </section>
 
  ]]></description>
+  <category>Statistics</category>
   <guid>https://high005.github.io/Site/posts/datah/papers/p_value/</guid>
   <pubDate>Tue, 06 May 2025 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/papers/p_value/pvalue.png" medium="image" type="image/png" height="216" width="144"/>
 </item>
 <item>
-  <title>How Artificial Intelligence is improving the teaching journey in medical oncology</title>
+  <title>AI avatars are starting to teach medical oncology</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/ai_onco/</link>
   <description><![CDATA[ 
 
@@ -605,12 +618,14 @@ treatment       1.2345     0.3456    3.57   0.0004</code></pre>
 
 
  ]]></description>
+  <category>AI</category>
+  <category>Medical education</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/ai_onco/</guid>
   <pubDate>Sat, 26 Apr 2025 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/ai_onco/onco.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>How Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI</title>
+  <title>How Novo Nordisk cut clinical study reports from 12 weeks to 10 minutes</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/ai_pharma/</link>
   <description><![CDATA[ 
 
@@ -626,12 +641,15 @@ treatment       1.2345     0.3456    3.57   0.0004</code></pre>
 
 
  ]]></description>
+  <category>AI</category>
+  <category>Pharma</category>
+  <category>Regulatory</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/ai_pharma/</guid>
   <pubDate>Sat, 26 Apr 2025 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/ai_pharma/csr.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>The world’s smallest surgical robot is among us</title>
+  <title>The world’s smallest surgical robot</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/nano_robots/</link>
   <description><![CDATA[ 
 
@@ -650,12 +668,14 @@ treatment       1.2345     0.3456    3.57   0.0004</code></pre>
 </section>
 
  ]]></description>
+  <category>Medtech</category>
+  <category>Robotics</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/nano_robots/</guid>
   <pubDate>Tue, 28 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/nano_robots/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Bias in Healthcare studies</title>
+  <title>Bias in healthcare studies, and how to reduce it</title>
   <link>https://high005.github.io/Site/posts/datah/papers/bias/</link>
   <description><![CDATA[ 
 
@@ -759,12 +779,14 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>Statistics</category>
+  <category>Study design</category>
   <guid>https://high005.github.io/Site/posts/datah/papers/bias/</guid>
   <pubDate>Fri, 24 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/papers/bias/img.png" medium="image" type="image/png" height="160" width="144"/>
 </item>
 <item>
-  <title>Survival analysis</title>
+  <title>Survival analysis, explained simply</title>
   <link>https://high005.github.io/Site/posts/datah/papers/survival/</link>
   <description><![CDATA[ 
 
@@ -871,12 +893,14 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>Statistics</category>
+  <category>Clinical research</category>
   <guid>https://high005.github.io/Site/posts/datah/papers/survival/</guid>
   <pubDate>Fri, 24 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/papers/survival/x1.png" medium="image" type="image/png" height="84" width="144"/>
 </item>
 <item>
-  <title>ChatGPT and his Artificial intelligence will make us live longer</title>
+  <title>Can AI help us live longer? OpenAI’s GPT-4b Micro</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/longevity/</link>
   <description><![CDATA[ 
 
@@ -906,12 +930,14 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>AI</category>
+  <category>Biotech</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/longevity/</guid>
   <pubDate>Tue, 21 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/longevity/images.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Is tech improving our healthcare journey?</title>
+  <title>Is technology improving the healthcare journey?</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/tech_challenge/</link>
   <description><![CDATA[ 
 
@@ -941,12 +967,13 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>Digital health</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/tech_challenge/</guid>
   <pubDate>Mon, 20 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/tech_challenge/robot.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Bitcoin like solutions and decentralized payments can help your healthcare’s balance</title>
+  <title>Can crypto payments help a medical practice’s balance sheet?</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/bitcoin/</link>
   <description><![CDATA[ 
 
@@ -973,12 +1000,13 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>Health economics</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/bitcoin/</guid>
   <pubDate>Sun, 19 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/bitcoin/bit.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Artificial intelligence will improve your healthcare job routine</title>
+  <title>Generative AI can give clinicians time back</title>
   <link>https://high005.github.io/Site/posts/datah/medical_datactor/cardiology/</link>
   <description><![CDATA[ 
 
@@ -996,12 +1024,14 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>AI</category>
+  <category>Clinical practice</category>
   <guid>https://high005.github.io/Site/posts/datah/medical_datactor/cardiology/</guid>
   <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/medical_datactor/cardiology/cuore.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Aspirin Vs Cancer</title>
+  <title>Aspirin may help the immune system find cancer cells</title>
   <link>https://high005.github.io/Site/posts/datah/papers/aspirin/</link>
   <description><![CDATA[ 
 
@@ -1018,6 +1048,8 @@ Here the main types of bias healthcare are explained with some examples, and off
 </section>
 
  ]]></description>
+  <category>Research</category>
+  <category>Oncology</category>
   <guid>https://high005.github.io/Site/posts/datah/papers/aspirin/</guid>
   <pubDate>Wed, 22 May 2024 22:00:00 GMT</pubDate>
   <media:content url="https://high005.github.io/Site/posts/datah/papers/aspirin/cells.png" medium="image" type="image/png" height="145" width="144"/>

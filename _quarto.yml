@@ -3,16 +3,28 @@ project:
   output-dir: docs
   resources:
     - .nojekyll
+    - robots.txt
+    - images/og-image.png
+    - images/icons/
 
 website:
   title: "High 0.05"
   description: "Biostatistics and clinical data for health-tech. Turning health data into evidence you can build a business on."
-  favicon: images/logo.png
+  favicon: images/icons/favicon-32.png
   site-url: https://high005.github.io/Site
-  open-graph: true
-  twitter-card: true
+  image: images/og-image.png
+  image-alt: "High 0.05: prove your health product works. Study design, clinical data capture, biostatistics."
+  open-graph:
+    locale: en_GB
+    site-name: "High 0.05"
+    image-width: 1200
+    image-height: 630
+  twitter-card:
+    card-style: summary_large_image
+  search: true
   navbar:
     logo: images/logo.png
+    logo-alt: "High 0.05 home"
     title: false
     background: light
     left:
@@ -27,17 +39,22 @@ website:
       - text: "About"
         href: about.qmd
     right:
-      - text: "Contact"
+      - text: "Get in touch"
         href: jobs.qmd
   page-footer:
-    left: "High 0.05. A spin-off of Medici con l'Africa CUAMM."
+    left: |
+      **{{< var legal-name >}}** · {{< var address >}}, {{< var city >}} · P.IVA {{< var vat >}}<br>
+      A spin-off of Medici con l'Africa CUAMM ·
+      [Privacy](/privacy.qmd) · [Terms](/terms.qmd) · [Cookie settings](#){.cookie-settings}
     right:
       - icon: youtube
         href: https://www.youtube.com/@High_005
+        aria-label: "YouTube channel"
       - text: "ORCID"
         href: https://orcid.org/0000-0002-4610-0950
       - icon: envelope
         href: "mailto:bisturiep005@gmail.com"
+        aria-label: "Email us"
 
 format:
   html:
@@ -47,5 +64,7 @@ format:
     toc: true
     toc-depth: 3
     smooth-scroll: true
+    include-in-header: _includes/head.html
+    include-after-body: _includes/after-body.html
     grid:
       body-width: 900px

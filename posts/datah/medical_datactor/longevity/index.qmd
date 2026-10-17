@@ -1,8 +1,10 @@
 ---
-title: "ChatGPT and his Artificial intelligence will make us live longer"
+title: "Can AI help us live longer? OpenAI's GPT-4b Micro"
+description: "OpenAI and Retro Biosciences built a model to engineer proteins that rejuvenate cells. What it does and what is still unproven."
 date: "2025-01-22"
-categories:
+categories: [AI, Biotech]
 image: "images.jpg"
+image-alt: "Sam Altman in front of illustrated cells with the caption GPT-4b micro"
 draft: false
 layout: single
 execute: 

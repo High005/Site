@@ -1,8 +1,10 @@
 ---
-title: "The DeepSeek deception: How fake accounts fooled markets and what it means for AI investment"
+title: "The DeepSeek deception: how fake accounts fooled markets"
+description: "An analysis of 41,864 profiles shows how coordinated fake accounts inflated DeepSeek's rise, and what that means for judging AI hype."
 date: "2025-09-09"
-categories:
+categories: [AI, Evidence]
 image: "dpsk.png"
+image-alt: "Wireframe hand holding a phone showing the DeepSeek logo"
 draft: false
 layout: single
 execute: 

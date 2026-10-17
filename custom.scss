@@ -233,3 +233,131 @@ a { text-decoration: none; &:hover { text-decoration: underline; } }
 
 // ---- Footer --------------------------------------------------------------
 .nav-footer { border-top: 1px solid $line; color: $muted; font-size: 0.9rem; }
+
+// ---- Home: steps -----------------------------------------------------------
+.steps {
+  display: grid; gap: 1.25rem; max-width: 1080px; margin: 0 auto 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+.step { background: #fff; border: 1px solid $line; border-radius: 12px; padding: 1.5rem; }
+.step h3 { font-size: 1.15rem; margin: 0.6rem 0 0.4rem; }
+.step p { color: $muted; margin: 0; }
+.step-n {
+  display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+  background: rgba(178,58,48,0.1); color: $accent; font-weight: 700;
+}
+.center { text-align: center; }
+
+// ---- Loading states: skeleton shimmer behind images while they load --------
+@keyframes hi-shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+.quarto-grid-item .card-img-top, .listing-item .thumbnail-image, .thumbnail img {
+  background: linear-gradient(90deg, $surface 0, $surface-2 50%, $surface 100%);
+  background-size: 800px 100%;
+  animation: hi-shimmer 1.4s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .quarto-grid-item .card-img-top, .listing-item .thumbnail-image, .thumbnail img { animation: none; }
+}
+
+// ---- Contact form ----------------------------------------------------------
+.contact-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 2.5rem; margin: 1.5rem 0 3rem; }
+.contact-side h3 { font-size: 1rem; margin: 0 0 0.35rem; }
+.contact-side p { color: $ink-soft; margin-bottom: 1.4rem; }
+.field { margin-bottom: 1.1rem; }
+.field label { display: block; font-weight: 600; font-size: 0.93rem; margin-bottom: 0.35rem; }
+.field .req { color: $accent; }
+.field .opt { color: $muted; font-weight: 400; }
+.field input[type=text], .field input[type=email], .field select, .field textarea {
+  width: 100%; font: inherit; color: $ink; background: #fff;
+  border: 1px solid #cdd1d7; border-radius: 6px; padding: 0.6rem 0.75rem;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: $ink-soft; box-shadow: 0 0 0 3px rgba(22,24,29,0.1);
+}
+.field-hint { color: $muted; font-size: 0.85rem; margin: 0.3rem 0 0; }
+.field-error { color: $accent; font-size: 0.86rem; font-weight: 500; margin: 0.3rem 0 0; min-height: 0; }
+.field-error:empty { display: none; }
+.field.is-invalid input, .field.is-invalid textarea, .field.is-invalid select {
+  border-color: $accent; background: #fff8f7;
+  &:focus { box-shadow: 0 0 0 3px rgba(178,58,48,0.16); }
+}
+.field-check { display: grid; grid-template-columns: auto 1fr; gap: 0.6rem; align-items: start; }
+.field-check input { margin-top: 0.3rem; width: 1.05rem; height: 1.05rem; accent-color: $accent; }
+.field-check label { font-weight: 400; font-size: 0.92rem; margin: 0; }
+.field-check .field-error { grid-column: 1 / -1; }
+.field-check.is-invalid label { color: $accent; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.btn-submit { display: inline-flex; align-items: center; gap: 0.6rem; cursor: pointer; }
+.btn-submit:disabled { opacity: 0.75; cursor: progress; }
+.btn-submit .spinner {
+  display: none; width: 1rem; height: 1rem; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4); border-top-color: #fff;
+  animation: hi-spin 0.7s linear infinite;
+}
+.btn-submit.is-loading .spinner { display: inline-block; }
+.btn-submit.is-loading .label::after { content: "…"; }
+@keyframes hi-spin { to { transform: rotate(360deg); } }
+
+.form-status { margin-top: 1rem; padding: 0.85rem 1rem; border-radius: 8px; font-size: 0.95rem; outline: none; }
+.form-status.success { background: rgba(31,138,91,0.1); color: #17694a; border: 1px solid rgba(31,138,91,0.3); }
+.form-status.error { background: #fff3f1; color: $accent-deep; border: 1px solid rgba(178,58,48,0.3); }
+
+// ---- 404 -------------------------------------------------------------------
+.notfound { max-width: 620px; margin: 2rem auto 3rem; }
+.notfound h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); border: 0; margin-top: 0; }
+
+// ---- Cookie banner ---------------------------------------------------------
+.cookie-banner {
+  position: fixed; z-index: 1050; left: 1rem; bottom: 1rem; max-width: 420px;
+  background: #fff; border: 1px solid $line; border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(22,24,29,0.16); padding: 1.1rem 1.2rem;
+  font-size: 0.92rem;
+}
+.cookie-banner p { margin: 0 0 0.8rem; color: $ink-soft; }
+.cookie-actions { display: flex; gap: 0.5rem; justify-content: flex-end; }
+.cookie-actions button { margin: 0; padding: 0.5rem 1.1rem; font-size: 0.92rem; cursor: pointer; }
+.cookie-banner[hidden], .sticky-cta[hidden] { display: none !important; }
+
+// ---- Sticky mobile CTA -----------------------------------------------------
+.sticky-cta {
+  position: fixed; z-index: 1040; left: 0; right: 0; bottom: 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom));
+  background: $ink; color: #fff; font-size: 0.9rem; font-weight: 500;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
+}
+.sticky-cta-btn {
+  background: $accent; color: #fff !important; font-weight: 600; white-space: nowrap;
+  padding: 0.55rem 1rem; border-radius: 6px;
+  &:hover { background: $accent-deep; text-decoration: none; }
+}
+body.has-sticky-cta { padding-bottom: 4.25rem; }
+@media (min-width: 768px) { .sticky-cta { display: none !important; } }
+
+// ---- Footer ----------------------------------------------------------------
+.nav-footer-left { font-size: 0.85rem; line-height: 1.6; }
+.nav-footer a { color: $ink-soft; }
+
+// ---- Mobile breakpoints ----------------------------------------------------
+@media (max-width: 991.98px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero-inner { padding: 4rem 1.25rem 3.5rem; }
+}
+@media (max-width: 767.98px) {
+  .section { padding: 3rem 1rem; }
+  .section-head { margin-bottom: 2rem; }
+  .hero-inner { padding: 2.75rem 1rem 2.75rem; }
+  .hero h1 { max-width: none; }
+  .hero-actions a { display: block; text-align: center; margin: 0 0 0.6rem; }
+  .cta-final { padding: 2.25rem 1.25rem; border-radius: 10px; }
+  .cookie-banner { left: 0.5rem; right: 0.5rem; bottom: 0.5rem; max-width: none; }
+  .nav-footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  .trust { font-size: 0.95rem; }
+}
+@media (max-width: 400px) {
+  .sticky-cta span { display: none; }
+  .sticky-cta { justify-content: center; }
+  .sticky-cta-btn { flex: 1; text-align: center; }
+}

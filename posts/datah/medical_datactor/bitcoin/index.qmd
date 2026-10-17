@@ -1,8 +1,10 @@
 ---
-title: "Bitcoin like solutions and decentralized payments can help your healthcare's balance"
+title: "Can crypto payments help a medical practice's balance sheet?"
+description: "Lower fees and smart contracts: where cryptocurrency payments may help healthcare practices, and where the risks are."
 date: "2025-01-20"
-categories:
+categories: [Health economics]
 image: "bit.jpg"
+image-alt: "Gold Bitcoin coins in front of a trading chart"
 draft: false
 layout: single
 execute: 

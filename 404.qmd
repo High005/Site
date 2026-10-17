@@ -1,0 +1,23 @@
+---
+title: "Page not found"
+pagetitle: "Page not found"
+description: "This page does not exist. Find our statistics guides, data tutorials or get in touch."
+toc: false
+search: false
+sitemap: false
+---
+
+::: {.notfound}
+[Error 404]{.eyebrow}
+
+## This page has a p-value of 1: it really isn't here.
+
+The link may be old, or the page has moved. Here is where most people are heading:
+
+- [Statistics, explained](science.qmd): p-values, bias, survival analysis
+- [Data guides](tutorials.qmd): REDCap tutorials, step by step
+- [Health-tech radar](tech.qmd): AI and medical innovation, without the hype
+
+[Back to the home page](index.qmd){.btn-primary-cta}
+[Get in touch](jobs.qmd){.btn-secondary-cta}
+:::

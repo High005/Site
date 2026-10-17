@@ -1,8 +1,10 @@
 ---
-title: "Aspirin Vs Cancer"
+title: "Aspirin may help the immune system find cancer cells"
+description: "A University of Padova study suggests aspirin helps immune cells detect and target cancer cells."
 date: "2024-05-23"
-categories:
+categories: [Research, Oncology]
 image: "cells.png"
+image-alt: "Fluorescence microscopy image of cells with blue nuclei and green cytoskeleton"
 draft: false
 layout: single
 execute: 

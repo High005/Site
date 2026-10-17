@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="An evidence-based read on AI and medical innovation: signal over hype.">
 
-<title>Health-tech radar – High 0.05</title>
+<title>Health-tech radar: AI and medical innovation – High 0.05</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logo.png" rel="icon" type="image/png">
+<link href="./images/icons/favicon-32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -43,10 +46,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8de4b4513e6de6461bb76bf2a6679a3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0802301d16eac291a7d15c79213164f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,9 +107,12 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="apple-touch-icon" sizes="180x180" href="https://high005.github.io/Site/images/icons/apple-touch-icon.png">
+<link rel="manifest" href="https://high005.github.io/Site/images/icons/site.webmanifest">
+<meta name="theme-color" content="#16181d">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -135,18 +141,21 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Health-tech radar – High 0.05">
+<meta property="og:title" content="Health-tech radar: AI and medical innovation">
 <meta property="og:description" content="An evidence-based read on AI and medical innovation: signal over hype.">
 <meta property="og:image" content="https://high005.github.io/Site/posts/datah/medical_datactor/deepseek/dpsk.png">
 <meta property="og:site_name" content="High 0.05">
 <meta property="og:image:height" content="560">
 <meta property="og:image:width" content="800">
-<meta name="twitter:title" content="Health-tech radar – High 0.05">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image:alt" content="Wireframe hand holding a phone showing the DeepSeek logo">
+<meta name="twitter:title" content="Health-tech radar: AI and medical innovation">
 <meta name="twitter:description" content="An evidence-based read on AI and medical innovation: signal over hype.">
 <meta name="twitter:image" content="https://high005.github.io/Site/posts/datah/medical_datactor/deepseek/dpsk.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Wireframe hand holding a phone showing the DeepSeek logo">
 <meta name="twitter:image-height" content="560">
 <meta name="twitter:image-width" content="800">
-<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -157,8 +166,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="./images/logo.png" alt="High 0.05 home" class="navbar-logo light-content">
+    <img src="./images/logo.png" alt="High 0.05 home" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -191,7 +200,7 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./jobs.html"> 
-<span class="menu-text">Contact</span></a>
+<span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -206,7 +215,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QmlvdGVjaA==">Biotech <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2xpbmljYWwlMjBwcmFjdGljZQ==">Clinical practice <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlnaXRhbCUyMGhlYWx0aA==">Digital health <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXZpZGVuY2U=">Evidence <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SGVhbHRoJTIwZWNvbm9taWNz">Health economics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWVkaWNhbCUyMGVkdWNhdGlvbg==">Medical education <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWVkdGVjaA==">Medtech <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhhcm1h">Pharma <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVndWxhdG9yeQ==">Regulatory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Um9ib3RpY3M=">Robotics <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -241,18 +250,18 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1757368800000" data-listing-file-modified-sort="1757417751000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="759">
+<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNFdmlkZW5jZQ==" data-listing-date-sort="1757368800000" data-listing-file-modified-sort="1792248284302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="759">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/deepseek/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/deepseek/dpsk.png" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/deepseek/dpsk.png" class="thumbnail-image" alt="Wireframe hand holding a phone showing the DeepSeek logo">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/deepseek/index.html" class="no-external">The DeepSeek deception: How fake accounts fooled markets and what it means for AI investment</a>
+<a href="./posts/datah/medical_datactor/deepseek/index.html" class="no-external">The DeepSeek deception: how fake accounts fooled markets</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/deepseek/index.html" class="no-external">
-Recently, a Chinese AI model called DeepSeek seemed to come out of nowhere, rocketing to the top of app charts and sending shockwaves through global financial markets. Tech…
+<p>An analysis of 41,864 profiles shows how coordinated fake accounts inflated DeepSeek’s rise, and what that means for judging AI hype.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -263,18 +272,18 @@ Sep 9, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1745704800000" data-listing-file-modified-sort="1745741489000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="quarto-post image-right" data-index="1" data-categories="QUklMkNNZWRpY2FsJTIwZWR1Y2F0aW9u" data-listing-date-sort="1745704800000" data-listing-file-modified-sort="1792248284297" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/ai_onco/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/ai_onco/onco.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/ai_onco/onco.jpg" class="thumbnail-image" alt="Doctor touching a glowing AI icon on a digital interface">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/ai_onco/index.html" class="no-external">How Artificial Intelligence is improving the teaching journey in medical oncology</a>
+<a href="./posts/datah/medical_datactor/ai_onco/index.html" class="no-external">AI avatars are starting to teach medical oncology</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/ai_onco/index.html" class="no-external">
-Artificial intelligence is entering classrooms to teach medical oncology. Italy is leading the way with the first study of its kind, called “AI Learning,” which will assess…
+<p>Italy’s AI Learning study tests whether medical students learn oncology as well from AI-powered avatars as from people.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -285,18 +294,18 @@ Apr 27, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1745704800000" data-listing-file-modified-sort="1745745410000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
+<div class="quarto-post image-right" data-index="2" data-categories="QUklMkNQaGFybWElMkNSZWd1bGF0b3J5" data-listing-date-sort="1745704800000" data-listing-file-modified-sort="1792248284298" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/ai_pharma/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/ai_pharma/csr.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/ai_pharma/csr.jpg" class="thumbnail-image" alt="Digital graphic with the words Clinical trial surrounded by connected icons">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/ai_pharma/index.html" class="no-external">How Novo Nordisk Accelerates drug development times from 12 weeks to 10 minutes with GenAI</a>
+<a href="./posts/datah/medical_datactor/ai_pharma/index.html" class="no-external">How Novo Nordisk cut clinical study reports from 12 weeks to 10 minutes</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/ai_pharma/index.html" class="no-external">
-Novo Nordisk, a global leader in diabetes and chronic disease care, has reimagined the way it creates clinical study reports, by using MongoDB Atlas together with Amazon…
+<p>How generative AI and retrieval-augmented generation automate clinical study report writing, and what it means for regulatory timelines.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -307,18 +316,18 @@ Apr 27, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1738187174000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
+<div class="quarto-post image-right" data-index="3" data-categories="TWVkdGVjaCUyQ1JvYm90aWNz" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1792248284304" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/nano_robots/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/nano_robots/image.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/nano_robots/image.jpg" class="thumbnail-image" alt="HKUST research team standing behind the magnetic coil system that steers the micro-robot">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/nano_robots/index.html" class="no-external">The world’s smallest surgical robot is among us</a>
+<a href="./posts/datah/medical_datactor/nano_robots/index.html" class="no-external">The world’s smallest surgical robot</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/nano_robots/index.html" class="no-external">
-Engineers at the Hong Kong University of Science and Technology have developed a new surgical robot, maybe the world’s smallest one. The 0.95-millimeter robot is 60% smaller…<em></em>
+<p>A 0.95 mm robot from HKUST can image, sample and perform laser ablation inside the body.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -329,18 +338,18 @@ Jan 29, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1737500400000" data-listing-file-modified-sort="1738136062000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595">
+<div class="quarto-post image-right" data-index="4" data-categories="QUklMkNCaW90ZWNo" data-listing-date-sort="1737500400000" data-listing-file-modified-sort="1792248284303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/longevity/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/longevity/images.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/longevity/images.jpg" class="thumbnail-image" alt="Sam Altman in front of illustrated cells with the caption GPT-4b micro">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/longevity/index.html" class="no-external">ChatGPT and his Artificial intelligence will make us live longer</a>
+<a href="./posts/datah/medical_datactor/longevity/index.html" class="no-external">Can AI help us live longer? OpenAI’s GPT-4b Micro</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/longevity/index.html" class="no-external">
-OpenAI has recently announced an innovative partnership with Retro Biosciences, a biotech startup dedicated to advancing longevity research. This collaboration has resulted…
+<p>OpenAI and Retro Biosciences built a model to engineer proteins that rejuvenate cells. What it does and what is still unproven.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -351,18 +360,18 @@ Jan 22, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1737414000000" data-listing-file-modified-sort="1737451795000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
+<div class="quarto-post image-right" data-index="5" data-categories="RGlnaXRhbCUyMGhlYWx0aA==" data-listing-date-sort="1737414000000" data-listing-file-modified-sort="1792248284305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/tech_challenge/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/tech_challenge/robot.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/tech_challenge/robot.jpg" class="thumbnail-image" alt="A woman smiling face to face with a white humanoid robot in a lab">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/tech_challenge/index.html" class="no-external">Is tech improving our healthcare journey?</a>
+<a href="./posts/datah/medical_datactor/tech_challenge/index.html" class="no-external">Is technology improving the healthcare journey?</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/tech_challenge/index.html" class="no-external">
-The integration of digital technologies in healthcare is an evolutionary process, marked by both advancements and initial challenges. While the introduction of new…
+<p>Why early hospital automation created friction, and how adaptive AI tools can fit real clinical workflows instead.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -373,18 +382,18 @@ Jan 21, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1737327600000" data-listing-file-modified-sort="1737389396000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="632">
+<div class="quarto-post image-right" data-index="6" data-categories="SGVhbHRoJTIwZWNvbm9taWNz" data-listing-date-sort="1737327600000" data-listing-file-modified-sort="1792248284299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="632">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/bitcoin/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/bitcoin/bit.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/bitcoin/bit.jpg" class="thumbnail-image" alt="Gold Bitcoin coins in front of a trading chart">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/bitcoin/index.html" class="no-external">Bitcoin like solutions and decentralized payments can help your healthcare’s balance</a>
+<a href="./posts/datah/medical_datactor/bitcoin/index.html" class="no-external">Can crypto payments help a medical practice’s balance sheet?</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/bitcoin/index.html" class="no-external">
-Different medical practices experience varying degrees of benefit from cryptocurrency adoption. Practices that primarily operate on a cash basis, such as outpatient clinics…
+<p>Lower fees and smart contracts: where cryptocurrency payments may help healthcare practices, and where the risks are.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -395,18 +404,18 @@ Jan 20, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1736550000000" data-listing-file-modified-sort="1737129185000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
+<div class="quarto-post image-right" data-index="7" data-categories="QUklMkNDbGluaWNhbCUyMHByYWN0aWNl" data-listing-date-sort="1736550000000" data-listing-file-modified-sort="1792248284301" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
 <div class="thumbnail"><a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/datah/medical_datactor/cardiology/cuore.jpg" class="thumbnail-image">
+<img loading="lazy" src="./posts/datah/medical_datactor/cardiology/cuore.jpg" class="thumbnail-image" alt="Vintage anatomical drawing of the human heart, cross-section and exterior">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">Artificial intelligence will improve your healthcare job routine</a>
+<a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">Generative AI can give clinicians time back</a>
 </h3>
 <div class="delink listing-description"><a href="./posts/datah/medical_datactor/cardiology/index.html" class="no-external">
-LLMs in medicine are nowadays super in hype. Or better, GenAI is super in hype. The last one is different from traditional AI in that it can generate content, such as…
+<p>Generative AI can take over the admin work clinicians avoid, freeing time for patients. Here is where it helps today.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -420,6 +429,158 @@ Jan 11, 2025
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<!-- Sticky mobile CTA (shown on small screens after scrolling) -->
+<div class="sticky-cta" id="sticky-cta" hidden="">
+  <span>Need evidence for your product?</span>
+  <a class="sticky-cta-btn" data-href="jobs.html">Get in touch</a>
+</div>
+
+<!-- Cookie consent: analytics only load after "Accept" -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden="">
+  <p>We use one optional analytics cookie to see which pages are useful. No ads, no selling data.
+    <a data-href="privacy.html#cookies">Read more</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" class="btn-secondary-cta" data-consent="denied">Decline</button>
+    <button type="button" class="btn-primary-cta" data-consent="granted">Accept</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ---- Site configuration ------------------------------------------------
+  // GA4 measurement ID, e.g. "G-ABC123XYZ". Leave empty to disable analytics.
+  var GA4_ID = "";
+  // Form backend (e.g. a Formspree endpoint "https://formspree.io/f/xxxxxxx").
+  // Leave empty and the contact form falls back to opening the visitor's email app.
+  var FORM_ENDPOINT = "";
+  var CONTACT_EMAIL = "bisturiep005@gmail.com";
+  // -------------------------------------------------------------------------
+
+  var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+  var root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+  document.querySelectorAll("[data-href]").forEach(function (a) {
+    a.setAttribute("href", root + a.getAttribute("data-href"));
+  });
+
+  function store(k, v) {
+    try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; }
+  }
+
+  // ---- Analytics, gated on consent ----------------------------------------
+  function loadAnalytics() {
+    if (!GA4_ID || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", GA4_ID, { anonymize_ip: true });
+  }
+  var banner = document.getElementById("cookie-banner");
+  var consent = store("h005-consent");
+  if (consent === "granted") loadAnalytics();
+  else if (!consent) banner.hidden = false;
+  banner.addEventListener("click", function (e) {
+    var choice = e.target.getAttribute && e.target.getAttribute("data-consent");
+    if (!choice) return;
+    store("h005-consent", choice);
+    banner.hidden = true;
+    if (choice === "granted") loadAnalytics();
+  });
+  document.querySelectorAll(".cookie-settings").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); banner.hidden = false; });
+  });
+
+  // ---- Sticky mobile CTA -------------------------------------------------
+  var cta = document.getElementById("sticky-cta");
+  var onContact = /\/jobs\.html$/.test(location.pathname);
+  if (!onContact) {
+    var toggle = function () {
+      var show = window.innerWidth < 768 && window.scrollY > 420 && banner.hidden;
+      cta.hidden = !show;
+      document.body.classList.toggle("has-sticky-cta", show);
+    };
+    window.addEventListener("scroll", toggle, { passive: true });
+    window.addEventListener("resize", toggle);
+    banner.addEventListener("click", toggle);
+    toggle();
+  }
+
+  // ---- Contact form: validation, loading, success and error states -------
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+  var status = document.getElementById("form-status");
+  var btn = form.querySelector("button[type=submit]");
+  var rules = {
+    name: function (v) { return v.trim().length >= 2 || "Please tell us your name."; },
+    email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || "Please enter a valid email address, e.g. name@company.com."; },
+    message: function (v) { return v.trim().length >= 20 || "A couple of sentences helps us reply usefully (at least 20 characters)."; },
+    consent: function (v, el) { return el.checked || "Please confirm you have read the privacy policy."; }
+  };
+  function check(el) {
+    var rule = rules[el.name];
+    if (!rule) return true;
+    var res = rule(el.value, el);
+    var err = document.getElementById(el.name + "-error");
+    var ok = res === true;
+    el.setAttribute("aria-invalid", ok ? "false" : "true");
+    el.closest(".field").classList.toggle("is-invalid", !ok);
+    err.textContent = ok ? "" : res;
+    return ok;
+  }
+  Object.keys(rules).forEach(function (n) {
+    var el = form.elements[n];
+    el.addEventListener("blur", function () { check(el); });
+    el.addEventListener("input", function () { if (el.getAttribute("aria-invalid") === "true") check(el); });
+  });
+  function setStatus(kind, html) {
+    status.className = "form-status " + kind;
+    status.innerHTML = html;
+    status.hidden = false;
+    status.focus();
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (form.elements._gotcha.value) return; // spam honeypot
+    var bad = Object.keys(rules).map(function (n) { return check(form.elements[n]) ? null : form.elements[n]; }).filter(Boolean);
+    if (bad.length) {
+      setStatus("error", "Please fix the " + (bad.length === 1 ? "highlighted field" : bad.length + " highlighted fields") + " and try again.");
+      bad[0].focus();
+      return;
+    }
+    var data = new FormData(form);
+    btn.disabled = true;
+    btn.classList.add("is-loading");
+    btn.setAttribute("aria-busy", "true");
+    var done = function () { btn.disabled = false; btn.classList.remove("is-loading"); btn.removeAttribute("aria-busy"); };
+
+    if (!FORM_ENDPOINT) {
+      var body = "Name: " + data.get("name") + "\nOrganisation: " + (data.get("org") || "-") +
+        "\nTopic: " + data.get("topic") + "\n\n" + data.get("message");
+      window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" +
+        encodeURIComponent("Enquiry: " + data.get("topic")) + "&body=" + encodeURIComponent(body);
+      setTimeout(function () {
+        done();
+        setStatus("success", "Your email app should now be open with the message ready to send. Nothing opened? Write to <a href=\"mailto:" + CONTACT_EMAIL + "\">" + CONTACT_EMAIL + "</a>.");
+      }, 600);
+      return;
+    }
+    fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); })
+      .then(function () {
+        form.reset();
+        setStatus("success", "<strong>Thanks, message received.</strong> We will reply by email.");
+      })
+      .catch(function () {
+        setStatus("error", "Sorry, the message could not be sent. Please try again, or email <a href=\"mailto:" + CONTACT_EMAIL + "\">" + CONTACT_EMAIL + "</a>.");
+      })
+      .then(done);
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -824,7 +985,7 @@ Jan 11, 2025
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>High 0.05. A spin-off of Medici con l’Africa CUAMM.</p>
+<p><strong>High 0.05</strong> · TODO: street, number, 35100 Padova (PD), Italy · P.IVA TODO: P.IVA<br> A spin-off of Medici con l’Africa CUAMM · <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a> · <a href="#" class="cookie-settings">Cookie settings</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
@@ -833,7 +994,7 @@ Jan 11, 2025
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://www.youtube.com/@High_005">
-      <i class="bi bi-youtube" role="img">
+      <i class="bi bi-youtube" role="img" aria-label="YouTube channel">
 </i> 
     </a>
   </li>  
@@ -844,7 +1005,7 @@ Jan 11, 2025
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:bisturiep005@gmail.com">
-      <i class="bi bi-envelope" role="img">
+      <i class="bi bi-envelope" role="img" aria-label="Email us">
 </i> 
     </a>
   </li>  

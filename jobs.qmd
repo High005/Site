@@ -1,35 +1,94 @@
 ---
-title: "Contact"
-description: "Tell us what you are dealing with: data capture, statistics, or clinical evidence for your product."
+title: "Get in touch"
+pagetitle: "Contact us: biostatistics & clinical data help"
+description: "Tell us what you are building and where the evidence gap is: study design, clinical data capture or biostatistics for your health product."
+toc: false
 ---
 
-## Tell us what you are stuck on
+A few sentences are enough. We read every message and reply by email.
 
-If it is clinical data, statistics, or evidence for your product, it has almost
-certainly come up before. The fastest way to start is a short message about
-what you are building and where you are stuck.
+::: {.contact-grid}
+::: {.contact-form-col}
 
-[bisturiep005@gmail.com](mailto:bisturiep005@gmail.com){.btn-primary-cta}
+```{=html}
+<form id="contact-form" class="contact-form" novalidate>
+  <div class="field">
+    <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+    <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+    <p class="field-error" id="name-error" aria-live="polite"></p>
+  </div>
+  <div class="field">
+    <label for="email">Work email <span class="req" aria-hidden="true">*</span></label>
+    <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+    <p class="field-error" id="email-error" aria-live="polite"></p>
+  </div>
+  <div class="field">
+    <label for="org">Company or institution <span class="opt">(optional)</span></label>
+    <input id="org" name="org" type="text" autocomplete="organization">
+  </div>
+  <div class="field">
+    <label for="topic">What do you need help with?</label>
+    <select id="topic" name="topic">
+      <option>Study design and sample size</option>
+      <option>Clinical data capture (REDCap)</option>
+      <option>Statistical analysis</option>
+      <option>Evidence for regulators, buyers or investors</option>
+      <option>Something else</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="message">Your message <span class="req" aria-hidden="true">*</span></label>
+    <textarea id="message" name="message" rows="6" required aria-describedby="message-hint message-error"
+      placeholder="E.g. We have a remote-monitoring app and need to show it reduces readmissions. We have 6 months of pilot data."></textarea>
+    <p class="field-hint" id="message-hint">What you are building, what data you have, and your deadline.</p>
+    <p class="field-error" id="message-error" aria-live="polite"></p>
+  </div>
+  <div class="field field-check">
+    <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+    <label for="consent">I have read the <a href="privacy.html">privacy policy</a> and agree that you use my details to reply.</label>
+    <p class="field-error" id="consent-error" aria-live="polite"></p>
+  </div>
+  <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button type="submit" class="btn-primary-cta btn-submit">
+    <span class="spinner" aria-hidden="true"></span><span class="label">Send message</span>
+  </button>
+  <div id="form-status" class="form-status" role="status" tabindex="-1" hidden></div>
+</form>
+```
 
-## Ways to reach us
+:::
+::: {.contact-side}
 
-- **Email:** [bisturiep005@gmail.com](mailto:bisturiep005@gmail.com)
-- **YouTube:** practical guides and worked examples at [High 005](https://www.youtube.com/@High_005)
-- **ORCID:** publicly verifiable work at [orcid.org/0000-0002-4610-0950](https://orcid.org/0000-0002-4610-0950)
+### Prefer email?
 
-## Who it's for
+[{{< var email >}}](mailto:{{< var email >}})
 
-- Health-tech and digital-health startups
-- Medtech and life-science companies
-- Hospitals and clinical teams
-- Research groups
+### Address
+
+{{< var legal-name >}}<br>
+{{< var address >}}<br>
+{{< var city >}}<br>
+P.IVA {{< var vat >}}
+
+### Who we work with
+
+Health-tech and digital-health startups, medtech and life-science companies,
+hospitals and research groups.
+
+### Elsewhere
+
+[YouTube: High 005](https://www.youtube.com/@High_005)<br>
+[ORCID: verifiable publications](https://orcid.org/0000-0002-4610-0950)
+
+:::
+:::
 
 ## Selected engagements
 
-- Diecimilauno S.p.A. (Treviso, IT), July 2024 to ongoing
-- University of Padua: Cardiology, Internal Medicine, Surgery, Oncology (Padua, IT), 2021 to ongoing
-- Broken Pot, energy startup (Padua, IT), 2025
-- Medicilio, telemedicine startup (Milan, IT), 2025
-- Stealth deeptech startup (Verona, IT), 2024
-- ASST Ospedale Papa Giovanni XXIII (Bergamo, IT), 2024
-- Mainz University (Mainz, DE), 2024
+- **Diecimilauno S.p.A.** (Treviso, IT), July 2024 to today
+- **University of Padua**: Cardiology, Internal Medicine, Surgery, Oncology, 2021 to today
+- **ASST Ospedale Papa Giovanni XXIII** (Bergamo, IT), 2024
+- **Mainz University** (Mainz, DE), 2024
+- **Medicilio**, telemedicine startup (Milan, IT), 2025
+- **Broken Pot**, energy startup (Padua, IT), 2025
+- **Stealth deeptech startup** (Verona, IT), 2024

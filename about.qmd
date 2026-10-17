@@ -1,5 +1,6 @@
 ---
 title: "About"
+pagetitle: "About us: a CUAMM spin-off for clinical evidence"
 description: "Why High 0.05 exists, and its roots in Medici con l'Africa CUAMM."
 ---
 

@@ -1,8 +1,10 @@
 ---
-title: "The world's smallest surgical robot is among us"
+title: "The world's smallest surgical robot"
+description: "A 0.95 mm robot from HKUST can image, sample and perform laser ablation inside the body."
 date: "2025-01-29"
-categories:
+categories: [Medtech, Robotics]
 image: "image.jpg"
+image-alt: "HKUST research team standing behind the magnetic coil system that steers the micro-robot"
 draft: false
 layout: single
 execute: 

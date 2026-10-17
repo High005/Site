@@ -1,8 +1,10 @@
 ---
-title: "Simplest Way to Present Your Statistical Results"
+title: "The simplest way to present statistical results"
+description: "Turn raw R regression output into clear, publication-ready tables with gtsummary that any stakeholder can read."
 date: "2025-09-08"
-categories:
+categories: [Statistics, R]
 image: "xx22.jpg"
+image-alt: "Meme comparing raw R summary(fit) output with a clean gtsummary regression table"
 draft: false
 layout: single
 execute: 

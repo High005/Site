@@ -1,5 +1,6 @@
 ---
-pagetitle: "High 0.05 | prove your health product works"
+pagetitle: "Biostatistics & clinical evidence for health-tech"
+image: images/og-image.png
 description: "High 0.05 turns clinical data into evidence that regulators, buyers and investors accept: captured cleanly, analysed honestly, presented clearly."
 page-layout: full
 toc: false
@@ -30,7 +31,7 @@ in the room can read it.
 :::
 
 ::: {.hero-actions}
-[Get in touch](jobs.qmd){.btn-primary-cta}
+[Tell us about your project](jobs.qmd){.btn-primary-cta}
 [See how it works](#how){.btn-secondary-cta}
 :::
 :::
@@ -111,8 +112,51 @@ Age            0.1500  0.0306  0.00001</pre>
 
 ::: {.section}
 ::: {.trust}
-Trusted with clinical data and analysis by <b>health-tech companies, hospitals
-and research teams across Europe.</b>
+Clinical data and analysis for <b>University of Padua</b> · <b>ASST Papa
+Giovanni XXIII</b> · <b>Mainz University</b> · <b>Diecimilauno</b> ·
+<b>Medicilio</b>, and health-tech startups across Italy.
+:::
+:::
+
+
+::: {.section .section-alt}
+::: {.section-head}
+## How working together goes
+
+No jargon, no surprises.
+:::
+
+::: {.steps}
+::: {.step}
+[1]{.step-n}
+
+### You tell us the problem
+
+A short message or call: what you are building, what data you have, and who
+needs convincing.
+:::
+
+::: {.step}
+[2]{.step-n}
+
+### We propose a plan
+
+A written scope with the method, timeline and price, so you know exactly what
+you get before anything starts.
+:::
+
+::: {.step}
+[3]{.step-n}
+
+### You get evidence you can use
+
+Clean data, sound analysis and a clear report your board, buyer or regulator
+can read.
+:::
+:::
+
+::: {.center}
+[Start with a message](jobs.qmd){.btn-primary-cta}
 :::
 :::
 

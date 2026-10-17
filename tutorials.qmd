@@ -1,5 +1,6 @@
 ---
 title: "Data guides"
+pagetitle: "REDCap tutorials for clinical data capture"
 description: "Build a clinical data collection tool that works: practical REDCap tutorials."
 ---
 

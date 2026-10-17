@@ -1,8 +1,10 @@
 ---
-title: "Your P-value is much more than you think"
+title: "Your p-value means more (and less) than you think"
+description: "What a p-value really tells you, why p < 0.05 is not the whole story, and how to read it with effect sizes."
 date: "2025-05-07"
-categories:
+categories: [Statistics]
 image: "pvalue.png"
+image-alt: "Cartoon of a flipping coin and a p < 0.05 sign: rejecting the null hypothesis because the result happens less than 1 in 20 times"
 draft: false
 layout: single
 execute: 

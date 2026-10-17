@@ -1,8 +1,10 @@
 ---
-title: "Bias in Healthcare studies"
+title: "Bias in healthcare studies, and how to reduce it"
+description: "The main types of bias in clinical research, with examples and practical ways to limit them, from design to publication."
 date: "2025-01-25"
-categories:
+categories: [Statistics, Study design]
 image: "img.png"
+image-alt: "Four targets showing accurate, biased, noisy, and biased-and-noisy measurements"
 draft: false
 layout: single
 execute: 

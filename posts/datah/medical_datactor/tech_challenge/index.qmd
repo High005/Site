@@ -1,8 +1,10 @@
 ---
-title: "Is tech improving our healthcare journey?"
+title: "Is technology improving the healthcare journey?"
+description: "Why early hospital automation created friction, and how adaptive AI tools can fit real clinical workflows instead."
 date: "2025-01-21"
-categories:
+categories: [Digital health]
 image: "robot.jpg"
+image-alt: "A woman smiling face to face with a white humanoid robot in a lab"
 draft: false
 layout: single
 execute: 

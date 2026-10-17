@@ -1,5 +1,6 @@
 ---
 title: "Health-tech radar"
+pagetitle: "Health-tech radar: AI and medical innovation"
 description: "An evidence-based read on AI and medical innovation: signal over hype."
 subtitle: "What's genuinely new in medicine, and what's just noise."
 listing:

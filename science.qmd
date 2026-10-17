@@ -1,5 +1,6 @@
 ---
 title: "Statistics, explained"
+pagetitle: "Biostatistics explained: p-values, bias, survival"
 description: "Worked biostatistics: p-values, bias, survival, regression, read in context."
 subtitle: "How we read the numbers that decide whether your evidence holds up."
 listing:

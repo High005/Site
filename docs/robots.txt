@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://high005.github.io/Site/sitemap.xml

@@ -1,6 +1,6 @@
 ---
 title: Newscare
-description: "The news about revolution that are solving Medicine's challenges"
+description: "News on the innovations tackling medicine's biggest challenges."
 listing:
   contents: medical_datactor
   sort: "date desc"

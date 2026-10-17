@@ -1,0 +1,52 @@
+---
+title: "Terms of use"
+pagetitle: "Terms of use"
+description: "The terms for using the High 0.05 website and its articles, tutorials and code."
+---
+
+_Last updated: {{< var updated >}}_
+
+By using this website you accept these terms. They are short on purpose.
+
+## Who we are
+
+This website is run by **{{< var legal-name >}}**, {{< var address >}},
+{{< var city >}}, VAT {{< var vat >}}. Contact:
+[{{< var email >}}](mailto:{{< var email >}}).
+
+## The content is educational, not advice
+
+Articles, tutorials and examples explain statistical and data methods in
+general terms. They are **not medical advice** and **not a substitute for a
+statistical or regulatory review of your specific study or product**. Do not
+make clinical, regulatory or investment decisions based only on this site.
+For work on your project we agree a separate written contract.
+
+## Accuracy
+
+We work hard to get things right and correct errors when we find them. Still,
+the content is provided "as is", without warranties. News articles summarise
+third-party sources, which are linked so you can check them.
+
+## Using our content
+
+- You may read, share and link to any page.
+- Code snippets in tutorials may be reused in your own work.
+- Please do not republish full articles or images without permission. Some
+  images belong to third parties and are used for commentary.
+
+## Links to other websites
+
+We link to external sites (journals, YouTube, news sources). We are not
+responsible for their content or their privacy practices.
+
+## Liability
+
+To the extent permitted by law, we are not liable for losses arising from use
+of this website. Nothing here limits liability that cannot be limited under
+Italian or EU law.
+
+## Law
+
+These terms are governed by Italian law. Your personal data is handled as
+described in our [privacy policy](privacy.qmd).

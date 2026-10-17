@@ -1,8 +1,10 @@
 ---
-title: "Artificial intelligence will improve your healthcare job routine"
+title: "Generative AI can give clinicians time back"
+description: "Generative AI can take over the admin work clinicians avoid, freeing time for patients. Here is where it helps today."
 date: "2025-01-11"
-categories:
+categories: [AI, Clinical practice]
 image: "cuore.jpg"
+image-alt: "Vintage anatomical drawing of the human heart, cross-section and exterior"
 draft: false
 layout: single
 execute: 

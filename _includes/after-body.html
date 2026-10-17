@@ -1,0 +1,152 @@
+<!-- Sticky mobile CTA (shown on small screens after scrolling) -->
+<div class="sticky-cta" id="sticky-cta" hidden>
+  <span>Need evidence for your product?</span>
+  <a class="sticky-cta-btn" data-href="jobs.html">Get in touch</a>
+</div>
+
+<!-- Cookie consent: analytics only load after "Accept" -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+  <p>We use one optional analytics cookie to see which pages are useful. No ads, no selling data.
+    <a data-href="privacy.html#cookies">Read more</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" class="btn-secondary-cta" data-consent="denied">Decline</button>
+    <button type="button" class="btn-primary-cta" data-consent="granted">Accept</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ---- Site configuration ------------------------------------------------
+  // GA4 measurement ID, e.g. "G-ABC123XYZ". Leave empty to disable analytics.
+  var GA4_ID = "";
+  // Form backend (e.g. a Formspree endpoint "https://formspree.io/f/xxxxxxx").
+  // Leave empty and the contact form falls back to opening the visitor's email app.
+  var FORM_ENDPOINT = "";
+  var CONTACT_EMAIL = "bisturiep005@gmail.com";
+  // -------------------------------------------------------------------------
+
+  var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+  var root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+  document.querySelectorAll("[data-href]").forEach(function (a) {
+    a.setAttribute("href", root + a.getAttribute("data-href"));
+  });
+
+  function store(k, v) {
+    try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; }
+  }
+
+  // ---- Analytics, gated on consent ----------------------------------------
+  function loadAnalytics() {
+    if (!GA4_ID || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", GA4_ID, { anonymize_ip: true });
+  }
+  var banner = document.getElementById("cookie-banner");
+  var consent = store("h005-consent");
+  if (consent === "granted") loadAnalytics();
+  else if (!consent) banner.hidden = false;
+  banner.addEventListener("click", function (e) {
+    var choice = e.target.getAttribute && e.target.getAttribute("data-consent");
+    if (!choice) return;
+    store("h005-consent", choice);
+    banner.hidden = true;
+    if (choice === "granted") loadAnalytics();
+  });
+  document.querySelectorAll(".cookie-settings").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); banner.hidden = false; });
+  });
+
+  // ---- Sticky mobile CTA -------------------------------------------------
+  var cta = document.getElementById("sticky-cta");
+  var onContact = /\/jobs\.html$/.test(location.pathname);
+  if (!onContact) {
+    var toggle = function () {
+      var show = window.innerWidth < 768 && window.scrollY > 420 && banner.hidden;
+      cta.hidden = !show;
+      document.body.classList.toggle("has-sticky-cta", show);
+    };
+    window.addEventListener("scroll", toggle, { passive: true });
+    window.addEventListener("resize", toggle);
+    banner.addEventListener("click", toggle);
+    toggle();
+  }
+
+  // ---- Contact form: validation, loading, success and error states -------
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+  var status = document.getElementById("form-status");
+  var btn = form.querySelector("button[type=submit]");
+  var rules = {
+    name: function (v) { return v.trim().length >= 2 || "Please tell us your name."; },
+    email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || "Please enter a valid email address, e.g. name@company.com."; },
+    message: function (v) { return v.trim().length >= 20 || "A couple of sentences helps us reply usefully (at least 20 characters)."; },
+    consent: function (v, el) { return el.checked || "Please confirm you have read the privacy policy."; }
+  };
+  function check(el) {
+    var rule = rules[el.name];
+    if (!rule) return true;
+    var res = rule(el.value, el);
+    var err = document.getElementById(el.name + "-error");
+    var ok = res === true;
+    el.setAttribute("aria-invalid", ok ? "false" : "true");
+    el.closest(".field").classList.toggle("is-invalid", !ok);
+    err.textContent = ok ? "" : res;
+    return ok;
+  }
+  Object.keys(rules).forEach(function (n) {
+    var el = form.elements[n];
+    el.addEventListener("blur", function () { check(el); });
+    el.addEventListener("input", function () { if (el.getAttribute("aria-invalid") === "true") check(el); });
+  });
+  function setStatus(kind, html) {
+    status.className = "form-status " + kind;
+    status.innerHTML = html;
+    status.hidden = false;
+    status.focus();
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (form.elements._gotcha.value) return; // spam honeypot
+    var bad = Object.keys(rules).map(function (n) { return check(form.elements[n]) ? null : form.elements[n]; }).filter(Boolean);
+    if (bad.length) {
+      setStatus("error", "Please fix the " + (bad.length === 1 ? "highlighted field" : bad.length + " highlighted fields") + " and try again.");
+      bad[0].focus();
+      return;
+    }
+    var data = new FormData(form);
+    btn.disabled = true;
+    btn.classList.add("is-loading");
+    btn.setAttribute("aria-busy", "true");
+    var done = function () { btn.disabled = false; btn.classList.remove("is-loading"); btn.removeAttribute("aria-busy"); };
+
+    if (!FORM_ENDPOINT) {
+      var body = "Name: " + data.get("name") + "\nOrganisation: " + (data.get("org") || "-") +
+        "\nTopic: " + data.get("topic") + "\n\n" + data.get("message");
+      window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" +
+        encodeURIComponent("Enquiry: " + data.get("topic")) + "&body=" + encodeURIComponent(body);
+      setTimeout(function () {
+        done();
+        setStatus("success", "Your email app should now be open with the message ready to send. Nothing opened? Write to <a href=\"mailto:" + CONTACT_EMAIL + "\">" + CONTACT_EMAIL + "</a>.");
+      }, 600);
+      return;
+    }
+    fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); })
+      .then(function () {
+        form.reset();
+        setStatus("success", "<strong>Thanks, message received.</strong> We will reply by email.");
+      })
+      .catch(function () {
+        setStatus("error", "Sorry, the message could not be sent. Please try again, or email <a href=\"mailto:" + CONTACT_EMAIL + "\">" + CONTACT_EMAIL + "</a>.");
+      })
+      .then(done);
+  });
+})();
+</script>

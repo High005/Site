@@ -1,8 +1,10 @@
 ---
-title: "How Artificial Intelligence is improving the teaching journey in medical oncology"
+title: "AI avatars are starting to teach medical oncology"
+description: "Italy's AI Learning study tests whether medical students learn oncology as well from AI-powered avatars as from people."
 date: "2025-04-27"
-categories:
+categories: [AI, Medical education]
 image: "onco.jpg"
+image-alt: "Doctor touching a glowing AI icon on a digital interface"
 draft: false
 layout: single
 execute: 

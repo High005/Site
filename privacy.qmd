@@ -1,0 +1,60 @@
+---
+title: "Privacy policy"
+pagetitle: "Privacy policy"
+description: "What personal data High 0.05 collects on this website, why, how long we keep it, and your rights under the GDPR."
+---
+
+_Last updated: {{< var updated >}}_
+
+The short version: this website collects as little as possible. We only know
+about you what you choose to tell us when you write to us, plus anonymous
+visit statistics if you accept the analytics cookie.
+
+## Who is responsible for your data
+
+The data controller is **{{< var legal-name >}}**, {{< var address >}},
+{{< var city >}}, VAT {{< var vat >}}. Contact for any privacy request:
+[{{< var email >}}](mailto:{{< var email >}}).
+
+## What we collect, and why
+
+| Data | When | Why (legal basis, GDPR art. 6) | Kept for |
+|---|---|---|---|
+| Name, email, organisation, your message | You use the contact form or email us | To answer you and, if you ask, prepare a proposal (steps prior to a contract, art. 6.1.b) | 24 months after our last exchange, unless a contract follows |
+| Anonymous usage statistics (pages viewed, device type, approximate country) | Only if you click **Accept** on the cookie banner | To understand which content is useful (consent, art. 6.1.a) | 14 months |
+| Technical logs (IP address, browser) | Every visit, kept by our hosting provider | Security and to deliver the site (legitimate interest, art. 6.1.f) | As set by the provider |
+
+We do not sell personal data, use it for advertising, or make automated
+decisions about you.
+
+## Cookies {#cookies}
+
+- **Necessary storage:** we save your cookie choice in your browser so we do
+  not ask again. No consent needed.
+- **Analytics (optional):** Google Analytics 4, loaded **only after you
+  accept**, with IP anonymisation. You can change your mind at any time via
+  [Cookie settings](#){.cookie-settings} in the footer.
+
+We do not use advertising or profiling cookies.
+
+## Who else processes data
+
+- **GitHub Pages** (GitHub Inc., USA) hosts the website.
+- **Google** (Google Fonts for typography; Google Analytics only with consent).
+- **Our email provider** receives the messages you send us.
+- **YouTube** only when you click a link to our videos.
+
+Some of these providers are based in the USA. Transfers rely on the EU-US Data
+Privacy Framework or the European Commission's Standard Contractual Clauses.
+
+## Your rights
+
+You can ask to access, correct, delete, restrict or port your data, object to
+its processing, and withdraw consent at any time, by writing to
+[{{< var email >}}](mailto:{{< var email >}}). We answer within one month.
+You can also complain to the Italian data protection authority,
+the [Garante per la protezione dei dati personali](https://www.garanteprivacy.it).
+
+## Changes
+
+If this policy changes, we update it here and change the date at the top.

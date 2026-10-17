@@ -1,8 +1,10 @@
 ---
-title: "Survival analysis"
+title: "Survival analysis, explained simply"
+description: "What survival analysis answers, why censored data matters, and how to read a survival curve."
 date: "2025-01-25"
-categories:
+categories: [Statistics, Clinical research]
 image: "x1.png"
+image-alt: "Kaplan-Meier curves comparing survival with and without hormonal therapy, with confidence bands"
 draft: false
 layout: single
 execute: 

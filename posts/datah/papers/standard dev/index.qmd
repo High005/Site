@@ -1,8 +1,10 @@
 ---
-title: "Standard Deviation Vs Standard Error"
+title: "Standard deviation vs standard error"
+description: "SD describes your data; SE describes your estimate. A clear guide to which one to report, and when."
 date: "2025-09-06"
-categories:
+categories: [Statistics]
 image: "x11.png"
+image-alt: "Side-by-side diagram: standard deviation as spread of data points, standard error as precision of the sample mean"
 draft: false
 layout: single
 execute: 

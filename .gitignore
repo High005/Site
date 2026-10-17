@@ -7,3 +7,6 @@
 
 **/*.quarto_ipynb
 _site_repair_clone/
+
+_quarto_internal_scss_error.scss
+render.log
