@@ -441,3 +441,12 @@ h1, h2, .hero h1, .section-head h2, .cta-final h2, .quarto-title h1.title {
 @media (max-width: 480px) {
   .trusted-list { grid-template-columns: 1fr; }
 }
+
+.quarto-title-banner h1, .quarto-title-banner .title, .quarto-title-banner .subtitle,
+.quarto-title-banner .description, .quarto-title-banner p { color: #fff !important; }
+.quarto-title-banner .description { opacity: 0.75; max-width: 60ch; }
+.hero, .trusted, .section-alt { width: 100vw; margin-left: calc(50% - 50vw); }
+.section-head h2 { text-wrap: balance; }
+main.content:has(.hero) { margin-top: 0 !important; padding-top: 0 !important; }
+main.content:has(.hero) > #title-block-header { display: none; }
+main.content:has(.hero) > .hero:first-of-type, main.content:has(.hero) .hero { margin-top: 0; }
