@@ -12,8 +12,7 @@ visit statistics if you accept the analytics cookie.
 
 ## Who is responsible for your data
 
-The data controller is **{{< var legal-name >}}**, {{< var address >}},
-{{< var city >}}, VAT {{< var vat >}}. Contact for any privacy request:
+The data controller is **{{< var legal-name >}}**, {{< var city >}}. Contact for any privacy request:
 [{{< var email >}}](mailto:{{< var email >}}).
 
 ## What we collect, and why

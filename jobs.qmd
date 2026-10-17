@@ -66,9 +66,7 @@ A few sentences are enough. We read every message and reply by email.
 ### Address
 
 {{< var legal-name >}}<br>
-{{< var address >}}<br>
-{{< var city >}}<br>
-P.IVA {{< var vat >}}
+{{< var city >}}
 
 ### Who we work with
 

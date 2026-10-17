@@ -43,7 +43,7 @@ website:
         href: jobs.qmd
   page-footer:
     left: |
-      **{{< var legal-name >}}** · {{< var address >}}, {{< var city >}} · P.IVA {{< var vat >}}<br>
+      **{{< var legal-name >}}** · {{< var city >}}<br>
       A spin-off of Medici con l'Africa CUAMM ·
       [Privacy](/privacy.qmd) · [Terms](/terms.qmd) · [Cookie settings](#){.cookie-settings}
     right:

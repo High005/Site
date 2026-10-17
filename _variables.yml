@@ -1,9 +1,5 @@
-# Single place for business details shown across the site
-# (contact page, footer, privacy policy, terms).
-# >>> Replace every value marked TODO before going live. <<<
+# Business details shown across the site (footer, contact, privacy, terms).
 email: bisturiep005@gmail.com
-legal-name: "High 0.05"               # TODO: registered company name (e.g. "High 0.05 S.r.l.")
-address: "TODO: street, number"        # TODO: registered office street address
-city: "35100 Padova (PD), Italy"       # TODO: confirm postcode and city
-vat: "TODO: P.IVA"                     # TODO: Italian VAT number (P.IVA), legally required on business sites
+legal-name: "High 0.05"
+city: "Padova, Italy"
 updated: "17 October 2026"

@@ -10,8 +10,7 @@ By using this website you accept these terms. They are short on purpose.
 
 ## Who we are
 
-This website is run by **{{< var legal-name >}}**, {{< var address >}},
-{{< var city >}}, VAT {{< var vat >}}. Contact:
+This website is run by **{{< var legal-name >}}**, {{< var city >}}. Contact:
 [{{< var email >}}](mailto:{{< var email >}}).
 
 ## The content is educational, not advice
